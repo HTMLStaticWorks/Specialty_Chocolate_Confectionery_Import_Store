@@ -65,7 +65,7 @@
         <li class="overlay-menu-item"><a href="home2.html" class="overlay-menu-link" data-preview-img="previewHome2"><span class="overlay-menu-num">02</span><span class="overlay-menu-text">HOME 2 — GRAND RESERVE</span></a></li>
         <li class="overlay-menu-item"><a href="products.html" class="overlay-menu-link" data-preview-img="previewProducts"><span class="overlay-menu-num">03</span><span class="overlay-menu-text">PRODUCTS CATALOG</span></a></li>
         <li class="overlay-menu-item"><a href="gifting.html" class="overlay-menu-link" data-preview-img="previewGifting"><span class="overlay-menu-num">04</span><span class="overlay-menu-text">BESPOKE GIFTING</span></a></li>
-        <li class="overlay-menu-item"><a href="corporate.html" class="overlay-menu-link" data-preview-img="previewCorporate"><span class="overlay-menu-num">05</span><span class="overlay-menu-text">CORPORATE ORDERS</span></a></li>
+        <li class="overlay-menu-item"><a href="corporate.html" class="overlay-menu-link active" aria-current="page" data-preview-img="previewCorporate"><span class="overlay-menu-num">05</span><span class="overlay-menu-text">CORPORATE ORDERS</span></a></li>
         <li class="overlay-menu-item"><a href="contact.html" class="overlay-menu-link" data-preview-img="previewContact"><span class="overlay-menu-num">06</span><span class="overlay-menu-text">CONTACT & SALON</span></a></li>
       </ul>
 
@@ -94,9 +94,14 @@
     <div class="container py-3">
       <span class="section-tag"><i class="bi bi-building-fill-check"></i> Executive & Client Gifting</span>
       <h1 class="serif-heading section-heading-lg mb-2">Corporate Confectionery Concierge</h1>
-      <p class="section-subhead">
+      <p class="section-subhead mb-4">
         Turn client appreciation, executive summits, and holiday milestones into memorable tasting experiences with custom foil-embossed presentation boxes.
       </p>
+
+      <!-- Hero Image Showcase -->
+      <div class="rounded-4 overflow-hidden border shadow-lg mx-auto" style="max-width: 920px; aspect-ratio: 21 / 9; max-height: 380px;">
+        <img src="image/pexels-gorkemography-1013671176-36921982.jpg" alt="Maison du Cacao Corporate Confectionery Suites" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
     </div>
   </header>
 
@@ -138,65 +143,48 @@
                 <span class="text-muted">Applied Volume Savings:</span>
                 <strong id="corpDiscount" class="text-success">15% Volume Savings</strong>
               </div>
-              <div class="d-flex justify-content-between pt-3 border-top mt-2">
-                <span class="fw-bold">Estimated Order Total:</span>
-                <strong id="corpTotalPrice" class="fs-4 text-gold fw-bold">$4,037.50</strong>
+              <div class="d-flex justify-content-between border-top pt-2">
+                <span class="fw-bold">Estimated Order Subtotal:</span>
+                <strong id="corpTotal" class="fs-4 text-gold">$4,037.50</strong>
               </div>
-            </div>
-
-            <div class="mt-4 text-center">
-              <span class="small text-muted"><i class="bi bi-shield-check text-gold me-1"></i> Includes complimentary white-glove corporate mockup proofs and climate packaging.</span>
             </div>
           </div>
         </div>
 
-        <!-- Corporate Inquiry Form -->
+        <!-- Consultation Form Column -->
         <div class="col-lg-6">
           <div class="calculator-box h-100">
             <div class="mb-4">
-              <span class="badge bg-noir text-gold px-3 py-2 mb-2"><i class="bi bi-send-fill me-1"></i> Dedicated Concierge</span>
-              <h3 class="serif-heading mb-1">Request a Bespoke Corporate Quote</h3>
-              <p class="text-muted-custom small">A dedicated corporate gifting director will respond within 2 business hours with digital proofs and wholesale tiered options.</p>
+              <span class="badge bg-noir text-gold px-3 py-2 mb-2"><i class="bi bi-headset me-1"></i> Dedicated Concierge</span>
+              <h3 class="serif-heading mb-1">Request Corporate Proposal</h3>
+              <p class="text-muted-custom small">Receive custom artwork mockups, sample tasting flights, and address upload templates.</p>
             </div>
 
             <form class="cacao-ajax-form">
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label class="form-label">Full Name</label>
-                  <input type="text" class="form-control" placeholder="Eleanor Vance" required>
+                  <label class="form-label">Company Name</label>
+                  <input type="text" class="form-control" placeholder="Acme Holdings" required>
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label">Company / Organization</label>
-                  <input type="text" class="form-control" placeholder="Vance Capital Partners" required>
+                  <label class="form-label">Contact Person</label>
+                  <input type="text" class="form-control" placeholder="Jane Smith" required>
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label">Work Email</label>
-                  <input type="email" class="form-control" placeholder="e.vance@vancecap.com" required>
+                  <label class="form-label">Corporate Email</label>
+                  <input type="email" class="form-control" placeholder="jsmith@acme.com" required>
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label">Phone Number</label>
-                  <input type="tel" class="form-control" placeholder="+1 (212) 555-0198" required>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Target Delivery Date</label>
-                  <input type="date" class="form-control" required>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Custom Branding Needs</label>
-                  <select class="form-select">
-                    <option>Gold Foil Logo Ribbon Stamp</option>
-                    <option>Custom Velvet Box Sleeve</option>
-                    <option>Embossed Wax Seal with Monogram</option>
-                    <option>Custom Curated Terroir Menu</option>
-                  </select>
+                  <label class="form-label">Direct Phone</label>
+                  <input type="tel" class="form-control" placeholder="+1 (555) 234-5678">
                 </div>
                 <div class="col-12">
-                  <label class="form-label">Project Details & Special Requirements</label>
-                  <textarea class="form-control" rows="3" placeholder="Describe your event, recipient list size, or multi-address international delivery requirements..."></textarea>
+                  <label class="form-label">Project Objectives & Target Delivery Date</label>
+                  <textarea class="form-control" rows="3" placeholder="Tell us about your event, client tier, custom ribbon or logo embossing requirements..."></textarea>
                 </div>
                 <div class="col-12">
                   <button type="submit" class="btn btn-cacao-gold w-100 py-3 fw-bold">
-                    <i class="bi bi-file-earmark-spreadsheet-fill me-2"></i> Submit Corporate Request & Request Tasting Kit
+                    <i class="bi bi-file-earmark-pdf-fill me-2"></i> Request Formal Corporate Quote
                   </button>
                 </div>
               </div>
@@ -219,43 +207,57 @@
 
       <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="chocolate-card">
+          <div class="chocolate-card h-100 d-flex flex-column">
             <div class="card-img-wrapper">
               <img src="image/pexels-gorkemography-1013671176-36921982.jpg" alt="Executive Gala Vault">
               <span class="origin-tag-pill"><i class="bi bi-star-fill text-gold"></i> Executive Gala</span>
             </div>
-            <div class="chocolate-card-body">
+            <div class="chocolate-card-body d-flex flex-column flex-grow-1">
               <div class="choc-brand-title">Private Equity Summit</div>
               <h3 class="choc-product-name">The Obsidian Vault</h3>
-              <p class="choc-flavor-notes">Custom matte black rigid gift boxes with metallic gold foil corporate crest for 350 international attendees.</p>
+              <p class="choc-flavor-notes mb-3 flex-grow-1">Custom matte black rigid gift boxes with metallic gold foil corporate crest for 350 international attendees.</p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25 mt-auto">
+                <span class="small text-gold fw-bold"><i class="bi bi-shield-lock-fill me-1"></i> Custom Branding</span>
+                <span class="badge bg-dark text-gold border border-warning border-opacity-40">350+ Units</span>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="chocolate-card">
+          <div class="chocolate-card h-100 d-flex flex-column">
             <div class="card-img-wrapper">
               <img src="image/pexels-capturavisualmoment-36547517.jpg" alt="Luxury Client Appreciation Suite">
               <span class="origin-tag-pill"><i class="bi bi-briefcase-fill text-gold"></i> Client Gifting</span>
             </div>
-            <div class="chocolate-card-body">
+            <div class="chocolate-card-body d-flex flex-column flex-grow-1">
               <div class="choc-brand-title">Law & Wealth Management</div>
               <h3 class="choc-product-name">The Chairman's Tasting Trunk</h3>
-              <p class="choc-flavor-notes">Double-layer walnut case featuring 24 European pralines and customized sommelier pairing booklet.</p>
+              <p class="choc-flavor-notes mb-3 flex-grow-1">Double-layer walnut case featuring 24 European pralines and customized sommelier pairing booklet.</p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25 mt-auto">
+                <span class="small text-gold fw-bold"><i class="bi bi-gift-fill me-1"></i> Walnut Chest</span>
+                <span class="badge bg-dark text-gold border border-warning border-opacity-40">Tier 1 Bespoke</span>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="chocolate-card">
+          <div class="chocolate-card h-100 d-flex flex-column">
             <div class="card-img-wrapper">
               <img src="image/aleksandra-PBZ_3SA5KCM-unsplash.jpg" alt="Artisan Holiday Hampers">
               <span class="origin-tag-pill"><i class="bi bi-gift-fill text-gold"></i> Holiday Tier</span>
             </div>
-            <div class="chocolate-card-body">
+            <div class="chocolate-card-body d-flex flex-column flex-grow-1">
               <div class="choc-brand-title">Tech Enterprise Appreciation</div>
               <h3 class="choc-product-name">Global Holiday Hamper</h3>
-              <p class="choc-flavor-notes">Direct cold-chain drop shipping to 1,200 remote employee home addresses across 14 countries.</p>
+              <p class="choc-flavor-notes mb-3 flex-grow-1">Direct cold-chain drop shipping to 1,200 remote employee home addresses across 14 countries.</p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25 mt-auto">
+                <span class="small text-gold fw-bold"><i class="bi bi-globe-americas me-1"></i> Multi-Country</span>
+                <span class="badge bg-dark text-gold border border-warning border-opacity-40">1,200+ Recipients</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -96,6 +96,38 @@ function initFullscreenMenu() {
       if (targetImg) targetImg.classList.add('active');
     });
   });
+
+  // Highlight active link based on URL and set initial preview
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.overlay-menu-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+      link.classList.add('active');
+      link.setAttribute('aria-current', 'page');
+      const activeImgId = link.getAttribute('data-preview-img');
+      const activeImg = document.getElementById(activeImgId);
+      if (activeImg) {
+        previewImgs.forEach(img => img.classList.remove('active'));
+        activeImg.classList.add('active');
+      }
+    }
+  });
+
+  // Restore active preview when mouse leaves menu
+  const menuList = document.querySelector('.overlay-menu-list');
+  if (menuList) {
+    menuList.addEventListener('mouseleave', () => {
+      const activeLink = document.querySelector('.overlay-menu-link.active');
+      if (activeLink) {
+        const activeImgId = activeLink.getAttribute('data-preview-img');
+        const activeImg = document.getElementById(activeImgId);
+        if (activeImg) {
+          previewImgs.forEach(img => img.classList.remove('active'));
+          activeImg.classList.add('active');
+        }
+      }
+    });
+  }
 }
 
 /* ==========================================================================
