@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Resources & IEP Toolkit | Sage Educational Advocacy & Consulting</title>
+  <meta name="description" content="Free parent resources, special education letter templates, IEP checklists, IDEA legal guides, and searchable special education acronym glossary.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233D3045'/><text x='50%' y='65%' font-size='50' font-family='serif' fill='%23C98F91' text-anchor='middle'>S</text></svg>">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar text-center py-2">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-2 small">
+        <span class="badge" style="background: var(--sage-dusty-rose); color: #fff;">Free Knowledge Hub</span>
+        <span>Empowering parents with free downloadable IEP templates & checklists.</span>
+      </div>
+      <div class="d-flex align-items-center gap-3 small">
+        <span><i class="bi bi-telephone-fill me-1 text-rose"></i> (800) 582-SAGE</span>
+        <span class="d-none d-md-inline">|</span>
+        <a href="login.html" class="d-none d-md-inline text-white text-decoration-underline"><i class="bi bi-shield-lock me-1"></i> Parent Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Straight-Line Navigation (Fixed in all views) -->
+  <nav class="navbar sage-navbar fixed-top">
+    <div class="container">
+      <div class="navbar-straight-wrapper">
+        
+        <!-- LOGO (Left) -->
+        <a class="brand-logo-wrap" href="index.html">
+          <div class="brand-symbol">S</div>
+          <div class="brand-text-block">
+            <span class="brand-name">Sage Advocacy</span>
+            <span class="brand-tagline">IEP & Education Consulting</span>
+          </div>
+        </a>
+
+        <!-- Right Side: Theme Toggle + Direction Toggle + Parent Portal + Magnetic MENU ☰ -->
+        <div class="d-flex align-items-center gap-2 gap-sm-3">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="bi bi-sun-fill text-warning"></i>
+          </button>
+
+          <button type="button" class="dir-toggle-btn" title="Toggle RTL / LTR Direction" aria-label="Toggle RTL / LTR">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+
+          <a href="login.html" class="portal-login-pill d-none d-md-inline-flex">
+            <i class="bi bi-shield-check"></i> Parent Portal
+          </a>
+
+          <button type="button" class="magnetic-menu-btn" title="Open Menu" aria-label="Open Fullscreen Menu">
+            <div class="menu-hamburger-icon"><span></span><span></span></div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Magnetic Navigation Overlay -->
+  <div id="fullscreenNavOverlay" class="fullscreen-nav-overlay">
+    <div class="nav-overlay-header">
+      <a class="brand-logo-wrap" href="index.html">
+        <div class="brand-symbol" style="background: var(--sage-dusty-rose);">S</div>
+        <div class="brand-text-block">
+          <span class="brand-name text-white">Sage Advocacy</span>
+          <span class="brand-tagline text-white-50">Every Child Deserves an Advocate</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+        <button type="button" class="dir-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <i class="bi bi-arrow-left-right"></i>
+        </button>
+        <button type="button" class="nav-close-btn" aria-label="Close Menu">
+          <i class="bi bi-x-lg"></i> CLOSE
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-overlay-body">
+      <ul class="overlay-menu-list">
+        <li class="overlay-menu-item">
+          <a href="index.html" class="overlay-menu-link" data-preview="preview-home">
+            <span class="overlay-menu-num">01</span>
+            <span class="overlay-menu-text">HOME</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="about.html" class="overlay-menu-link" data-preview="preview-about">
+            <span class="overlay-menu-num">02</span>
+            <span class="overlay-menu-text">ABOUT</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="services.html" class="overlay-menu-link" data-preview="preview-services">
+            <span class="overlay-menu-num">03</span>
+            <span class="overlay-menu-text">SERVICES</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="resources.html" class="overlay-menu-link active" data-preview="preview-projects">
+            <span class="overlay-menu-num">04</span>
+            <span class="overlay-menu-text">PROJECTS &amp; TOOLKIT</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="contact.html" class="overlay-menu-link" data-preview="preview-contact">
+            <span class="overlay-menu-num">05</span>
+            <span class="overlay-menu-text">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="overlay-preview-viewport">
+        <img src="image/care-assure-Zx4ddAfk0Ck-unsplash.jpg" alt="Home preview" class="overlay-preview-img" data-preview-id="preview-home">
+        <img src="image/annie-spratt-byZkjVj5OIE-unsplash.jpg" alt="About preview" class="overlay-preview-img" data-preview-id="preview-about">
+        <img src="image/marwen-larafa-5w7d1ThYYE0-unsplash.jpg" alt="Services preview" class="overlay-preview-img" data-preview-id="preview-services">
+        <img src="image/santi-vedri-O5EMzfdxedg-unsplash.jpg" alt="Projects preview" class="overlay-preview-img active" data-preview-id="preview-projects">
+        <img src="image/anna-kolosyuk-4R6pg0Iq5IU-unsplash.jpg" alt="Contact preview" class="overlay-preview-img" data-preview-id="preview-contact">
+      </div>
+    </div>
+
+    <div class="nav-overlay-footer">
+      <div>
+        <i class="bi bi-telephone-fill text-rose me-2"></i> (800) 582-SAGE &nbsp;|&nbsp; <span class="text-white-50">advocacy@sageeac.com</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="login.html" class="text-white text-decoration-underline"><i class="bi bi-shield-lock me-1"></i> Parent Portal Login</a>
+        <a href="contact.html" class="btn btn-sage-secondary btn-sm"><i class="bi bi-calendar2-check me-1"></i> Book Discovery Call</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="py-5 bg-ivory-light border-bottom">
+    <div class="container py-4 text-center max-w-700 mx-auto" data-aos="fade-up">
+      <span class="section-tag tag-rose"><i class="bi bi-book-half"></i> Free Parent Toolkit</span>
+      <h1 class="section-heading-lg">IEP Guides, Templates & Knowledge Hub</h1>
+      <p class="section-subhead mx-auto">
+        Knowledge is your greatest leverage at the IEP table. Explore our curated library of parent letter templates, statutory checklists, and special education legal explainers.
+      </p>
+
+      <!-- Search Bar -->
+      <div class="max-w-600 mx-auto mt-4">
+        <div class="input-group shadow-sm" style="border-radius: var(--radius-pill); overflow: hidden;">
+          <span class="input-group-text bg-white border-end-0 px-3"><i class="bi bi-search text-muted"></i></span>
+          <input type="text" id="resourceSearchInput" class="form-control border-start-0 py-3" placeholder="Search templates, acronyms, or keywords (e.g., 'PWN', 'IEE', 'Dyslexia')...">
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+        <button class="btn btn-sm btn-sage-outline resource-cat-btn active" data-category="all">All Resources</button>
+        <button class="btn btn-sm btn-sage-outline resource-cat-btn" data-category="templates">Letter Templates</button>
+        <button class="btn btn-sm btn-sage-outline resource-cat-btn" data-category="checklists">Parent Checklists</button>
+        <button class="btn btn-sm btn-sage-outline resource-cat-btn" data-category="guides">IDEA Legal Guides</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Resources Cards Grid -->
+  <section class="py-5 my-3">
+    <div class="container">
+      <div class="row g-4" id="resourceCardsContainer">
+
+        <!-- Resource 1 -->
+        <div class="col-md-6 col-lg-4 resource-card-item" data-category="checklists" data-aos="fade-up">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-green-subtle text-green-dark border px-3 py-1">Checklist</span>
+              <span class="small text-muted"><i class="bi bi-filetype-pdf text-danger me-1"></i> PDF Guide</span>
+            </div>
+            <h4 class="resource-title">Ultimate IEP Meeting Prep Checklist</h4>
+            <p class="resource-desc">
+              Step-by-step checklist for the 14 days leading up to your annual ARD/IEP review, including draft requests, question scripts, and recording notices.
+            </p>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <span class="small text-muted">Updated: 2026 Edition</span>
+              <a href="#" class="btn btn-sage-outline btn-sm" onclick="alert('Downloading Ultimate IEP Meeting Prep Checklist (PDF)...'); return false;"><i class="bi bi-download me-1"></i> Free Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resource 2 -->
+        <div class="col-md-6 col-lg-4 resource-card-item" data-category="templates" data-aos="fade-up" data-aos-delay="100">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-rose-subtle text-rose-dark border px-3 py-1">Letter Template</span>
+              <span class="small text-muted"><i class="bi bi-file-earmark-word text-primary me-1"></i> Word & PDF</span>
+            </div>
+            <h4 class="resource-title">Formal Evaluation Request Letter</h4>
+            <p class="resource-desc">
+              Legally compliant letter template to request an initial psycho-educational or FIE evaluation under IDEA 34 CFR § 300.301, triggering the 60-day timeline.
+            </p>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <span class="small text-muted">IDEA Statutory Language</span>
+              <a href="#" class="btn btn-sage-outline btn-sm" onclick="alert('Downloading Initial Evaluation Request Template (DOCX)...'); return false;"><i class="bi bi-download me-1"></i> Free Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resource 3 -->
+        <div class="col-md-6 col-lg-4 resource-card-item" data-category="templates" data-aos="fade-up" data-aos-delay="200">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-rose-subtle text-rose-dark border px-3 py-1">Letter Template</span>
+              <span class="small text-muted"><i class="bi bi-file-earmark-word text-primary me-1"></i> Word & PDF</span>
+            </div>
+            <h4 class="resource-title">Independent Evaluation (IEE) Request</h4>
+            <p class="resource-desc">
+              Formal notification letter citing IDEA 34 CFR § 300.502 when you disagree with the school's testing and request an independent evaluation at district expense.
+            </p>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <span class="small text-muted">Includes Legal Citations</span>
+              <a href="#" class="btn btn-sage-outline btn-sm" onclick="alert('Downloading IEE Formal Request Letter Template...'); return false;"><i class="bi bi-download me-1"></i> Free Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resource 4 -->
+        <div class="col-md-6 col-lg-4 resource-card-item" data-category="guides" data-aos="fade-up">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-ivory text-plum border px-3 py-1">Legal Guide</span>
+              <span class="small text-muted"><i class="bi bi-filetype-pdf text-danger me-1"></i> 18-Page Guide</span>
+            </div>
+            <h4 class="resource-title">The Power of Prior Written Notice (PWN)</h4>
+            <p class="resource-desc">
+              Why Prior Written Notice is the most underutilized weapon in special education, and how to demand it whenever a school denies services or accommodations.
+            </p>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <span class="small text-muted">Legal Advocacy Series</span>
+              <a href="#" class="btn btn-sage-outline btn-sm" onclick="alert('Downloading Prior Written Notice Guide...'); return false;"><i class="bi bi-download me-1"></i> Free Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resource 5 -->
+        <div class="col-md-6 col-lg-4 resource-card-item" data-category="checklists" data-aos="fade-up" data-aos-delay="100">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-green-subtle text-green-dark border px-3 py-1">Checklist</span>
+              <span class="small text-muted"><i class="bi bi-filetype-pdf text-danger me-1"></i> PDF Guide</span>
+            </div>
+            <h4 class="resource-title">10 Red Flags in School IEP Goals</h4>
+            <p class="resource-desc">
+              How to instantly spot subjective, unmeasurable, or generic IEP goals that allow school districts to claim progress without real student achievement.
+            </p>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <span class="small text-muted">SMART Goal Criteria</span>
+              <a href="#" class="btn btn-sage-outline btn-sm" onclick="alert('Downloading SMART Goal Red Flags Guide...'); return false;"><i class="bi bi-download me-1"></i> Free Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resource 6 -->
+        <div class="col-md-6 col-lg-4 resource-card-item" data-category="guides" data-aos="fade-up" data-aos-delay="200">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="badge bg-ivory text-plum border px-3 py-1">Menu & Guide</span>
+              <span class="small text-muted"><i class="bi bi-filetype-pdf text-danger me-1"></i> PDF Guide</span>
+            </div>
+            <h4 class="resource-title">ADHD & Executive Functioning Accommodations</h4>
+            <p class="resource-desc">
+              Comprehensive list of 45+ concrete 504 and IEP accommodations for focus, task transitions, memory retrieval, and homework modification.
+            </p>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <span class="small text-muted">Evidence-Based</span>
+              <a href="#" class="btn btn-sage-outline btn-sm" onclick="alert('Downloading ADHD Accommodations Menu...'); return false;"><i class="bi bi-download me-1"></i> Free Download</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Special Education Glossary -->
+  <section class="py-5 bg-ivory-light">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+        <span class="section-tag tag-plum"><i class="bi bi-alphabet-uppercase"></i> Special Ed Lexicon</span>
+        <h2 class="section-heading-lg">Special Education Acronym Glossary</h2>
+        <p class="section-subhead mx-auto">
+          School teams love using acronyms that confuse parents. Here is your quick cheat sheet to speak their language with confidence.
+        </p>
+      </div>
+
+      <div class="row g-3" data-aos="fade-up">
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 bg-white rounded-3 border h-100 shadow-sm">
+            <span class="badge bg-plum text-white mb-2">IDEA</span>
+            <h6 class="fw-bold text-plum mb-1">Individuals with Disabilities Education Act</h6>
+            <p class="small text-muted mb-0">The primary federal special education law guaranteeing children with disabilities the right to FAPE.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 bg-white rounded-3 border h-100 shadow-sm">
+            <span class="badge bg-plum text-white mb-2">FAPE</span>
+            <h6 class="fw-bold text-plum mb-1">Free Appropriate Public Education</h6>
+            <p class="small text-muted mb-0">The core legal requirement that special education and related services must be provided at no cost and tailored appropriately.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 bg-white rounded-3 border h-100 shadow-sm">
+            <span class="badge bg-plum text-white mb-2">LRE</span>
+            <h6 class="fw-bold text-plum mb-1">Least Restrictive Environment</h6>
+            <p class="small text-muted mb-0">The legal mandate that students with disabilities must be educated with peers without disabilities to the greatest extent possible.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 bg-white rounded-3 border h-100 shadow-sm">
+            <span class="badge bg-plum text-white mb-2">PWN</span>
+            <h6 class="fw-bold text-plum mb-1">Prior Written Notice</h6>
+            <p class="small text-muted mb-0">Formal document school districts MUST give parents whenever they propose or refuse any identification, evaluation, or placement action.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 bg-white rounded-3 border h-100 shadow-sm">
+            <span class="badge bg-plum text-white mb-2">IEE</span>
+            <h6 class="fw-bold text-plum mb-1">Independent Educational Evaluation</h6>
+            <p class="small text-muted mb-0">An evaluation conducted by a qualified independent examiner not employed by the school district, often paid for by the district.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="p-3 bg-white rounded-3 border h-100 shadow-sm">
+            <span class="badge bg-plum text-white mb-2">BIP / FBA</span>
+            <h6 class="fw-bold text-plum mb-1">Behavior Intervention Plan & FBA</h6>
+            <p class="small text-muted mb-0">Functional Behavior Assessment (FBA) identifies the root cause of behaviors, followed by a BIP outlining positive supports.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Searchable FAQ Accordion -->
+  <section class="py-5 my-3">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+        <span class="section-tag tag-rose"><i class="bi bi-question-circle"></i> Clear Answers</span>
+        <h2 class="section-heading-lg">Frequently Asked Questions</h2>
+        <p class="section-subhead mx-auto">
+          Everything you need to know about engaging an independent advocate and protecting your child's rights.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9" data-aos="fade-up">
+          <div class="accordion" id="sageFAQAccordion">
+            
+            <div class="accordion-item mb-3 border rounded-3 overflow-hidden shadow-sm">
+              <h2 class="accordion-header" id="faqHeadingOne">
+                <button class="accordion-button fw-bold text-plum" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                  What is the difference between a Special Education Advocate and an Attorney?
+                </button>
+              </h2>
+              <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#sageFAQAccordion">
+                <div class="accordion-body text-muted small">
+                  Special education advocates specialize in educational diagnostics, SMART goal writing, accommodations, and attending IEP/504 meetings alongside parents. We help families secure services through collaborative, data-driven negotiation without the high cost ($400-$700/hr) of formal litigation. If a case requires filing a formal state due process complaint in court, we partner directly with specialized special education attorneys.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3 border rounded-3 overflow-hidden shadow-sm">
+              <h2 class="accordion-header" id="faqHeadingTwo">
+                <button class="accordion-button collapsed fw-bold text-plum" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                  Can an advocate attend our meeting virtually if we are outside your local area?
+                </button>
+              </h2>
+              <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#sageFAQAccordion">
+                <div class="accordion-body text-muted small">
+                  Yes! Over 80% of our meeting accompaniments are conducted virtually via Zoom, Google Meet, or Microsoft Teams. Under IDEA federal guidelines, parents have the legal right to invite anyone with knowledge or special expertise regarding the child to the IEP meeting, whether in-person or virtually.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3 border rounded-3 overflow-hidden shadow-sm">
+              <h2 class="accordion-header" id="faqHeadingThree">
+                <button class="accordion-button collapsed fw-bold text-plum" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                  What should I do if the school refuses to evaluate my child?
+                </button>
+              </h2>
+              <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#sageFAQAccordion">
+                <div class="accordion-body text-muted small">
+                  Never accept a verbal refusal. Always submit your evaluation request in writing. If the school refuses, they are legally required under IDEA to issue a <strong>Prior Written Notice (PWN)</strong> detailing the specific data used to justify the refusal. You can then invoke Child Find provisions or request mediation.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3 border rounded-3 overflow-hidden shadow-sm">
+              <h2 class="accordion-header" id="faqHeadingFour">
+                <button class="accordion-button collapsed fw-bold text-plum" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                  How does the secure Sage Parent Workspace protect our family’s privacy?
+                </button>
+              </h2>
+              <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#sageFAQAccordion">
+                <div class="accordion-body text-muted small">
+                  We handle sensitive educational and medical records in strict compliance with FERPA (Family Educational Rights and Privacy Act) and HIPAA security standards. All documents stored in your Parent Portal are 256-bit encrypted, password-protected, and never shared with any third party without your explicit consent.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-5">
+    <div class="container">
+      <div class="cta-banner-plum text-center" data-aos="zoom-in">
+        <div class="max-w-700 mx-auto text-center">
+          <h2>Need Personalized Guidance on These Materials?</h2>
+          <p>
+            Download our free guides, or schedule a 1-on-1 strategy call to review your child's specific school documents with Lead Advocate Lisa Anderson.
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="contact.html" class="btn btn-sage-secondary btn-lg">
+              <i class="bi bi-calendar2-check"></i> Book Strategy Session
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="sage-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-symbol" style="width: 38px; height: 38px; font-size: 1.2rem;">S</div>
+            <span class="brand-name text-white fs-4">Sage Advocacy</span>
+          </div>
+          <p class="small text-white-50 mb-3">
+            Sage Educational Advocacy & IEP Consulting is an independent parent-centered practice. We empower families to navigate special education law, obtain appropriate services, and protect their child's future.
+          </p>
+          <div class="footer-social-wrap">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="footer-link-list small">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About & Approach</a></li>
+            <li><a href="services.html">Advocacy Services</a></li>
+            <li><a href="resources.html">Parent Toolkit</a></li>
+            <li><a href="contact.html">Free Consultation</a></li>
+            <li><a href="login.html">Parent Portal Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5>Advocacy Focus</h5>
+          <ul class="footer-link-list small">
+            <li><a href="services.html">IEP Document Audits</a></li>
+            <li><a href="services.html">ARD / IEP Meeting Accompaniment</a></li>
+            <li><a href="services.html">Independent Evals (IEE)</a></li>
+            <li><a href="services.html">SMART Goal Development</a></li>
+            <li><a href="services.html">504 Accommodation Plans</a></li>
+            <li><a href="services.html">Due Process & Mediation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Contact Practice</h5>
+          <p class="small text-white-50 mb-2"><i class="bi bi-geo-alt me-2 text-rose"></i> Nationwide Virtual Consulting</p>
+          <p class="small text-white-50 mb-2"><i class="bi bi-envelope me-2 text-rose"></i> advocacy@sageeac.com</p>
+          <p class="small text-white-50"><i class="bi bi-telephone me-2 text-rose"></i> (800) 582-SAGE</p>
+        </div>
+      </div>
+
+      <div class="footer-legal-notice">
+        <p class="mb-0">
+          © 2026 Sage Educational Advocacy & Consulting LLC. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

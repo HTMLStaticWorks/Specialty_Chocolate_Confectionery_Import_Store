@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us & Our Approach | Sage Educational Advocacy & IEP Consulting</title>
+  <meta name="description" content="Meet our certified special education advocates and IEP consultants. Learn about our child-centered, data-driven, and non-adversarial advocacy methodology.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233D3045'/><text x='50%' y='65%' font-size='50' font-family='serif' fill='%23C98F91' text-anchor='middle'>S</text></svg>">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar text-center py-2">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-2 small">
+        <span class="badge" style="background: var(--sage-dusty-rose); color: #fff;">Our Pledge</span>
+        <span>Independent, parent-centered special education advocacy with 15+ years of success.</span>
+      </div>
+      <div class="d-flex align-items-center gap-3 small">
+        <span><i class="bi bi-telephone-fill me-1 text-rose"></i> (800) 582-SAGE</span>
+        <span class="d-none d-md-inline">|</span>
+        <a href="login.html" class="d-none d-md-inline text-white text-decoration-underline"><i class="bi bi-shield-lock me-1"></i> Parent Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Straight-Line Navigation (Fixed in all views) -->
+  <nav class="navbar sage-navbar fixed-top">
+    <div class="container">
+      <div class="navbar-straight-wrapper">
+        
+        <!-- LOGO (Left) -->
+        <a class="brand-logo-wrap" href="index.html">
+          <div class="brand-symbol">S</div>
+          <div class="brand-text-block">
+            <span class="brand-name">Sage Advocacy</span>
+            <span class="brand-tagline">IEP & Education Consulting</span>
+          </div>
+        </a>
+
+        <!-- Right Side: Theme Toggle + Direction Toggle + Parent Portal + Magnetic MENU ☰ -->
+        <div class="d-flex align-items-center gap-2 gap-sm-3">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="bi bi-sun-fill text-warning"></i>
+          </button>
+
+          <button type="button" class="dir-toggle-btn" title="Toggle RTL / LTR Direction" aria-label="Toggle RTL / LTR">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+
+          <a href="login.html" class="portal-login-pill d-none d-md-inline-flex">
+            <i class="bi bi-shield-check"></i> Parent Portal
+          </a>
+
+          <button type="button" class="magnetic-menu-btn" title="Open Menu" aria-label="Open Fullscreen Menu">
+            <div class="menu-hamburger-icon"><span></span><span></span></div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Magnetic Navigation Overlay -->
+  <div id="fullscreenNavOverlay" class="fullscreen-nav-overlay">
+    <div class="nav-overlay-header">
+      <a class="brand-logo-wrap" href="index.html">
+        <div class="brand-symbol" style="background: var(--sage-dusty-rose);">S</div>
+        <div class="brand-text-block">
+          <span class="brand-name text-white">Sage Advocacy</span>
+          <span class="brand-tagline text-white-50">Every Child Deserves an Advocate</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+        <button type="button" class="dir-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <i class="bi bi-arrow-left-right"></i>
+        </button>
+        <button type="button" class="nav-close-btn" aria-label="Close Menu">
+          <i class="bi bi-x-lg"></i> CLOSE
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-overlay-body">
+      <ul class="overlay-menu-list">
+        <li class="overlay-menu-item">
+          <a href="index.html" class="overlay-menu-link" data-preview="preview-home">
+            <span class="overlay-menu-num">01</span>
+            <span class="overlay-menu-text">HOME</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="about.html" class="overlay-menu-link active" data-preview="preview-about">
+            <span class="overlay-menu-num">02</span>
+            <span class="overlay-menu-text">ABOUT</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="services.html" class="overlay-menu-link" data-preview="preview-services">
+            <span class="overlay-menu-num">03</span>
+            <span class="overlay-menu-text">SERVICES</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="resources.html" class="overlay-menu-link" data-preview="preview-projects">
+            <span class="overlay-menu-num">04</span>
+            <span class="overlay-menu-text">PROJECTS &amp; TOOLKIT</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="contact.html" class="overlay-menu-link" data-preview="preview-contact">
+            <span class="overlay-menu-num">05</span>
+            <span class="overlay-menu-text">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="overlay-preview-viewport">
+        <img src="image/care-assure-Zx4ddAfk0Ck-unsplash.jpg" alt="Home preview" class="overlay-preview-img" data-preview-id="preview-home">
+        <img src="image/annie-spratt-byZkjVj5OIE-unsplash.jpg" alt="About preview" class="overlay-preview-img active" data-preview-id="preview-about">
+        <img src="image/marwen-larafa-5w7d1ThYYE0-unsplash.jpg" alt="Services preview" class="overlay-preview-img" data-preview-id="preview-services">
+        <img src="image/santi-vedri-O5EMzfdxedg-unsplash.jpg" alt="Projects preview" class="overlay-preview-img" data-preview-id="preview-projects">
+        <img src="image/anna-kolosyuk-4R6pg0Iq5IU-unsplash.jpg" alt="Contact preview" class="overlay-preview-img" data-preview-id="preview-contact">
+      </div>
+    </div>
+
+    <div class="nav-overlay-footer">
+      <div>
+        <i class="bi bi-telephone-fill text-rose me-2"></i> (800) 582-SAGE &nbsp;|&nbsp; <span class="text-white-50">advocacy@sageeac.com</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="login.html" class="text-white text-decoration-underline"><i class="bi bi-shield-lock me-1"></i> Parent Portal Login</a>
+        <a href="contact.html" class="btn btn-sage-secondary btn-sm"><i class="bi bi-calendar2-check me-1"></i> Book Discovery Call</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Hero -->
+  <header class="py-5 bg-ivory-light border-bottom">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7" data-aos="fade-up">
+          <span class="section-tag tag-rose"><i class="bi bi-compass"></i> Our Mission & Heritage</span>
+          <h1 class="section-heading-lg">
+            Empowering Parents. Demystifying the Law. <span class="highlight-serif">Championing Every Child.</span>
+          </h1>
+          <p class="section-subhead">
+            Sage Educational Advocacy was founded on a simple truth: parents shouldn't have to become legal scholars or fight an exhausting bureaucratic system just to get their child the education they deserve.
+          </p>
+        </div>
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="p-4 rounded-4 bg-white border shadow-sm">
+            <h5 class="serif-heading mb-3 text-plum"><i class="bi bi-shield-check text-rose me-2"></i> Our Core Philosophy</h5>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-3 small">
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                <div><strong>Child-First, Always:</strong> Every negotiation, accommodation request, and goal edit revolves solely around the student's holistic well-being and growth.</div>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                <div><strong>Data Over Subjectivity:</strong> We turn ambiguous progress claims into measurable, quantifiable milestones using objective psycho-educational data.</div>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle-fill text-success mt-1"></i>
+                <div><strong>Collaborative Yet Firm:</strong> We maintain professional, respectful relationships with school personnel while fearlessly holding the district accountable to the letter of the law.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Founder & Lead Advocate Section -->
+  <section class="py-5 my-3">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="position-relative">
+            <div class="founder-img-viewport">
+              <img src="image/annie-spratt-byZkjVj5OIE-unsplash.jpg" alt="Lisa Anderson - Lead Special Education Advocate">
+            </div>
+            <div class="position-absolute bottom-0 start-0 m-3 p-3 rounded-3 shadow-sm border hero-floating-stat" style="max-width: 280px;">
+              <div class="fw-bold text-plum">Lisa Anderson, M.Ed., BCBA</div>
+              <div class="small text-muted-custom">Founder & Principal Advocate</div>
+              <div class="small text-rose mt-1"><i class="bi bi-award-fill"></i> 15+ Yrs Special Ed Practice</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <span class="section-tag tag-plum"><i class="bi bi-person-lines-fill"></i> Founder's Story</span>
+          <h2 class="section-heading-lg">“I’ve Sat on Both Sides of the IEP Table.”</h2>
+          <p>
+            Before founding Sage Educational Advocacy, Lisa spent over a decade as a public school special education specialist and district behavioral consultant. She witnessed firsthand how loving, devoted parents were routinely silenced by clinical jargon, rushed meetings, and district budget constraints.
+          </p>
+          <p>
+            <em>"Parents would walk into IEP meetings carrying binders full of hope, only to walk out feeling defeated and misunderstood. I founded Sage to provide families with the authoritative expertise, legal backing, and strategic poise needed to ensure their voice is heard."</em>
+          </p>
+
+          <div class="row g-3 mt-2">
+            <div class="col-sm-6">
+              <div class="p-3 rounded-3 bg-ivory border">
+                <div class="fw-bold text-plum mb-1"><i class="bi bi-mortarboard-fill text-rose me-1"></i> Master of Education (M.Ed.)</div>
+                <div class="small text-muted">Special Education Law & Instructional Design</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 rounded-3 bg-ivory border">
+                <div class="fw-bold text-plum mb-1"><i class="bi bi-award-fill text-rose me-1"></i> Board Certified BCBA</div>
+                <div class="small text-muted">Functional Behavior Assessments & BIP Audits</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Interdisciplinary Team -->
+  <section class="py-5 bg-ivory-light">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+        <span class="section-tag tag-rose"><i class="bi bi-people-fill"></i> Specialized Expertise</span>
+        <h2 class="section-heading-lg">Our Multidisciplinary Team</h2>
+        <p class="section-subhead mx-auto">
+          We bring together former educators, educational diagnosticians, assistive technology specialists, and parent advocates.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member-card">
+            <div class="team-img-viewport">
+              <img src="image/marwen-larafa-5w7d1ThYYE0-unsplash.jpg" alt="Dr. Marcus Vance">
+            </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="serif-heading mb-1 text-plum">Dr. Marcus Vance, Ph.D.</h5>
+              <div class="text-rose small fw-bold mb-3">Neuropsychology & Evaluation Review Consultant</div>
+              <p class="small text-muted mb-0">
+                Specializes in dissecting school psycho-educational evaluations, WISC-V cognitive metrics, and identifying unaddressed SLD / executive functioning deficits.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-member-card">
+            <div class="team-img-viewport">
+              <img src="image/anna-kolosyuk-4R6pg0Iq5IU-unsplash.jpg" alt="Sarah Collins">
+            </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="serif-heading mb-1 text-plum">Sarah Collins, M.S., CCC-SLP</h5>
+              <div class="text-rose small fw-bold mb-3">Speech, Language & Assistive Tech Lead</div>
+              <p class="small text-muted mb-0">
+                12+ years advocating for high-tech AAC device integration, pragmatic language development, and adequate direct therapy minutes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-member-card">
+            <div class="team-img-viewport">
+              <img src="image/santi-vedri-O5EMzfdxedg-unsplash.jpg" alt="David Wright">
+            </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h5 class="serif-heading mb-1 text-plum">David Wright, M.Ed.</h5>
+              <div class="text-rose small fw-bold mb-3">504 Plans & High School Transition Specialist</div>
+              <p class="small text-muted mb-0">
+                Expert in Section 504 accommodations, mental health accommodations, post-secondary transition roadmaps, and college disability accommodations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 Fundamental Parent Rights Under IDEA Infographic -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+        <span class="section-tag tag-plum"><i class="bi bi-journal-text"></i> Legal Pillars</span>
+        <h2 class="section-heading-lg">5 Non-Negotiable Parent Rights Under IDEA</h2>
+        <p class="section-subhead mx-auto">
+          Federal law grants parents extensive authority in special education decisions. Here are five statutory pillars we vigorously defend.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-4 rounded-4 bg-white border h-100 shadow-sm">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon-box" style="background: var(--sage-rose-subtle); color: var(--sage-rose-dark);">01</div>
+              <h5 class="mb-0 text-plum">FAPE (Free & Appropriate Public Education)</h5>
+            </div>
+            <p class="small text-muted mb-0">
+              The school must provide individualized instruction tailored to confer meaningful educational benefit — not merely "the bare minimum" (Supreme Court ruling in <em>Endrew F. v. Douglas County</em>).
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="p-4 rounded-4 bg-white border h-100 shadow-sm">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon-box" style="background: var(--sage-green-light); color: var(--sage-green-deep);">02</div>
+              <h5 class="mb-0 text-plum">LRE (Least Restrictive Environment)</h5>
+            </div>
+            <p class="small text-muted mb-0">
+              Children must be educated alongside non-disabled peers to the maximum extent appropriate, with supplementary aids and services before any self-contained placement is considered.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="p-4 rounded-4 bg-white border h-100 shadow-sm">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon-box" style="background: rgba(61, 48, 69, 0.1); color: var(--sage-plum);">03</div>
+              <h5 class="mb-0 text-plum">PWN (Prior Written Notice)</h5>
+            </div>
+            <p class="small text-muted mb-0">
+              If the school proposes or refuses to initiate an evaluation, accommodation, or service change, they MUST provide written explanation citing specific evaluation data.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="p-4 rounded-4 bg-white border h-100 shadow-sm">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon-box" style="background: var(--sage-rose-subtle); color: var(--sage-rose-dark);">04</div>
+              <h5 class="mb-0 text-plum">Independent Educational Evaluations (IEE)</h5>
+            </div>
+            <p class="small text-muted mb-0">
+              If you disagree with a district evaluation, you have the right to request an outside independent evaluation at public expense under 34 CFR § 300.502.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="500">
+          <div class="p-4 rounded-4 bg-white border h-100 shadow-sm">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="stat-icon-box" style="background: var(--sage-green-light); color: var(--sage-green-deep);">05</div>
+              <h5 class="mb-0 text-plum">Equal Partnership in IEP Meetings</h5>
+            </div>
+            <p class="small text-muted mb-0">
+              Parents are legally equal team members. The school cannot present "predetermined" IEPs or finalize placements without genuine parent participation and input.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-5">
+    <div class="container">
+      <div class="cta-banner-plum text-center" data-aos="zoom-in">
+        <div class="max-w-700 mx-auto text-center">
+          <h2>Let’s Discuss Your Child’s IEP Strategy</h2>
+          <p>
+            Whether your annual review is next week or you are facing school pushback, we are here to support and advocate for your family.
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="contact.html" class="btn btn-sage-secondary btn-lg">
+              <i class="bi bi-calendar-event"></i> Schedule Strategy Session
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="sage-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-symbol" style="width: 38px; height: 38px; font-size: 1.2rem;">S</div>
+            <span class="brand-name text-white fs-4">Sage Advocacy</span>
+          </div>
+          <p class="small text-white-50 mb-3">
+            Sage Educational Advocacy & IEP Consulting is an independent parent-centered practice. We empower families to navigate special education law, obtain appropriate services, and protect their child's future.
+          </p>
+          <div class="footer-social-wrap">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="footer-link-list small">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About & Approach</a></li>
+            <li><a href="services.html">Advocacy Services</a></li>
+            <li><a href="resources.html">Parent Toolkit</a></li>
+            <li><a href="contact.html">Free Consultation</a></li>
+            <li><a href="login.html">Parent Portal Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5>Advocacy Focus</h5>
+          <ul class="footer-link-list small">
+            <li><a href="services.html">IEP Document Audits</a></li>
+            <li><a href="services.html">ARD / IEP Meeting Accompaniment</a></li>
+            <li><a href="services.html">Independent Evals (IEE)</a></li>
+            <li><a href="services.html">SMART Goal Development</a></li>
+            <li><a href="services.html">504 Accommodation Plans</a></li>
+            <li><a href="services.html">Due Process & Mediation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Contact Our Practice</h5>
+          <p class="small text-white-50 mb-2"><i class="bi bi-geo-alt me-2 text-rose"></i> Nationwide Virtual Consulting & Regional In-Person Support</p>
+          <p class="small text-white-50 mb-2"><i class="bi bi-envelope me-2 text-rose"></i> advocacy@sageeac.com</p>
+          <p class="small text-white-50"><i class="bi bi-telephone me-2 text-rose"></i> (800) 582-SAGE</p>
+        </div>
+      </div>
+
+      <div class="footer-legal-notice">
+        <p class="mb-0">
+          © 2026 Sage Educational Advocacy & Consulting LLC. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

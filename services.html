@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advocacy Services & Packages | Sage Educational Advocacy & IEP Consulting</title>
+  <meta name="description" content="Comprehensive special education advocacy services: IEP reviews, ARD meeting attendance, 504 accommodations, IEE independent evaluation support, and SMART goal drafting.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233D3045'/><text x='50%' y='65%' font-size='50' font-family='serif' fill='%23C98F91' text-anchor='middle'>S</text></svg>">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement-bar text-center py-2">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-2 small">
+        <span class="badge" style="background: var(--sage-dusty-rose); color: #fff;">Transparent Pricing</span>
+        <span>Clear packages with no hidden retainers. Virtual & in-person support available.</span>
+      </div>
+      <div class="d-flex align-items-center gap-3 small">
+        <span><i class="bi bi-telephone-fill me-1 text-rose"></i> (800) 582-SAGE</span>
+        <span class="d-none d-md-inline">|</span>
+        <a href="login.html" class="d-none d-md-inline text-white text-decoration-underline"><i class="bi bi-shield-lock me-1"></i> Parent Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Straight-Line Navigation (Fixed in all views) -->
+  <nav class="navbar sage-navbar fixed-top">
+    <div class="container">
+      <div class="navbar-straight-wrapper">
+        
+        <!-- LOGO (Left) -->
+        <a class="brand-logo-wrap" href="index.html">
+          <div class="brand-symbol">S</div>
+          <div class="brand-text-block">
+            <span class="brand-name">Sage Advocacy</span>
+            <span class="brand-tagline">IEP & Education Consulting</span>
+          </div>
+        </a>
+
+        <!-- Right Side: Theme Toggle + Direction Toggle + Parent Portal + Magnetic MENU ☰ -->
+        <div class="d-flex align-items-center gap-2 gap-sm-3">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="bi bi-sun-fill text-warning"></i>
+          </button>
+
+          <button type="button" class="dir-toggle-btn" title="Toggle RTL / LTR Direction" aria-label="Toggle RTL / LTR">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+
+          <a href="login.html" class="portal-login-pill d-none d-md-inline-flex">
+            <i class="bi bi-shield-check"></i> Parent Portal
+          </a>
+
+          <button type="button" class="magnetic-menu-btn" title="Open Menu" aria-label="Open Fullscreen Menu">
+            <div class="menu-hamburger-icon"><span></span><span></span></div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Magnetic Navigation Overlay -->
+  <div id="fullscreenNavOverlay" class="fullscreen-nav-overlay">
+    <div class="nav-overlay-header">
+      <a class="brand-logo-wrap" href="index.html">
+        <div class="brand-symbol" style="background: var(--sage-dusty-rose);">S</div>
+        <div class="brand-text-block">
+          <span class="brand-name text-white">Sage Advocacy</span>
+          <span class="brand-tagline text-white-50">Every Child Deserves an Advocate</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-sun-fill text-warning"></i>
+        </button>
+        <button type="button" class="dir-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <i class="bi bi-arrow-left-right"></i>
+        </button>
+        <button type="button" class="nav-close-btn" aria-label="Close Menu">
+          <i class="bi bi-x-lg"></i> CLOSE
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-overlay-body">
+      <ul class="overlay-menu-list">
+        <li class="overlay-menu-item">
+          <a href="index.html" class="overlay-menu-link" data-preview="preview-home">
+            <span class="overlay-menu-num">01</span>
+            <span class="overlay-menu-text">HOME</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="about.html" class="overlay-menu-link" data-preview="preview-about">
+            <span class="overlay-menu-num">02</span>
+            <span class="overlay-menu-text">ABOUT</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="services.html" class="overlay-menu-link active" data-preview="preview-services">
+            <span class="overlay-menu-num">03</span>
+            <span class="overlay-menu-text">SERVICES</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="resources.html" class="overlay-menu-link" data-preview="preview-projects">
+            <span class="overlay-menu-num">04</span>
+            <span class="overlay-menu-text">PROJECTS &amp; TOOLKIT</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="contact.html" class="overlay-menu-link" data-preview="preview-contact">
+            <span class="overlay-menu-num">05</span>
+            <span class="overlay-menu-text">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="overlay-preview-viewport">
+        <img src="image/care-assure-Zx4ddAfk0Ck-unsplash.jpg" alt="Home preview" class="overlay-preview-img" data-preview-id="preview-home">
+        <img src="image/annie-spratt-byZkjVj5OIE-unsplash.jpg" alt="About preview" class="overlay-preview-img" data-preview-id="preview-about">
+        <img src="image/marwen-larafa-5w7d1ThYYE0-unsplash.jpg" alt="Services preview" class="overlay-preview-img active" data-preview-id="preview-services">
+        <img src="image/santi-vedri-O5EMzfdxedg-unsplash.jpg" alt="Projects preview" class="overlay-preview-img" data-preview-id="preview-projects">
+        <img src="image/anna-kolosyuk-4R6pg0Iq5IU-unsplash.jpg" alt="Contact preview" class="overlay-preview-img" data-preview-id="preview-contact">
+      </div>
+    </div>
+
+    <div class="nav-overlay-footer">
+      <div>
+        <i class="bi bi-telephone-fill text-rose me-2"></i> (800) 582-SAGE &nbsp;|&nbsp; <span class="text-white-50">advocacy@sageeac.com</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="login.html" class="text-white text-decoration-underline"><i class="bi bi-shield-lock me-1"></i> Parent Portal Login</a>
+        <a href="contact.html" class="btn btn-sage-secondary btn-sm"><i class="bi bi-calendar2-check me-1"></i> Book Discovery Call</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="py-5 bg-ivory-light border-bottom">
+    <div class="container py-4 text-center max-w-700 mx-auto" data-aos="fade-up">
+      <span class="section-tag tag-rose"><i class="bi bi-briefcase"></i> Dedicated Practice Tracks</span>
+      <h1 class="section-heading-lg">Comprehensive Advocacy Services</h1>
+      <p class="section-subhead mx-auto">
+        From comprehensive evaluation audits to live meeting representation, our services are structured to provide parents with relentless, data-backed advocacy.
+      </p>
+    </div>
+  </header>
+
+  <!-- 6 Detailed Service Tracks -->
+  <section class="py-5 my-4">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Service 1 -->
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="card-icon-wrap mb-0">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <span class="badge bg-ivory text-plum border px-3 py-2">Most Popular Starting Track</span>
+            </div>
+            <h3 class="serif-heading mb-3">360° Comprehensive IEP & Record Audit</h3>
+            <p>
+              A deep-dive forensic analysis of your child's entire educational record. We review past IEPs, 504 plans, psycho-educational evaluations, standardized testing, and teacher notes to identify missing accommodations, procedural violations, and vague goals.
+            </p>
+            <h6 class="text-plum mt-3 mb-2">Deliverables Include:</h6>
+            <ul class="card-feature-list mb-4">
+              <li><i class="bi bi-check2-circle"></i> Line-by-line written IEP Audit Report with specific redline edits</li>
+              <li><i class="bi bi-check2-circle"></i> Compliance check against IDEA, Section 504, and State Education Codes</li>
+              <li><i class="bi bi-check2-circle"></i> 60-Minute 1-on-1 Parent Strategy & Action Call with Lead Advocate</li>
+              <li><i class="bi bi-check2-circle"></i> Customized list of legally backed requests to submit to the school</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <div>
+                <span class="small text-muted">Fixed Rate:</span>
+                <div class="fw-bold text-plum fs-5">$650</div>
+              </div>
+              <a href="contact.html" class="btn btn-sage-primary btn-sm">Book IEP Audit</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="card-icon-wrap rose-accent mb-0">
+                <i class="bi bi-people"></i>
+              </div>
+              <span class="badge bg-rose-subtle text-rose-dark border px-3 py-2">Live Representation</span>
+            </div>
+            <h3 class="serif-heading mb-3">ARD / IEP Meeting Accompaniment</h3>
+            <p>
+              Never sit across an intimidating table of school district officials alone. An experienced Sage Advocate joins your meeting (virtually via Zoom/Teams or in-person) to speak on your behalf, hold the team to legal standards, and negotiate services calmly.
+            </p>
+            <h6 class="text-plum mt-3 mb-2">Deliverables Include:</h6>
+            <ul class="card-feature-list mb-4">
+              <li><i class="bi bi-check2-circle"></i> Pre-meeting alignment briefing & prioritized parent agenda</li>
+              <li><i class="bi bi-check2-circle"></i> Direct live advocacy, meeting moderation & legal cross-referencing</li>
+              <li><i class="bi bi-check2-circle"></i> Post-meeting PWN (Prior Written Notice) & minutes verification</li>
+              <li><i class="bi bi-check2-circle"></i> Assistance writing parent disagreement letters if consensus fails</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <div>
+                <span class="small text-muted">Meeting Rate:</span>
+                <div class="fw-bold text-plum fs-5">$195 / hr <span class="small text-muted fw-normal">(2 hr min)</span></div>
+              </div>
+              <a href="contact.html" class="btn btn-sage-primary btn-sm">Request Accompaniment</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="card-icon-wrap mb-0">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <span class="badge bg-ivory text-plum border px-3 py-2">Core Foundation</span>
+            </div>
+            <h3 class="serif-heading mb-3">SMART Goal Architecture & Progress Tracking</h3>
+            <p>
+              Vague goals like "Leo will improve reading skills by 80%" are impossible to enforce. We reconstruct your child's IEP goals using rigorous SMART criteria (Specific, Measurable, Attainable, Relevant, Time-bound) tied to clear data collection methods.
+            </p>
+            <h6 class="text-plum mt-3 mb-2">Deliverables Include:</h6>
+            <ul class="card-feature-list mb-4">
+              <li><i class="bi bi-check2-circle"></i> Re-drafting 4–8 customized academic & behavioral SMART goals</li>
+              <li><i class="bi bi-check2-circle"></i> Defining baseline testing protocols & quantifiable milestones</li>
+              <li><i class="bi bi-check2-circle"></i> Setup inside your Parent Workspace Chart.js interactive tracker</li>
+              <li><i class="bi bi-check2-circle"></i> Quarterly data audit to flag school non-compliance early</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <div>
+                <span class="small text-muted">Fixed Rate:</span>
+                <div class="fw-bold text-plum fs-5">$450</div>
+              </div>
+              <a href="contact.html" class="btn btn-sage-primary btn-sm">Request Goal Drafting</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="card-icon-wrap rose-accent mb-0">
+                <i class="bi bi-clipboard2-pulse"></i>
+              </div>
+              <span class="badge bg-rose-subtle text-rose-dark border px-3 py-2">Evaluation Defense</span>
+            </div>
+            <h3 class="serif-heading mb-3">Independent Educational Evaluation (IEE) Guidance</h3>
+            <p>
+              If a school psychologist's evaluation downplayed your child's autism, dyslexia, or ADHD, you have statutory rights under IDEA 34 CFR § 300.502 to demand an Independent Educational Evaluation at public expense. We guide you through the exact legal steps.
+            </p>
+            <h6 class="text-plum mt-3 mb-2">Deliverables Include:</h6>
+            <ul class="card-feature-list mb-4">
+              <li><i class="bi bi-check2-circle"></i> Evaluation Critique Report pinpointing flaws in school testing</li>
+              <li><i class="bi bi-check2-circle"></i> Formal Written IEE Request Letter tailored to your district</li>
+              <li><i class="bi bi-check2-circle"></i> Independent Neuropsychologist & SLP provider vetting</li>
+              <li><i class="bi bi-check2-circle"></i> Integration of outside evaluation results into the subsequent IEP</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <div>
+                <span class="small text-muted">Package Rate:</span>
+                <div class="fw-bold text-plum fs-5">$550</div>
+              </div>
+              <a href="contact.html" class="btn btn-sage-primary btn-sm">Get IEE Guidance</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="card-icon-wrap mb-0">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <span class="badge bg-ivory text-plum border px-3 py-2">Medical & Accommodation</span>
+            </div>
+            <h3 class="serif-heading mb-3">Section 504 Plan Formulation & Enforcement</h3>
+            <p>
+              Section 504 plans for ADHD, anxiety, allergies, diabetes, and chronic medical conditions often get treated as second-class documents by schools. We design enforceable accommodations with clear staff responsibilities.
+            </p>
+            <h6 class="text-plum mt-3 mb-2">Deliverables Include:</h6>
+            <ul class="card-feature-list mb-4">
+              <li><i class="bi bi-check2-circle"></i> Medical documentation synthesis and 504 eligibility defense</li>
+              <li><i class="bi bi-check2-circle"></i> Detailed classroom accommodation matrix (testing, sensory, pacing)</li>
+              <li><i class="bi bi-check2-circle"></i> 504 Annual Review Meeting preparation & attendance</li>
+              <li><i class="bi bi-check2-circle"></i> Section 504 to IDEA / IEP escalation evaluation</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <div>
+                <span class="small text-muted">Fixed Rate:</span>
+                <div class="fw-bold text-plum fs-5">$425</div>
+              </div>
+              <a href="contact.html" class="btn btn-sage-primary btn-sm">Build 504 Plan</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="advocacy-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="card-icon-wrap rose-accent mb-0">
+                <i class="bi bi-shield-exclamation"></i>
+              </div>
+              <span class="badge bg-rose-subtle text-rose-dark border px-3 py-2">Conflict Resolution</span>
+            </div>
+            <h3 class="serif-heading mb-3">Mediation & Due Process Strategy Preparation</h3>
+            <p>
+              When constructive negotiations fail and school districts violate FAPE, we prepare your evidence binder for state mediation or formal due process filing alongside special education legal counsel.
+            </p>
+            <h6 class="text-plum mt-3 mb-2">Deliverables Include:</h6>
+            <ul class="card-feature-list mb-4">
+              <li><i class="bi bi-check2-circle"></i> Chronological Evidence Matrix & procedural violation timeline</li>
+              <li><i class="bi bi-check2-circle"></i> Compensatory Education calculation (quantifying missed minutes)</li>
+              <li><i class="bi bi-check2-circle"></i> State Mediation briefing & non-adversarial settlement proposals</li>
+              <li><i class="bi bi-check2-circle"></i> Special Education Attorney referral network coordination</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center pt-3 border-top mt-auto">
+              <div>
+                <span class="small text-muted">Retainer Rate:</span>
+                <div class="fw-bold text-plum fs-5">$195 / hr</div>
+              </div>
+              <a href="contact.html" class="btn btn-sage-primary btn-sm">Request Case Prep</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Service Package & Hours Calculator -->
+  <section class="py-5 bg-ivory-light">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+        <span class="section-tag tag-plum"><i class="bi bi-calculator"></i> Transparent Estimation</span>
+        <h2 class="section-heading-lg">Interactive Advocacy Estimator</h2>
+        <p class="section-subhead mx-auto">
+          Customize an advocacy plan based on your upcoming meeting dates, IEP complexity, and required level of advocate accompaniment.
+        </p>
+      </div>
+
+      <div class="row g-4" id="serviceCalculator" data-aos="fade-up">
+        <div class="col-lg-7">
+          <div class="calc-card">
+            <h4 class="serif-heading mb-3 text-plum">1. Select Core Advocacy Foundation</h4>
+            
+            <div class="d-flex flex-column gap-3 mb-4">
+              <label class="calc-option-pill">
+                <input type="radio" name="baseService" value="audit" data-price="650" data-hours="4" data-days="5" checked>
+                <div class="pill-box">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="fw-bold text-plum fs-5">360° Comprehensive IEP Audit</div>
+                    <span class="badge bg-plum text-white">$650</span>
+                  </div>
+                  <div class="small text-muted mt-1">Full record audit, written recommendation report, and 60-min parent strategy briefing.</div>
+                </div>
+              </label>
+
+              <label class="calc-option-pill">
+                <input type="radio" name="baseService" value="meeting_pack" data-price="1050" data-hours="7" data-days="3">
+                <div class="pill-box">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="fw-bold text-plum fs-5">Audit + ARD / IEP Meeting Representation</div>
+                    <span class="badge bg-plum text-white">$1,050</span>
+                  </div>
+                  <div class="small text-muted mt-1">Includes complete document audit + 2 hours of live advocate attendance and PWN review.</div>
+                </div>
+              </label>
+
+              <label class="calc-option-pill">
+                <input type="radio" name="baseService" value="iee_pack" data-price="550" data-hours="3" data-days="4">
+                <div class="pill-box">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="fw-bold text-plum fs-5">Independent Evaluation (IEE) Defense Track</div>
+                    <span class="badge bg-plum text-white">$550</span>
+                  </div>
+                  <div class="small text-muted mt-1">Psych-eval critique, formal letter drafting to district, and outside evaluator vetting.</div>
+                </div>
+              </label>
+            </div>
+
+            <h4 class="serif-heading mb-3 text-plum">2. Optional Add-On Supports</h4>
+            <div class="d-flex flex-column gap-3 mb-4">
+              <label class="calc-option-pill">
+                <input type="checkbox" name="serviceAddon" value="smart_goals" data-price="350" data-hours="2">
+                <div class="pill-box">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="fw-bold text-plum">Custom SMART Goals Drafting (+4 Goals)</div>
+                    <span class="text-rose fw-bold">+$350</span>
+                  </div>
+                  <div class="small text-muted">Targeted academic/speech/behavioral goals with explicit measurement metrics.</div>
+                </div>
+              </label>
+
+              <label class="calc-option-pill">
+                <input type="checkbox" name="serviceAddon" value="extra_meeting" data-price="390" data-hours="2">
+                <div class="pill-box">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="fw-bold text-plum">Second Follow-Up ARD Meeting Session (2 Hours)</div>
+                    <span class="text-rose fw-bold">+$390</span>
+                  </div>
+                  <div class="small text-muted">For multi-day or reconvened 10-day IEP meetings.</div>
+                </div>
+              </label>
+
+              <label class="calc-option-pill">
+                <input type="checkbox" name="serviceAddon" value="expedited" data-price="200" data-hours="0">
+                <div class="pill-box">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="fw-bold text-plum">Expedited Turnaround (Under 48 Hours)</div>
+                    <span class="text-rose fw-bold">+$200</span>
+                  </div>
+                  <div class="small text-muted">Rush analysis for upcoming emergency IEP meetings or manifestation hearings.</div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="calc-summary-panel h-100 d-flex flex-column justify-content-between">
+            <div>
+              <span class="badge mb-3" style="background: var(--sage-dusty-rose); color: #FFF;">Estimated Investment</span>
+              <h3 class="serif-heading text-white mb-3">Advocacy Plan Summary</h3>
+              <p class="text-white-50 small mb-4">
+                All packages include unlimited access to your secure <strong>Sage Parent Workspace</strong>, document archiving, and direct messaging with your advocate.
+              </p>
+
+              <div class="border-top border-white-50 pt-3 mb-4">
+                <div class="small text-white-50 mb-1">Estimated Total:</div>
+                <div id="calcTotalPrice" class="price-display">$650</div>
+              </div>
+
+              <div class="d-flex flex-column gap-2 mb-4 small text-white-50">
+                <div><i class="bi bi-clock-history text-rose me-2"></i> <span id="calcHoursEstimate" class="text-white">4 Estimated Advocacy Hours</span></div>
+                <div><i class="bi bi-calendar-check text-rose me-2"></i> <span id="calcTurnaround" class="text-white">5 Business Days Turnaround</span></div>
+                <div><i class="bi bi-shield-check text-rose me-2"></i> <span class="text-white">FERPA & HIPAA Compliant Data Security</span></div>
+              </div>
+            </div>
+
+            <div>
+              <a href="contact.html" class="btn btn-sage-secondary w-100 mb-2">
+                <i class="bi bi-calendar2-check"></i> Book With This Estimate
+              </a>
+              <small class="text-center d-block text-white-50" style="font-size: 0.75rem;">
+                No upfront payment required to book your initial 20-min strategy call.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-5">
+    <div class="container">
+      <div class="cta-banner-plum text-center" data-aos="zoom-in">
+        <div class="max-w-700 mx-auto text-center">
+          <h2>Not Sure Which Service Your Child Needs?</h2>
+          <p>
+            Every school situation has different nuances. Book a free 20-minute discovery call and we will review your situation and advise the most cost-effective path forward.
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="contact.html" class="btn btn-sage-secondary btn-lg">
+              <i class="bi bi-telephone-inbound"></i> Request Free Discovery Call
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="sage-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-symbol" style="width: 38px; height: 38px; font-size: 1.2rem;">S</div>
+            <span class="brand-name text-white fs-4">Sage Advocacy</span>
+          </div>
+          <p class="small text-white-50 mb-3">
+            Sage Educational Advocacy & IEP Consulting is an independent parent-centered practice. We empower families to navigate special education law, obtain appropriate services, and protect their child's future.
+          </p>
+          <div class="footer-social-wrap">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="X Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Quick Links</h5>
+          <ul class="footer-link-list small">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About & Approach</a></li>
+            <li><a href="services.html">Advocacy Services</a></li>
+            <li><a href="resources.html">Parent Toolkit</a></li>
+            <li><a href="contact.html">Free Consultation</a></li>
+            <li><a href="login.html">Parent Portal Login</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5>Advocacy Focus</h5>
+          <ul class="footer-link-list small">
+            <li><a href="services.html">IEP Document Audits</a></li>
+            <li><a href="services.html">ARD / IEP Meeting Accompaniment</a></li>
+            <li><a href="services.html">Independent Evals (IEE)</a></li>
+            <li><a href="services.html">SMART Goal Development</a></li>
+            <li><a href="services.html">504 Accommodation Plans</a></li>
+            <li><a href="services.html">Due Process & Mediation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Contact Practice</h5>
+          <p class="small text-white-50 mb-2"><i class="bi bi-geo-alt me-2 text-rose"></i> Nationwide Virtual Consulting</p>
+          <p class="small text-white-50 mb-2"><i class="bi bi-envelope me-2 text-rose"></i> advocacy@sageeac.com</p>
+          <p class="small text-white-50"><i class="bi bi-telephone me-2 text-rose"></i> (800) 582-SAGE</p>
+        </div>
+      </div>
+
+      <div class="footer-legal-notice">
+        <p class="mb-0">
+          © 2026 Sage Educational Advocacy & Consulting LLC. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

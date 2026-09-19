@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Advocacy Workspace | Parent Portal - Sage Educational Advocacy</title>
+  <meta name="description" content="Secure Parent Advocacy Workspace for tracking IEP meetings, evaluation documents, SMART goal progress, case notes, and advocate communications.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233D3045'/><text x='50%' y='65%' font-size='50' font-family='serif' fill='%23C98F91' text-anchor='middle'>S</text></svg>">
+
+  <!-- Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-wrapper">
+    
+    <!-- Collapsible Sidebar -->
+    <aside class="dash-sidebar">
+      <!-- Brand Box -->
+      <div class="sidebar-brand-box">
+        <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+          <div class="brand-symbol" style="width: 36px; height: 36px; font-size: 1.1rem;">S</div>
+          <div>
+            <div class="brand-name text-white fs-5">Sage Advocacy</div>
+            <div class="brand-tagline text-white-50" style="font-size: 0.65rem;">Parent Workspace</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Student Profile Switcher -->
+      <div class="sidebar-student-card">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <span class="small text-white-50 text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 0.06em;">Active Student Profile</span>
+          <span class="badge" style="background: var(--sage-dusty-rose); font-size: 0.7rem;">IEP Active</span>
+        </div>
+        <button class="student-select-btn" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="d-flex align-items-center gap-2">
+            <div class="student-avatar-badge">LJ</div>
+            <div>
+              <div class="fw-bold fs-6 line-clamp-1">Leo Jenkins</div>
+              <div class="small text-white-50" style="font-size: 0.75rem;">Grade 4 · Autism & Speech</div>
+            </div>
+          </div>
+          <i class="bi bi-chevron-down text-white-50 small"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark shadow w-100">
+          <li><h6 class="dropdown-header">Switch Child Profile</h6></li>
+          <li><a class="dropdown-item active" href="#"><i class="bi bi-check2 me-2"></i> Leo Jenkins (4th Grade)</a></li>
+          <li><a class="dropdown-item text-white-50" href="#" onclick="alert('Sibling profile mode: Maya Jenkins (Grade 6, 504 Plan) loaded.'); return false;"><i class="bi bi-person me-2"></i> Maya Jenkins (6th Grade)</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item small text-rose" href="#" onclick="alert('Add Sibling Form: Contact your advocate Lisa Anderson to link a new student profile.'); return false;"><i class="bi bi-plus-circle me-2"></i> Add Sibling Profile</a></li>
+        </ul>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="dash-nav-list">
+        <li class="dash-nav-item">
+          <a class="dash-nav-link active" data-section="sec-overview">
+            <span class="nav-icon"><i class="bi bi-grid-1x2"></i></span>
+            <span>Workspace Overview</span>
+          </a>
+        </li>
+        <li class="dash-nav-item">
+          <a class="dash-nav-link" data-section="sec-meetings">
+            <span class="nav-icon"><i class="bi bi-calendar2-event"></i></span>
+            <span>Upcoming IEP Meetings</span>
+            <span class="dash-nav-badge">1 Next</span>
+          </a>
+        </li>
+        <li class="dash-nav-item">
+          <a class="dash-nav-link" data-section="sec-timeline">
+            <span class="nav-icon"><i class="bi bi-journal-text"></i></span>
+            <span>Advocacy Case Notes</span>
+          </a>
+        </li>
+        <li class="dash-nav-item">
+          <a class="dash-nav-link" data-section="sec-documents">
+            <span class="nav-icon"><i class="bi bi-folder2-open"></i></span>
+            <span>Evaluation Documents</span>
+            <span class="dash-nav-badge">14 Files</span>
+          </a>
+        </li>
+        <li class="dash-nav-item">
+          <a class="dash-nav-link" data-section="sec-goals">
+            <span class="nav-icon"><i class="bi bi-bullseye"></i></span>
+            <span>IEP Goal Progress</span>
+          </a>
+        </li>
+        <li class="dash-nav-item">
+          <a class="dash-nav-link" data-section="sec-chat">
+            <span class="nav-icon"><i class="bi bi-chat-dots"></i></span>
+            <span>Advocate Direct Chat</span>
+            <span class="badge bg-danger rounded-pill ms-auto" style="font-size: 0.7rem;">Active</span>
+          </a>
+        </li>
+        <li class="dash-nav-item">
+          <a class="dash-nav-link" data-section="sec-billing">
+            <span class="nav-icon"><i class="bi bi-credit-card"></i></span>
+            <span>Consultation Retainers</span>
+          </a>
+        </li>
+        <li class="dash-nav-item">
+          <a class="dash-nav-link" data-section="sec-resources">
+            <span class="nav-icon"><i class="bi bi-bookmark-check"></i></span>
+            <span>Assigned Parent Guides</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- User Account & Sign Out -->
+      <div class="sidebar-user-footer">
+        <div class="d-flex align-items-center gap-2">
+          <img src="image/annie-spratt-byZkjVj5OIE-unsplash.jpg" alt="Sarah Jenkins" class="rounded-circle" style="width: 38px; height: 38px; object-fit: cover; border: 2px solid var(--sage-dusty-rose);">
+          <div>
+            <div class="fw-bold text-white small">Sarah Jenkins</div>
+            <div class="text-white-50" style="font-size: 0.7rem;">sarah@family.com</div>
+          </div>
+        </div>
+        <a href="login.html" class="text-white-50 fs-5" title="Sign Out"><i class="bi bi-box-arrow-right"></i></a>
+      </div>
+    </aside>
+
+    <!-- Main Workspace -->
+    <main class="dash-main-area">
+      
+      <!-- Top Header -->
+      <header class="dash-header">
+        <div class="d-flex align-items-center gap-3">
+          <button id="sidebarToggleBtn" class="btn btn-sm btn-outline-secondary d-lg-none" aria-label="Toggle sidebar">
+            <i class="bi bi-list fs-5"></i>
+          </button>
+          <div class="header-search position-relative d-none d-md-block">
+            <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+            <input type="text" class="form-control" placeholder="Search case notes, goals, evaluations...">
+          </div>
+        </div>
+
+        <div class="header-actions">
+          
+          <!-- Assigned Advocate Callout -->
+          <div class="d-none d-sm-flex align-items-center gap-2 p-1 pe-3 bg-light border rounded-pill">
+            <div class="student-avatar-badge" style="background: var(--sage-plum); width: 30px; height: 30px; font-size: 0.75rem;">LA</div>
+            <div class="small">
+              <span class="text-muted">Lead Advocate:</span>
+              <strong class="text-plum ms-1">Lisa Anderson, M.Ed.</strong>
+            </div>
+          </div>
+
+          <!-- Theme (Dark / Light) Switcher Button -->
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+            <i class="bi bi-sun-fill text-warning"></i>
+          </button>
+
+          <!-- Direction (RTL / LTR) Toggle Button -->
+          <button type="button" class="dir-toggle-btn" title="Toggle RTL / LTR Direction" aria-label="Toggle RTL / LTR">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+
+          <!-- Quick Upload Trigger -->
+          <button class="btn btn-sage-primary btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#uploadDocModal">
+            <i class="bi bi-cloud-arrow-up me-1"></i> Upload Document
+          </button>
+
+          <!-- Notification Bell -->
+          <div class="dropdown">
+            <button class="header-icon-btn" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications">
+              <i class="bi bi-bell"></i>
+              <span class="notif-badge-dot"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow-sm border p-2" style="width: 320px;">
+              <li class="dropdown-header fw-bold text-plum">Recent Case Notifications</li>
+              <li>
+                <a class="dropdown-item rounded p-2 small" href="#">
+                  <div class="fw-bold text-plum"><i class="bi bi-calendar2-check text-rose me-1"></i> IEP Meeting Agenda Ready</div>
+                  <div class="text-muted">Lisa posted the strategy notes for next Tuesday's ARD review.</div>
+                  <div class="text-muted mt-1" style="font-size: 0.7rem;">2 hours ago</div>
+                </a>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <a class="dropdown-item rounded p-2 small" href="#">
+                  <div class="fw-bold text-plum"><i class="bi bi-graph-up text-success me-1"></i> Q2 Speech Data Uploaded</div>
+                  <div class="text-muted">Leo reached 86% clarity on target consonant blends.</div>
+                  <div class="text-muted mt-1" style="font-size: 0.7rem;">Yesterday</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Public Website Link -->
+          <a href="index.html" class="header-icon-btn" title="View Public Website">
+            <i class="bi bi-house"></i>
+          </a>
+        </div>
+      </header>
+
+      <!-- Workspace Content Area -->
+      <div class="dash-content">
+        
+        <!-- SECTION 1: OVERVIEW PANE -->
+        <div id="sec-overview" class="dash-section-pane">
+          
+          <!-- Welcome Banner -->
+          <div class="p-4 rounded-4 text-white mb-4 position-relative overflow-hidden shadow-sm" style="background: linear-gradient(135deg, var(--sage-plum) 0%, var(--sage-plum-dark) 100%);">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <span class="badge mb-2" style="background: var(--sage-dusty-rose);">Spring 2026 IEP Active</span>
+                <h2 class="serif-heading text-white mb-2">Welcome Back, Sarah</h2>
+                <p class="text-white-50 mb-0 small">
+                  Leo's Annual ARD/IEP Review is scheduled in <strong>4 Days</strong>. Advocate Lisa Anderson has completed the 360° record audit and prepared your 7-point parent negotiation priority list.
+                </p>
+              </div>
+              <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                <a href="#sec-meetings" class="btn btn-sage-secondary btn-sm" onclick="document.querySelector('[data-section=sec-meetings]').click();">
+                  <i class="bi bi-file-earmark-text me-1"></i> Open Meeting Strategy
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Metric Cards -->
+          <div class="row g-3 mb-4">
+            <div class="col-6 col-xl-3">
+              <div class="metric-summary-card">
+                <div class="metric-icon-box plum">
+                  <i class="bi bi-calendar2-week"></i>
+                </div>
+                <div>
+                  <div class="metric-number-val">4 Days</div>
+                  <div class="metric-sub-label">Next ARD Meeting</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-xl-3">
+              <div class="metric-summary-card">
+                <div class="metric-icon-box rose">
+                  <i class="bi bi-bullseye"></i>
+                </div>
+                <div>
+                  <div class="metric-number-val">84%</div>
+                  <div class="metric-sub-label">Avg Goal Progress</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-xl-3">
+              <div class="metric-summary-card">
+                <div class="metric-icon-box green">
+                  <i class="bi bi-folder2-check"></i>
+                </div>
+                <div>
+                  <div class="metric-number-val">14</div>
+                  <div class="metric-sub-label">Encrypted Files</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-xl-3">
+              <div class="metric-summary-card">
+                <div class="metric-icon-box gold">
+                  <i class="bi bi-wallet2"></i>
+                </div>
+                <div>
+                  <div class="metric-number-val">$450</div>
+                  <div class="metric-sub-label">Retainer Balance</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Left: Upcoming Meeting Spotlight & Quick Goal Chart -->
+            <div class="col-lg-8">
+              
+              <!-- Spotlight Card -->
+              <div class="dash-card">
+                <div class="dash-card-header">
+                  <h4 class="dash-card-title"><i class="bi bi-calendar-check text-rose"></i> Immediate Action: Annual ARD / IEP Meeting</h4>
+                  <span class="badge bg-danger p-2">Confirmed: Feb 24, 10:00 AM EST</span>
+                </div>
+                <div class="p-3 bg-ivory-light rounded-3 border mb-3">
+                  <div class="row g-2">
+                    <div class="col-sm-6 small"><strong>School:</strong> Oakridge Elementary School</div>
+                    <div class="col-sm-6 small"><strong>Location:</strong> District Room 204 & Zoom Hybrid</div>
+                    <div class="col-sm-6 small"><strong>Sage Representation:</strong> Lisa Anderson (Live Accompaniment)</div>
+                    <div class="col-sm-6 small"><strong>Format:</strong> Annual Review & 3-Year Re-evaluation Review</div>
+                  </div>
+                </div>
+                <h6 class="text-plum mb-2">Advocate Pre-Briefing Summary:</h6>
+                <p class="small text-muted mb-3">
+                  We are pushing for an additional 30 minutes of direct speech therapy, continuing 1:1 paraprofessional support during unstructured lunch/recess, and locking in multisensory reading intervention.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a href="#" class="btn btn-sage-primary btn-sm" onclick="alert('Opening Zoom Meeting Room: Ready for ARD connection with Advocate Lisa Anderson.'); return false;">
+                    <i class="bi bi-camera-video me-1"></i> Join Meeting Room
+                  </a>
+                  <button class="btn btn-sage-outline btn-sm" data-bs-toggle="modal" data-bs-target="#agendaModal">
+                    <i class="bi bi-card-checklist me-1"></i> View Parent Agenda Script
+                  </button>
+                </div>
+              </div>
+
+              <!-- Mini Progress Canvas Preview -->
+              <div class="dash-card">
+                <div class="dash-card-header">
+                  <h4 class="dash-card-title"><i class="bi bi-graph-up text-plum"></i> IEP Goal Trajectory Overview</h4>
+                  <a href="#sec-goals" class="small text-rose fw-bold" onclick="document.querySelector('[data-section=sec-goals]').click();">Detailed View <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div style="height: 280px;">
+                  <canvas id="iepGoalChartOverview"></canvas>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right: Recent Case Activity & Quick Chat -->
+            <div class="col-lg-4">
+              
+              <!-- Recent Case Feed -->
+              <div class="dash-card">
+                <div class="dash-card-header">
+                  <h4 class="dash-card-title"><i class="bi bi-clock-history text-plum"></i> Recent Case Feed</h4>
+                </div>
+                <div class="case-timeline small">
+                  <div class="timeline-event-item">
+                    <div class="timeline-dot plum"></div>
+                    <div class="fw-bold text-plum">Draft IEP Redline Complete</div>
+                    <div class="text-muted">Lisa Anderson audited the 28-page school draft and noted 5 critical gaps.</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">Today, 9:15 AM</div>
+                  </div>
+                  <div class="timeline-event-item">
+                    <div class="timeline-dot green"></div>
+                    <div class="fw-bold text-plum">Speech Evaluation Uploaded</div>
+                    <div class="text-muted">Independent CCC-SLP testing results added to vault.</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">Feb 17, 2026</div>
+                  </div>
+                  <div class="timeline-event-item">
+                    <div class="timeline-dot"></div>
+                    <div class="fw-bold text-plum">PWN Demand Letter Dispatched</div>
+                    <div class="text-muted">Sent to District Special Ed Director regarding paraprofessional ratio.</div>
+                    <div class="text-muted" style="font-size: 0.7rem;">Feb 12, 2026</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Chat Box Preview -->
+              <div class="dash-card">
+                <div class="dash-card-header">
+                  <h4 class="dash-card-title"><i class="bi bi-chat-dots text-rose"></i> Direct Advocate Chat</h4>
+                  <span class="badge bg-success small">Lisa Online</span>
+                </div>
+                <p class="small text-muted mb-3">
+                  Have a question about next week's meeting or teacher correspondence? Send a secure message directly to your lead advocate.
+                </p>
+                <button class="btn btn-sage-secondary btn-sm w-100" onclick="document.querySelector('[data-section=sec-chat]').click();">
+                  <i class="bi bi-send-fill me-1"></i> Open Direct Chat Thread
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SECTION 2: MEETINGS PANE -->
+        <div id="sec-meetings" class="dash-section-pane d-none">
+          <div class="dash-card">
+            <div class="dash-card-header">
+              <h4 class="dash-card-title"><i class="bi bi-calendar2-week text-rose"></i> IEP & ARD Meeting Center</h4>
+              <button class="btn btn-sage-primary btn-sm" onclick="alert('Meeting Request Form: Lisa Anderson will coordinate with Oakridge ISD to confirm date alignment.');"><i class="bi bi-plus-lg me-1"></i> Log New Meeting Date</button>
+            </div>
+
+            <!-- Meeting 1 -->
+            <div class="p-4 rounded-4 border bg-white mb-4 shadow-sm">
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                <div>
+                  <span class="badge bg-danger mb-1">Upcoming in 4 Days</span>
+                  <h4 class="serif-heading text-plum mb-0">Annual ARD & IEP Revision Meeting</h4>
+                </div>
+                <div class="text-end">
+                  <div class="fw-bold text-plum fs-5">Tuesday, Feb 24, 2026</div>
+                  <div class="small text-muted">10:00 AM – 12:00 PM EST (2 Hours)</div>
+                </div>
+              </div>
+
+              <div class="row g-3 p-3 rounded-3 bg-ivory-light border mb-3">
+                <div class="col-md-4 small"><strong>School District:</strong> Oakridge Elementary ISD</div>
+                <div class="col-md-4 small"><strong>School Team:</strong> Principal, SPED Lead, Gen Ed Teacher, SLP</div>
+                <div class="col-md-4 small"><strong>Sage Advocate:</strong> Lisa Anderson (Attending Live via Video)</div>
+              </div>
+
+              <h6 class="fw-bold text-plum mb-2">Meeting Objective & Parent Priority Strategy:</h6>
+              <ul class="small text-muted mb-4">
+                <li><strong>Priority 1:</strong> Increase Speech-Language Therapy from 30 min consultative to 60 min direct individual therapy per week.</li>
+                <li><strong>Priority 2:</strong> Secure dedicated 1:1 aide support during transitions, sensory breaks, and cafeteria time.</li>
+                <li><strong>Priority 3:</strong> Reject vague behavioral goals; establish concrete Functional Behavior Assessment (FBA) timeline.</li>
+              </ul>
+
+              <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-sage-primary btn-sm" onclick="alert('Connecting to Secured Zoom Meeting Room...');"><i class="bi bi-camera-video me-1"></i> Launch Zoom Link</button>
+                <button class="btn btn-sage-outline btn-sm" data-bs-toggle="modal" data-bs-target="#agendaModal"><i class="bi bi-file-text me-1"></i> Download Pre-Meeting Agenda Script (PDF)</button>
+              </div>
+            </div>
+
+            <!-- Past Meeting History -->
+            <h5 class="serif-heading text-plum mb-3">Past Meeting Archive</h5>
+            <div class="table-responsive">
+              <table class="table table-hover align-middle border rounded-3 overflow-hidden">
+                <thead class="table-light small">
+                  <tr>
+                    <th>Date</th>
+                    <th>Meeting Type</th>
+                    <th>Outcome Summary</th>
+                    <th>Advocate Accompaniment</th>
+                    <th>Minutes File</th>
+                  </tr>
+                </thead>
+                <tbody class="small">
+                  <tr>
+                    <td>Nov 14, 2025</td>
+                    <td>Quarterly Progress & 504 Transition</td>
+                    <td>Added sensory accommodation menu & speech baseline</td>
+                    <td>Lisa Anderson (Zoom)</td>
+                    <td><a href="#" class="text-rose fw-bold" onclick="alert('Downloading Nov 14 Meeting Minutes PDF...'); return false;"><i class="bi bi-filetype-pdf me-1"></i> Minutes.pdf</a></td>
+                  </tr>
+                  <tr>
+                    <td>Sept 08, 2025</td>
+                    <td>Initial 4th Grade Placement Review</td>
+                    <td>General education with co-teaching supports agreed</td>
+                    <td>Lisa Anderson (In-Person)</td>
+                    <td><a href="#" class="text-rose fw-bold" onclick="alert('Downloading Sept 08 Meeting Minutes PDF...'); return false;"><i class="bi bi-filetype-pdf me-1"></i> Minutes.pdf</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECTION 3: TIMELINE & CASE NOTES -->
+        <div id="sec-timeline" class="dash-section-pane d-none">
+          <div class="dash-card">
+            <div class="dash-card-header">
+              <h4 class="dash-card-title"><i class="bi bi-journal-check text-plum"></i> Advocacy Case Notes & Log</h4>
+              <span class="badge bg-ivory text-plum border p-2">Chronological Legal Trail</span>
+            </div>
+
+            <p class="small text-muted mb-4">
+              Every school email, advocate review, draft edit, and formal district notice is logged here to maintain an irrefutable paper trail under IDEA.
+            </p>
+
+            <div class="case-timeline">
+              
+              <!-- Entry 1 -->
+              <div class="timeline-event-item">
+                <div class="timeline-dot plum"></div>
+                <div class="timeline-event-card">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="badge bg-plum text-white">Draft IEP Redline Audit</span>
+                    <small class="text-muted">Today at 9:15 AM · By Lisa Anderson, M.Ed.</small>
+                  </div>
+                  <h6 class="fw-bold text-plum mb-2">Completed Line-by-Line Review of Oakridge ISD Draft IEP</h6>
+                  <p class="small text-muted mb-2">
+                    Identified 5 procedural deficiencies in the school's draft:
+                  </p>
+                  <ul class="small text-muted mb-2">
+                    <li>Goal 2 (Speech) lacked baseline data and accuracy percentages.</li>
+                    <li>No ESY (Extended School Year) regression data was collected over winter break.</li>
+                    <li>Sensory diet was relegated to "teacher discretion" instead of mandatory IEP accommodations.</li>
+                  </ul>
+                  <div class="p-2 bg-white rounded border small d-inline-block">
+                    <i class="bi bi-paperclip text-rose me-1"></i> Attached: <strong>Leo_Draft_IEP_Redline_Notes_Feb2026.pdf</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Entry 2 -->
+              <div class="timeline-event-item">
+                <div class="timeline-dot green"></div>
+                <div class="timeline-event-card">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="badge bg-green-subtle text-green-dark">School District Communication</span>
+                    <small class="text-muted">Feb 14, 2026 · By Parent Sarah Jenkins</small>
+                  </div>
+                  <h6 class="fw-bold text-plum mb-2">Forwarded Email from Case Manager Mrs. Henderson</h6>
+                  <p class="small text-muted mb-0">
+                    District confirmed meeting date for Feb 24 at 10:00 AM. School psychologist Dr. Kelly and Speech Pathologist Ms. Torres confirmed attendance.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Entry 3 -->
+              <div class="timeline-event-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-event-card">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="badge bg-rose-subtle text-rose-dark">Formal PWN Demand</span>
+                    <small class="text-muted">Feb 10, 2026 · By Lisa Anderson, M.Ed.</small>
+                  </div>
+                  <h6 class="fw-bold text-plum mb-2">Issued Prior Written Notice Demand to Director of Special Education</h6>
+                  <p class="small text-muted mb-0">
+                    Formally demanded written rationale under 34 CFR § 300.503 explaining why the school reduced paraprofessional support hours in January without holding an IEP amendment meeting.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 4: EVALUATION DOCUMENTS & VAULT -->
+        <div id="sec-documents" class="dash-section-pane d-none">
+          <div class="dash-card">
+            <div class="dash-card-header">
+              <h4 class="dash-card-title"><i class="bi bi-folder2-open text-rose"></i> Encrypted Document Vault</h4>
+              <button class="btn btn-sage-primary btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#uploadDocModal">
+                <i class="bi bi-cloud-arrow-up me-1"></i> Upload New Document
+              </button>
+            </div>
+
+            <!-- Filter Pills -->
+            <div class="doc-filter-pills">
+              <button class="doc-filter-pill active" data-doc-cat="all">All Documents (14)</button>
+              <button class="doc-filter-pill" data-doc-cat="iep">IEPs & 504 Plans (4)</button>
+              <button class="doc-filter-pill" data-doc-cat="eval">Psychological & Medical Evals (5)</button>
+              <button class="doc-filter-pill" data-doc-cat="speech">Speech, OT & PT Reports (3)</button>
+              <button class="doc-filter-pill" data-doc-cat="pwn">PWN & School Correspondence (2)</button>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" id="docSearchInput" class="form-control form-control-sm" placeholder="Search documents by title, evaluator, or tag...">
+            </div>
+
+            <!-- Documents Rows -->
+            <div class="document-item-row" data-doc-cat="iep">
+              <div class="d-flex align-items-center gap-3">
+                <div class="doc-type-icon"><i class="bi bi-file-earmark-pdf"></i></div>
+                <div>
+                  <div class="fw-bold text-plum">2026 Proposed Draft IEP & Accommodations</div>
+                  <div class="small text-muted">Oakridge ISD · Uploaded Feb 18, 2026 · 28 Pages (Audit Redlined)</div>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-sage-outline" data-bs-toggle="modal" data-bs-target="#docPreviewModal"><i class="bi bi-eye me-1"></i> Preview</button>
+                <button class="btn btn-sm btn-sage-primary" onclick="alert('Downloading encrypted PDF: 2026_Proposed_Draft_IEP.pdf');"><i class="bi bi-download"></i></button>
+              </div>
+            </div>
+
+            <div class="document-item-row" data-doc-cat="eval">
+              <div class="d-flex align-items-center gap-3">
+                <div class="doc-type-icon"><i class="bi bi-file-earmark-text"></i></div>
+                <div>
+                  <div class="fw-bold text-plum">Independent Neuropsychological Evaluation (Dr. Marcus Vance)</div>
+                  <div class="small text-muted">Comprehensive WISC-V & BASC-3 Report · Oct 2025 · 42 Pages</div>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-sage-outline" data-bs-toggle="modal" data-bs-target="#docPreviewModal"><i class="bi bi-eye me-1"></i> Preview</button>
+                <button class="btn btn-sm btn-sage-primary" onclick="alert('Downloading: Independent_Neuropsych_Evaluation.pdf');"><i class="bi bi-download"></i></button>
+              </div>
+            </div>
+
+            <div class="document-item-row" data-doc-cat="speech">
+              <div class="d-flex align-items-center gap-3">
+                <div class="doc-type-icon"><i class="bi bi-file-earmark-medical"></i></div>
+                <div>
+                  <div class="fw-bold text-plum">Speech & Pragmatic Communication Evaluation (GFTA-3)</div>
+                  <div class="small text-muted">Speech Pathways Clinic · Dec 2025 · 16 Pages</div>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-sage-outline" data-bs-toggle="modal" data-bs-target="#docPreviewModal"><i class="bi bi-eye me-1"></i> Preview</button>
+                <button class="btn btn-sm btn-sage-primary" onclick="alert('Downloading: Speech_GFTA3_Evaluation.pdf');"><i class="bi bi-download"></i></button>
+              </div>
+            </div>
+
+            <div class="document-item-row" data-doc-cat="iep">
+              <div class="d-flex align-items-center gap-3">
+                <div class="doc-type-icon"><i class="bi bi-file-earmark-pdf"></i></div>
+                <div>
+                  <div class="fw-bold text-plum">2024-2025 Final Executed IEP</div>
+                  <div class="small text-muted">Historical Record · March 2025 · 32 Pages</div>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-sage-outline" data-bs-toggle="modal" data-bs-target="#docPreviewModal"><i class="bi bi-eye me-1"></i> Preview</button>
+                <button class="btn btn-sm btn-sage-primary" onclick="alert('Downloading: Historical_IEP_2025.pdf');"><i class="bi bi-download"></i></button>
+              </div>
+            </div>
+
+            <div class="document-item-row" data-doc-cat="pwn">
+              <div class="d-flex align-items-center gap-3">
+                <div class="doc-type-icon"><i class="bi bi-file-earmark-lock"></i></div>
+                <div>
+                  <div class="fw-bold text-plum">Prior Written Notice (PWN) Demand Letter</div>
+                  <div class="small text-muted">Dispatched to District SPED Director · Feb 10, 2026</div>
+                </div>
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-sage-outline" data-bs-toggle="modal" data-bs-target="#docPreviewModal"><i class="bi bi-eye me-1"></i> Preview</button>
+                <button class="btn btn-sm btn-sage-primary" onclick="alert('Downloading: PWN_Demand_Letter.pdf');"><i class="bi bi-download"></i></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECTION 5: GOAL PROGRESS & CHART.JS -->
+        <div id="sec-goals" class="dash-section-pane d-none">
+          <div class="dash-card">
+            <div class="dash-card-header">
+              <h4 class="dash-card-title"><i class="bi bi-bullseye text-rose"></i> SMART Goal Progress Visualizer</h4>
+              <div class="d-flex align-items-center gap-2">
+                <span class="small text-muted">Filter Goal:</span>
+                <select id="goalFilterDropdown" class="form-select form-select-sm" style="width: auto;">
+                  <option value="all" selected>All SMART Goals</option>
+                  <option value="1">Goal 1: Reading Comprehension</option>
+                  <option value="2">Goal 2: Speech & Articulation</option>
+                  <option value="3">Goal 4: Sensory Regulation</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Chart.js Canvas -->
+            <div class="mb-4" style="height: 380px; position: relative;">
+              <canvas id="iepGoalChart"></canvas>
+            </div>
+
+            <!-- Individual Goal Milestone Cards -->
+            <h5 class="serif-heading text-plum mb-3">Active IEP SMART Goals Breakdown</h5>
+            
+            <div class="row g-3">
+              <!-- Goal 1 -->
+              <div class="col-md-6">
+                <div class="p-3 rounded-3 border bg-white shadow-sm">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-plum text-white">SMART Goal #1</span>
+                    <span class="fw-bold text-plum">82% / 90% Target</span>
+                  </div>
+                  <h6 class="fw-bold text-plum mb-1">Reading Comprehension & Inferencing</h6>
+                  <p class="small text-muted mb-2">Given a 4th-grade passage, Leo will answer 4/5 inferential comprehension questions with graphic organizers in 4 out of 5 trials.</p>
+                  <div class="progress" style="height: 8px;">
+                    <div class="progress-bar" style="width: 82%; background-color: var(--sage-plum);"></div>
+                  </div>
+                  <div class="d-flex justify-content-between small text-muted mt-1">
+                    <span>Baseline: 38%</span>
+                    <span class="text-success fw-bold"><i class="bi bi-arrow-up-right"></i> On Track (+44%)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Goal 2 -->
+              <div class="col-md-6">
+                <div class="p-3 rounded-3 border bg-white shadow-sm">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge" style="background: var(--sage-dusty-rose); color: #FFF;">SMART Goal #2</span>
+                    <span class="fw-bold text-plum">86% / 90% Target</span>
+                  </div>
+                  <h6 class="fw-bold text-plum mb-1">Speech & Articulation Clarity</h6>
+                  <p class="small text-muted mb-2">Leo will articulate multisyllabic words and /r/ blends with 85% accuracy across structured conversational settings.</p>
+                  <div class="progress" style="height: 8px;">
+                    <div class="progress-bar" style="width: 86%; background-color: var(--sage-dusty-rose);"></div>
+                  </div>
+                  <div class="d-flex justify-content-between small text-muted mt-1">
+                    <span>Baseline: 30%</span>
+                    <span class="text-success fw-bold"><i class="bi bi-arrow-up-right"></i> High Mastery (+56%)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Goal 3 -->
+              <div class="col-md-6">
+                <div class="p-3 rounded-3 border bg-white shadow-sm">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-green-subtle text-green-dark border">SMART Goal #3</span>
+                    <span class="fw-bold text-plum">88% / 90% Target</span>
+                  </div>
+                  <h6 class="fw-bold text-plum mb-1">Sensory Regulation & Self-Advocacy</h6>
+                  <p class="small text-muted mb-2">Leo will independently utilize a visual break card prior to escalation in 4 out of 5 observed classroom sensory events.</p>
+                  <div class="progress" style="height: 8px;">
+                    <div class="progress-bar" style="width: 88%; background-color: var(--sage-green-dark);"></div>
+                  </div>
+                  <div class="d-flex justify-content-between small text-muted mt-1">
+                    <span>Baseline: 35%</span>
+                    <span class="text-success fw-bold"><i class="bi bi-arrow-up-right"></i> On Track (+53%)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Goal 4 -->
+              <div class="col-md-6">
+                <div class="p-3 rounded-3 border bg-white shadow-sm">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-warning text-dark">SMART Goal #4 (Needs Attention)</span>
+                    <span class="fw-bold text-plum">80% / 90% Target</span>
+                  </div>
+                  <h6 class="fw-bold text-plum mb-1">Math Word Problem Multi-Step Computation</h6>
+                  <p class="small text-muted mb-2">Leo will solve 2-step word problems involving fractions with 80% accuracy using visual manipulatives.</p>
+                  <div class="progress" style="height: 8px;">
+                    <div class="progress-bar bg-warning" style="width: 80%;"></div>
+                  </div>
+                  <div class="d-flex justify-content-between small text-muted mt-1">
+                    <span>Baseline: 45%</span>
+                    <span class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i> Review at ARD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECTION 6: CHAT PANE -->
+        <div id="sec-chat" class="dash-section-pane d-none">
+          <div class="dash-card">
+            <div class="dash-card-header">
+              <div class="d-flex align-items-center gap-3">
+                <div class="student-avatar-badge" style="background: var(--sage-plum); width: 44px; height: 44px; font-size: 1rem;">LA</div>
+                <div>
+                  <h4 class="dash-card-title mb-0">Lisa Anderson, M.Ed., BCBA</h4>
+                  <div class="small text-muted"><i class="bi bi-circle-fill text-success" style="font-size: 0.65rem;"></i> Active on Leo's Case · Response avg: &lt; 15 mins</div>
+                </div>
+              </div>
+              <span class="badge bg-green-subtle text-green-dark border p-2"><i class="bi bi-lock-fill"></i> End-to-End Encrypted</span>
+            </div>
+
+            <!-- Chat Thread -->
+            <div class="chat-thread-box" id="chatThreadBox">
+              
+              <div class="chat-message received">
+                <div class="student-avatar-badge" style="background: var(--sage-plum); width: 34px; height: 34px; font-size: 0.8rem;">LA</div>
+                <div>
+                  <div class="chat-bubble">
+                    Hi Sarah! I've finished redlining Oakridge's proposed draft for Leo. They initially tried to cut his speech minutes, but I've inserted the GFTA-3 evaluation data showing he still requires 60 direct minutes per week.
+                  </div>
+                  <div class="chat-timestamp">Yesterday at 4:30 PM · Lisa Anderson</div>
+                </div>
+              </div>
+
+              <div class="chat-message sent">
+                <div>
+                  <div class="chat-bubble">
+                    Thank you so much Lisa! That is such a relief. Do you think we need to bring up the aide support during recess as well?
+                  </div>
+                  <div class="chat-timestamp text-end">Yesterday at 5:10 PM · Sent</div>
+                </div>
+              </div>
+
+              <div class="chat-message received">
+                <div class="student-avatar-badge" style="background: var(--sage-plum); width: 34px; height: 34px; font-size: 0.8rem;">LA</div>
+                <div>
+                  <div class="chat-bubble">
+                    Absolutely. I have already drafted a specific paragraph citing IDEA LRE mandates for unstructured settings. I will introduce this during our Tuesday meeting.
+                  </div>
+                  <div class="chat-timestamp">Today at 8:45 AM · Lisa Anderson</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Chat Input Form -->
+            <form id="advocateChatForm" class="mt-3">
+              <div class="input-group">
+                <button type="button" class="btn btn-outline-secondary" title="Attach Document" onclick="alert('Attachment modal: Select document from Leo\'s vault to attach.');"><i class="bi bi-paperclip"></i></button>
+                <input type="text" id="chatMessageInput" class="form-control" placeholder="Type a secure message to Lisa Anderson..." required>
+                <button type="submit" class="btn btn-sage-primary"><i class="bi bi-send-fill me-1"></i> Send</button>
+              </div>
+              <small class="text-muted mt-1 d-block" style="font-size: 0.75rem;"><i class="bi bi-shield-check text-success me-1"></i> Messages are logged to your child's permanent legal case archive.</small>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- SECTION 7: BILLING & RETAINERS -->
+        <div id="sec-billing" class="dash-section-pane d-none">
+          <div class="dash-card">
+            <div class="dash-card-header">
+              <h4 class="dash-card-title"><i class="bi bi-credit-card text-plum"></i> Consultation Retainers & Invoices</h4>
+              <button class="btn btn-sage-primary btn-sm" onclick="alert('Retainer Top-Up: Contact billing@sageeac.com or use card on file to replenish balance.');"><i class="bi bi-plus-circle me-1"></i> Replenish Retainer</button>
+            </div>
+
+            <div class="row g-4 mb-4">
+              <div class="col-md-4">
+                <div class="p-4 rounded-4 bg-plum text-white">
+                  <div class="small text-white-50 mb-1">Available Retainer Credit</div>
+                  <div class="serif-heading text-white fs-2 mb-2">$450.00</div>
+                  <div class="small text-white-50">Covers upcoming 2-hour ARD meeting representation on Feb 24.</div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="p-4 rounded-4 bg-ivory-light border h-100 d-flex flex-column justify-content-between">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <div class="fw-bold text-plum">Active Agreement: Full Comprehensive Advocacy Track</div>
+                      <div class="small text-muted">Includes 360° Audit, Written Redlines & Live ARD Accompaniment</div>
+                    </div>
+                    <span class="badge bg-success">In Good Standing</span>
+                  </div>
+                  <div class="small text-muted mt-2">
+                    Card on File: <strong>Visa ending in •••• 4829</strong> (Auto-receipts emailed to sarah@family.com)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h5 class="serif-heading text-plum mb-3">Itemized Activity Statement</h5>
+            <div class="table-responsive">
+              <table class="table table-hover align-middle border rounded-3 overflow-hidden">
+                <thead class="table-light small">
+                  <tr>
+                    <th>Date</th>
+                    <th>Service Description</th>
+                    <th>Advocate</th>
+                    <th>Hours</th>
+                    <th>Amount</th>
+                    <th>Receipt</th>
+                  </tr>
+                </thead>
+                <tbody class="small">
+                  <tr>
+                    <td>Feb 18, 2026</td>
+                    <td>Forensic IEP Redline & PWN Strategy Review</td>
+                    <td>Lisa Anderson</td>
+                    <td>2.0 hrs</td>
+                    <td>$390.00</td>
+                    <td><button class="btn btn-sm btn-link text-rose p-0" onclick="alert('Downloading PDF Receipt #SAGE-INV-9402...');"><i class="bi bi-filetype-pdf"></i> Receipt.pdf</button></td>
+                  </tr>
+                  <tr>
+                    <td>Jan 22, 2026</td>
+                    <td>360° Comprehensive Record Audit & Report</td>
+                    <td>Lisa Anderson</td>
+                    <td>Package</td>
+                    <td>$650.00</td>
+                    <td><button class="btn btn-sm btn-link text-rose p-0" onclick="alert('Downloading PDF Receipt #SAGE-INV-9184...');"><i class="bi bi-filetype-pdf"></i> Receipt.pdf</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECTION 8: ASSIGNED RESOURCES -->
+        <div id="sec-resources" class="dash-section-pane d-none">
+          <div class="dash-card">
+            <div class="dash-card-header">
+              <h4 class="dash-card-title"><i class="bi bi-bookmark-check text-rose"></i> Assigned Parent Guides for Leo</h4>
+            </div>
+            <p class="small text-muted mb-4">
+              Advocate Lisa Anderson has selected these specific guides from the Sage Library based on Leo's 4th grade IEP transition.
+            </p>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="p-3 bg-white rounded-3 border shadow-sm h-100">
+                  <span class="badge bg-plum text-white mb-2">Assigned Feb 18</span>
+                  <h6 class="fw-bold text-plum mb-1">Negotiating 1:1 Paraprofessional Support in General Ed</h6>
+                  <p class="small text-muted mb-2">Key phrases and legal arguments to avoid the school claim that "aides create dependency."</p>
+                  <a href="#" class="small fw-bold text-rose" onclick="alert('Opening Assigned Guide: Paraprofessional_Negotiation.pdf'); return false;"><i class="bi bi-book me-1"></i> Read Guide (12 min read)</a>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 bg-white rounded-3 border shadow-sm h-100">
+                  <span class="badge bg-plum text-white mb-2">Assigned Feb 15</span>
+                  <h6 class="fw-bold text-plum mb-1">Speech & Language Service Minute Standards</h6>
+                  <p class="small text-muted mb-2">How to distinguish between consultative speech vs. direct individual therapy on the IEP service page.</p>
+                  <a href="#" class="small fw-bold text-rose" onclick="alert('Opening Assigned Guide: Speech_Minute_Standards.pdf'); return false;"><i class="bi bi-book me-1"></i> Read Guide (8 min read)</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- MODAL: Upload Document Simulation -->
+  <div class="modal fade" id="uploadDocModal" tabindex="-1" aria-labelledby="uploadDocModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 rounded-4 shadow-lg">
+        <div class="modal-header border-bottom bg-ivory-light">
+          <h5 class="modal-title serif-heading text-plum" id="uploadDocModalLabel"><i class="bi bi-shield-lock-fill text-rose me-2"></i> Upload to Leo's Secure Vault</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="simulatedUploadForm">
+          <div class="modal-body p-4">
+            <div class="mb-3">
+              <label class="form-label small fw-bold text-plum">Select Document File (PDF, DOCX, JPG)</label>
+              <input type="file" id="vaultFileInput" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold text-plum">Document Category</label>
+              <select id="vaultDocType" class="form-select">
+                <option value="iep">IEP or 504 Accommodation Draft</option>
+                <option value="eval">Psychological or Neuropsych Evaluation</option>
+                <option value="speech">Speech / OT / PT Clinical Report</option>
+                <option value="pwn">Prior Written Notice / School Letter</option>
+                <option value="other">Teacher Notes / Work Samples</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold text-plum">Parent Notes for Advocate</label>
+              <textarea id="vaultDocNotes" class="form-control" rows="2" placeholder="e.g. Received from school today, check page 4 for changes in minutes..."></textarea>
+            </div>
+
+            <!-- Upload Progress Indicator -->
+            <div id="uploadProgressWrap" class="d-none">
+              <div class="progress mb-2" style="height: 8px;">
+                <div id="uploadProgressBar" class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 0%;"></div>
+              </div>
+              <div id="uploadStatusText" class="small text-muted">Encrypting & Uploading...</div>
+            </div>
+          </div>
+          <div class="modal-footer border-top bg-light">
+            <button type="button" class="btn btn-sage-outline btn-sm" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-sage-primary btn-sm"><i class="bi bi-cloud-arrow-up me-1"></i> Upload & Encrypt</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Document Previewer -->
+  <div class="modal fade" id="docPreviewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow-lg border-0">
+        <div class="modal-header bg-plum text-white">
+          <h5 class="modal-title fs-6"><i class="bi bi-file-earmark-pdf me-2"></i> Document Preview: Oakridge_ISD_Draft_IEP_2026.pdf</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 bg-light text-center">
+          <div class="bg-white p-5 border rounded shadow-sm text-start" style="min-height: 400px; font-family: 'Times New Roman', serif;">
+            <div class="text-center border-bottom pb-3 mb-4">
+              <h5 class="mb-1">OAKRIDGE INDEPENDENT SCHOOL DISTRICT</h5>
+              <div class="small text-muted">INDIVIDUALIZED EDUCATION PROGRAM (IEP) - ANNUAL REVIEW</div>
+              <div class="small fw-bold text-danger mt-1">[SAGE ADVOCATE REDLINE AUDIT HIGHLIGHTS]</div>
+            </div>
+            <h6>STUDENT: Leo Jenkins | GRADE: 4 | PRIMARY DISABILITY: Autism</h6>
+            <div class="p-3 my-3 bg-rose-subtle border border-danger rounded small">
+              <strong>Advocate Note (Lisa Anderson):</strong> Section 7 (Related Services) currently allocates 30 min/week speech. We will request 60 min direct speech therapy supported by Dr. Vance's October testing.
+            </div>
+            <p class="small text-muted">
+              Section 8: Accommodations - The student will receive preferential seating, visual schedules, sensory break card access, and specialized multisensory literacy instruction using Orton-Gillingham methodology.
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sage-outline btn-sm" data-bs-dismiss="modal">Close Preview</button>
+          <button type="button" class="btn btn-sage-primary btn-sm" onclick="alert('Downloading full audited document...');"><i class="bi bi-download me-1"></i> Download PDF</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Meeting Agenda & Parent Script -->
+  <div class="modal fade" id="agendaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow-lg border-0">
+        <div class="modal-header bg-plum text-white">
+          <h5 class="modal-title fs-6"><i class="bi bi-card-checklist me-2"></i> Feb 24 ARD Meeting Strategy & Parent Question Script</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <h6 class="text-plum fw-bold mb-3">Pre-Meeting Parent Talking Points Prepared by Lisa Anderson, M.Ed.</h6>
+          <ol class="small text-muted d-flex flex-column gap-3">
+            <li>
+              <strong>Opening Statement:</strong> "Thank you everyone for meeting today to support Leo. As a team, we want to ensure Leo’s IEP reflects his current independent evaluation data and provides meaningful educational progress."
+            </li>
+            <li>
+              <strong>On Speech Minutes:</strong> "We note that the proposed draft reduces speech minutes to 30 min. Can the team show us the objective regression data that justifies this reduction?"
+            </li>
+            <li>
+              <strong>On Aide Support:</strong> "Given Leo’s sensory processing profile, we are requesting that 1:1 support be specified in the IEP for all transitions and unstructured periods."
+            </li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sage-outline btn-sm" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-sage-primary btn-sm" onclick="alert('Downloading Parent Meeting Script PDF...');"><i class="bi bi-printer me-1"></i> Print / Download Script</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script>
+    // Overview mini chart initialization
+    document.addEventListener('DOMContentLoaded', function() {
+      const overviewCtx = document.getElementById('iepGoalChartOverview');
+      if (overviewCtx) {
+        new Chart(overviewCtx, {
+          type: 'bar',
+          data: {
+            labels: ['Reading', 'Speech', 'Sensory', 'Math'],
+            datasets: [
+              { label: 'Current Progress (%)', data: [82, 86, 88, 80], backgroundColor: '#3D3045', borderRadius: 8 },
+              { label: 'Annual Target (90%)', data: [90, 90, 90, 90], backgroundColor: '#D4A373', borderRadius: 8 }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { position: 'bottom' } },
+            scales: { y: { min: 0, max: 100 } }
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

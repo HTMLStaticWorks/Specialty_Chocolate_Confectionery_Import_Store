@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Tasting Salon | Maison du Cacao</title>
+  <meta name="description" content="Connect with our master chocolate curators, reserve a private tasting flight in our New York salon, or submit import & wholesale distribution inquiries.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23140D09'/><text x='50%' y='66%' font-size='50' font-family='serif' fill='%23D4AF37' text-anchor='middle'>M</text></svg>">
+
+  <!-- Bootstrap 5.3 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Fixed Straight-Line Navigation -->
+  <nav class="navbar cacao-navbar fixed-top">
+    <div class="container">
+      <div class="navbar-straight-wrapper">
+        
+        <a class="brand-logo-wrap" href="index.html">
+          <div class="brand-symbol">M</div>
+          <div class="brand-text-block">
+            <span class="brand-name">Maison du Cacao</span>
+            <span class="brand-tagline">Specialty Chocolate Imports</span>
+          </div>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 gap-sm-3">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme"><i class="bi bi-sun-fill text-gold"></i></button>
+          <button type="button" class="dir-toggle-btn" title="Toggle Direction" aria-label="Toggle Direction"><i class="bi bi-arrow-left-right"></i></button>
+          <a href="gifting.html" class="concierge-pill d-none d-md-inline-flex"><i class="bi bi-gift-fill"></i> Bespoke Gifting</a>
+          <button type="button" class="magnetic-menu-btn" title="Open Menu" aria-label="Open Fullscreen Menu">
+            <div class="menu-hamburger-icon"><span></span><span></span></div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Magnetic Navigation Overlay -->
+  <div id="fullscreenNavOverlay" class="fullscreen-nav-overlay">
+    <div class="nav-overlay-header">
+      <a class="brand-logo-wrap" href="index.html">
+        <div class="brand-symbol" style="background: var(--cacao-gold); color: #140D09;">M</div>
+        <div class="brand-text-block">
+          <span class="brand-name text-white">Maison du Cacao</span>
+          <span class="brand-tagline text-gold">Grand Cru & Confectionery Imports</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme"><i class="bi bi-sun-fill text-gold"></i></button>
+        <button type="button" class="dir-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle Direction"><i class="bi bi-arrow-left-right text-white"></i></button>
+        <button type="button" id="navCloseBtn" class="nav-close-btn" aria-label="Close Menu"><span>Close</span> <i class="bi bi-x-lg"></i></button>
+      </div>
+    </div>
+
+    <div class="nav-overlay-body">
+      <ul class="overlay-menu-list">
+        <li class="overlay-menu-item"><a href="index.html" class="overlay-menu-link" data-preview-img="previewHome1"><span class="overlay-menu-num">01</span><span class="overlay-menu-text">HOME 1 — CLASSIC</span></a></li>
+        <li class="overlay-menu-item"><a href="home2.html" class="overlay-menu-link" data-preview-img="previewHome2"><span class="overlay-menu-num">02</span><span class="overlay-menu-text">HOME 2 — GRAND RESERVE</span></a></li>
+        <li class="overlay-menu-item"><a href="products.html" class="overlay-menu-link" data-preview-img="previewProducts"><span class="overlay-menu-num">03</span><span class="overlay-menu-text">PRODUCTS CATALOG</span></a></li>
+        <li class="overlay-menu-item"><a href="gifting.html" class="overlay-menu-link" data-preview-img="previewGifting"><span class="overlay-menu-num">04</span><span class="overlay-menu-text">BESPOKE GIFTING</span></a></li>
+        <li class="overlay-menu-item"><a href="corporate.html" class="overlay-menu-link" data-preview-img="previewCorporate"><span class="overlay-menu-num">05</span><span class="overlay-menu-text">CORPORATE ORDERS</span></a></li>
+        <li class="overlay-menu-item"><a href="contact.html" class="overlay-menu-link" data-preview-img="previewContact"><span class="overlay-menu-num">06</span><span class="overlay-menu-text">CONTACT & SALON</span></a></li>
+      </ul>
+
+      <div class="overlay-preview-viewport d-none d-lg-block">
+        <img id="previewHome1" src="image/dimitrisvetsikas1969-chocolaterie-3590621_1920.jpg" class="overlay-preview-img" alt="Home Classic">
+        <img id="previewHome2" src="image/pexels-valeriya-10323376.jpg" class="overlay-preview-img" alt="Home Grand Reserve">
+        <img id="previewProducts" src="image/pexels-alleksana-4113345.jpg" class="overlay-preview-img" alt="Products Preview">
+        <img id="previewGifting" src="image/abouyassin-christmas-5816557_1920.jpg" class="overlay-preview-img" alt="Gifting Preview">
+        <img id="previewCorporate" src="image/pexels-gorkemography-1013671176-36921982.jpg" class="overlay-preview-img" alt="Corporate Preview">
+        <img id="previewContact" src="image/dimitrisvetsikas1969-chocolaterie-3590622_1920.jpg" class="overlay-preview-img active" alt="Contact Preview">
+      </div>
+    </div>
+
+    <div class="nav-overlay-footer">
+      <div class="d-flex align-items-center gap-3">
+        <span><i class="bi bi-airplane-engines-fill text-gold me-1"></i> Direct Air-Import Cold Chain</span>
+        <span>|</span>
+        <span><i class="bi bi-shield-check text-gold me-1"></i> 100% Single-Estate Certified</span>
+      </div>
+      <div class="small"><span>Concierge: concierge@maisonducacao.com</span></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="py-5 text-center bg-cream-light">
+    <div class="container py-3">
+      <span class="section-tag"><i class="bi bi-geo-alt-fill"></i> Atelier & Tasting Salon</span>
+      <h1 class="serif-heading section-heading-lg mb-2">Connect with Our Sommelier Concierge</h1>
+      <p class="section-subhead">
+        Whether reserving a private comparative terroir tasting flight or inquiring about wholesale single-estate import distribution, we welcome your inquiry.
+      </p>
+    </div>
+  </header>
+
+  <!-- Contact Grid & Salon Booking -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        
+        <!-- Salon Details Column -->
+        <div class="col-lg-5">
+          <div class="p-4 rounded-4 bg-white border h-100 d-flex flex-column">
+            <!-- Salon Photo (4:3 ratio) -->
+            <div class="rounded-3 overflow-hidden mb-4 border" style="aspect-ratio: 16 / 9;">
+              <img src="image/dimitrisvetsikas1969-chocolaterie-3590622_1920.jpg" alt="Madison Avenue Tasting Salon" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+
+            <h3 class="serif-heading mb-3">Madison Avenue Salon</h3>
+            <p class="text-muted small mb-4">
+              Step into our climate-controlled tasting vault featuring live bean-to-bar tastings, rare single-origin pairing sessions, and bespoke gift box assembly.
+            </p>
+
+            <div class="d-flex flex-column gap-3 mb-4">
+              <div class="d-flex align-items-start gap-3">
+                <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <strong>Boutique Address</strong>
+                  <div class="small text-muted">480 Madison Avenue, 4th Floor, New York, NY 10022</div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <strong>Concierge Hotline</strong>
+                  <div class="small text-muted">+1 (800) 840-CACAO (Toll-Free)</div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <strong>Direct Email</strong>
+                  <div class="small text-muted">concierge@maisonducacao.com</div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <strong>Tasting Salon Hours</strong>
+                  <div class="small text-muted">Monday – Friday: 10:00 AM – 7:00 PM EST<br>Saturday: 11:00 AM – 6:00 PM EST<br>Sunday: By Private Sommelier Reservation</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-auto p-3 rounded-3 bg-cream border text-center">
+              <span class="small fw-bold text-gold d-block mb-1"><i class="bi bi-calendar-event me-1"></i> Private Sommelier Tastings</span>
+              <span class="small text-muted">Reservations required 48 hours in advance for groups of 4 to 16 guests.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enquiry Form Column -->
+        <div class="col-lg-7">
+          <div class="calculator-box h-100">
+            <div class="mb-4">
+              <span class="badge bg-noir text-gold px-3 py-2 mb-2"><i class="bi bi-chat-heart-fill me-1"></i> Salon Enquiry</span>
+              <h3 class="serif-heading mb-1">Send a Message or Reservation</h3>
+              <p class="text-muted-custom small">Our concierge team responds to all inquiries within 2 business hours.</p>
+            </div>
+
+            <form class="cacao-ajax-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Your Name</label>
+                  <input type="text" class="form-control" placeholder="Jean-Luc Dupont" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" class="form-control" placeholder="jeanluc@domain.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Phone</label>
+                  <input type="tel" class="form-control" placeholder="+1 (555) 019-2834">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Nature of Inquiry</label>
+                  <select class="form-select">
+                    <option>Private Tasting Salon Reservation</option>
+                    <option>Wholesale & Direct Import Distribution</option>
+                    <option>Bespoke Event & Wedding Favors</option>
+                    <option>Press & Sommelier Collaboration</option>
+                    <option>Order Inquiries & Tracking</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Your Message</label>
+                  <textarea class="form-control" rows="4" placeholder="Please provide details regarding your requested date, guest count, or import product interests..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-cacao-gold w-100 py-3 fw-bold">
+                    <i class="bi bi-send-fill me-2"></i> Submit Inquiry to Concierge
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Salon Atmosphere Photos Row -->
+      <div class="row g-3 mb-5">
+        <div class="col-6 col-md-4">
+          <div class="rounded-3 overflow-hidden border shadow-sm" style="aspect-ratio: 4 / 3;">
+            <img src="image/phil-hearing-o5Kjk9eB_Eg-unsplash.jpg" alt="Artisan Chocolaterie Counter" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="rounded-3 overflow-hidden border shadow-sm" style="aspect-ratio: 4 / 3;">
+            <img src="image/pexels-revac-film-s-photography-10400-364726.jpg" alt="Chocolate Tasting Vault" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="rounded-3 overflow-hidden border shadow-sm" style="aspect-ratio: 4 / 3;">
+            <img src="image/pexels-revac-film-s-photography-10400-364727.jpg" alt="Sommelier Tasting Counter" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Salon Experience Video Showcase -->
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="video-showcase-wrapper">
+            <video autoplay muted loop playsinline controls poster="image/dimitrisvetsikas1969-chocolaterie-3590622_1920.jpg">
+              <source src="vi9deos/7677423-hd_1920_1080_25fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay-badge">
+              <i class="bi bi-cup-hot-fill text-gold fs-5"></i>
+              <span>Live Sommelier Tasting & Sensory Pairings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Import & Cold-Chain Logistics FAQs Accordion -->
+  <section class="py-5 bg-cream-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-question-circle-fill"></i> Frequently Asked Questions</span>
+        <h2 class="serif-heading section-heading-lg">Cold Chain, Storage & Import Logistics</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion" id="cacaoFaqAccordion">
+            
+            <div class="accordion-item mb-3 rounded-3 overflow-hidden border">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  How do you protect delicate chocolates from melting during warm-weather transit?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#cacaoFaqAccordion">
+                <div class="accordion-body text-muted small">
+                  Every order is packed inside biodegradable insulated thermal sleeves accompanied by frozen non-toxic gel packs calibrated to maintain a steady 14°C – 18°C (57°F – 64°F) temperature. We monitor weather conditions along every route and adjust insulation accordingly with our 100% Melt-Free Guarantee.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3 rounded-3 overflow-hidden border">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  What is the optimal way to store artisan single-origin chocolates at home?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#cacaoFaqAccordion">
+                <div class="accordion-body text-muted small">
+                  Store chocolates in a cool, dry, and dark location between 16°C – 20°C (60°F – 68°F) with humidity below 50%. Avoid refrigeration when possible to prevent moisture condensation and sugar bloom. If storing in a wine cooler, keep bars sealed in their original airtight pouches.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3 rounded-3 overflow-hidden border">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Do you offer wholesale distribution for specialty grocery boutiques and fine restaurants?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#cacaoFaqAccordion">
+                <div class="accordion-body text-muted small">
+                  Yes, Maison du Cacao serves as the exclusive North American distributor for select European and South American bean-to-bar makers. Please submit the wholesale enquiry form above with your resale tax certificate number and our distribution director will contact you.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-3 rounded-3 overflow-hidden border">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Are your imported chocolates certified ethical and child-labor-free?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#cacaoFaqAccordion">
+                <div class="accordion-body text-muted small">
+                  Unconditionally. We only import from estates and ateliers practicing direct trade transparency where farmers are paid 200% to 400% above Fair Trade minimum prices. Every single-estate harvest is audited for biodynamic farming and zero child labor.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="cacao-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between mb-5">
+        <div class="col-lg-4 text-start">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="brand-symbol">M</div>
+            <div>
+              <div class="footer-brand-title mb-0">Maison du Cacao</div>
+              <div class="small text-gold text-uppercase tracking-widest">Specialty Import Store</div>
+            </div>
+          </div>
+          <p class="small text-muted mb-4">
+            Curating and importing the planet's rarest single-origin chocolates and confectionery masterpieces since 2012. Direct cold-chain distribution.
+          </p>
+          <div class="footer-social-links d-flex gap-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Collections</h5>
+          <ul class="footer-links-list small">
+            <li><a href="products.html">Single-Origin Bars</a></li>
+            <li><a href="products.html">Belgian Pralines</a></li>
+            <li><a href="products.html">Swiss Truffles</a></li>
+            <li><a href="products.html">Rare Confections</a></li>
+            <li><a href="products.html">Vegan Selections</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Services</h5>
+          <ul class="footer-links-list small">
+            <li><a href="gifting.html">Bespoke Gift Boxes</a></li>
+            <li><a href="corporate.html">Corporate Orders</a></li>
+            <li><a href="corporate.html">Custom Ribbon Branding</a></li>
+            <li><a href="contact.html">Private Tasting Salon</a></li>
+            <li><a href="contact.html">Wholesale Enquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Concierge Salon</h5>
+          <p class="small text-muted mb-2"><i class="bi bi-geo-alt-fill text-gold me-1"></i> 480 Madison Avenue, New York, NY 10022</p>
+          <p class="small text-muted mb-2"><i class="bi bi-telephone-fill text-gold me-1"></i> +1 (800) 840-CACAO</p>
+          <p class="small text-muted mb-0"><i class="bi bi-clock-fill text-gold me-1"></i> Mon – Sat: 10:00 AM – 7:00 PM EST</p>
+        </div>
+      </div>
+
+      <div class="border-top pt-4 text-center small text-muted d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span>&copy; 2026 Maison du Cacao & Confectionery Import Co. All rights reserved.</span>
+        <span>Ethically Sourced | Climate-Insulated Shipping | Direct Master Importers</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

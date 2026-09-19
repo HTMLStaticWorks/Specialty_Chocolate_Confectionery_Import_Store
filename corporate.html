@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Gifting & Volume Orders | Maison du Cacao</title>
+  <meta name="description" content="Elevate executive gifting and client appreciation with custom-branded luxury chocolate vaults, volume tier savings, and multi-address cold chain dispatch.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23140D09'/><text x='50%' y='66%' font-size='50' font-family='serif' fill='%23D4AF37' text-anchor='middle'>M</text></svg>">
+
+  <!-- Bootstrap 5.3 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Fixed Straight-Line Navigation -->
+  <nav class="navbar cacao-navbar fixed-top">
+    <div class="container">
+      <div class="navbar-straight-wrapper">
+        
+        <a class="brand-logo-wrap" href="index.html">
+          <div class="brand-symbol">M</div>
+          <div class="brand-text-block">
+            <span class="brand-name">Maison du Cacao</span>
+            <span class="brand-tagline">Specialty Chocolate Imports</span>
+          </div>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 gap-sm-3">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme"><i class="bi bi-sun-fill text-gold"></i></button>
+          <button type="button" class="dir-toggle-btn" title="Toggle Direction" aria-label="Toggle Direction"><i class="bi bi-arrow-left-right"></i></button>
+          <a href="gifting.html" class="concierge-pill d-none d-md-inline-flex"><i class="bi bi-gift-fill"></i> Bespoke Gifting</a>
+          <button type="button" class="magnetic-menu-btn" title="Open Menu" aria-label="Open Fullscreen Menu">
+            <div class="menu-hamburger-icon"><span></span><span></span></div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Magnetic Navigation Overlay -->
+  <div id="fullscreenNavOverlay" class="fullscreen-nav-overlay">
+    <div class="nav-overlay-header">
+      <a class="brand-logo-wrap" href="index.html">
+        <div class="brand-symbol" style="background: var(--cacao-gold); color: #140D09;">M</div>
+        <div class="brand-text-block">
+          <span class="brand-name text-white">Maison du Cacao</span>
+          <span class="brand-tagline text-gold">Grand Cru & Confectionery Imports</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme"><i class="bi bi-sun-fill text-gold"></i></button>
+        <button type="button" class="dir-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle Direction"><i class="bi bi-arrow-left-right text-white"></i></button>
+        <button type="button" id="navCloseBtn" class="nav-close-btn" aria-label="Close Menu"><span>Close</span> <i class="bi bi-x-lg"></i></button>
+      </div>
+    </div>
+
+    <div class="nav-overlay-body">
+      <ul class="overlay-menu-list">
+        <li class="overlay-menu-item"><a href="index.html" class="overlay-menu-link" data-preview-img="previewHome1"><span class="overlay-menu-num">01</span><span class="overlay-menu-text">HOME 1 — CLASSIC</span></a></li>
+        <li class="overlay-menu-item"><a href="home2.html" class="overlay-menu-link" data-preview-img="previewHome2"><span class="overlay-menu-num">02</span><span class="overlay-menu-text">HOME 2 — GRAND RESERVE</span></a></li>
+        <li class="overlay-menu-item"><a href="products.html" class="overlay-menu-link" data-preview-img="previewProducts"><span class="overlay-menu-num">03</span><span class="overlay-menu-text">PRODUCTS CATALOG</span></a></li>
+        <li class="overlay-menu-item"><a href="gifting.html" class="overlay-menu-link" data-preview-img="previewGifting"><span class="overlay-menu-num">04</span><span class="overlay-menu-text">BESPOKE GIFTING</span></a></li>
+        <li class="overlay-menu-item"><a href="corporate.html" class="overlay-menu-link" data-preview-img="previewCorporate"><span class="overlay-menu-num">05</span><span class="overlay-menu-text">CORPORATE ORDERS</span></a></li>
+        <li class="overlay-menu-item"><a href="contact.html" class="overlay-menu-link" data-preview-img="previewContact"><span class="overlay-menu-num">06</span><span class="overlay-menu-text">CONTACT & SALON</span></a></li>
+      </ul>
+
+      <div class="overlay-preview-viewport d-none d-lg-block">
+        <img id="previewHome1" src="image/dimitrisvetsikas1969-chocolaterie-3590621_1920.jpg" class="overlay-preview-img" alt="Home Classic">
+        <img id="previewHome2" src="image/pexels-valeriya-10323376.jpg" class="overlay-preview-img" alt="Home Grand Reserve">
+        <img id="previewProducts" src="image/pexels-alleksana-4113345.jpg" class="overlay-preview-img" alt="Products Preview">
+        <img id="previewGifting" src="image/abouyassin-christmas-5816557_1920.jpg" class="overlay-preview-img" alt="Gifting Preview">
+        <img id="previewCorporate" src="image/pexels-gorkemography-1013671176-36921982.jpg" class="overlay-preview-img active" alt="Corporate Preview">
+        <img id="previewContact" src="image/dimitrisvetsikas1969-chocolaterie-3590622_1920.jpg" class="overlay-preview-img" alt="Contact Preview">
+      </div>
+    </div>
+
+    <div class="nav-overlay-footer">
+      <div class="d-flex align-items-center gap-3">
+        <span><i class="bi bi-airplane-engines-fill text-gold me-1"></i> Direct Air-Import Cold Chain</span>
+        <span>|</span>
+        <span><i class="bi bi-shield-check text-gold me-1"></i> 100% Single-Estate Certified</span>
+      </div>
+      <div class="small"><span>Concierge: concierge@maisonducacao.com</span></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="py-5 text-center bg-cream-light">
+    <div class="container py-3">
+      <span class="section-tag"><i class="bi bi-building-fill-check"></i> Executive & Client Gifting</span>
+      <h1 class="serif-heading section-heading-lg mb-2">Corporate Confectionery Concierge</h1>
+      <p class="section-subhead">
+        Turn client appreciation, executive summits, and holiday milestones into memorable tasting experiences with custom foil-embossed presentation boxes.
+      </p>
+    </div>
+  </header>
+
+  <!-- Corporate Calculator & Consultation Form -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Calculator Column -->
+        <div class="col-lg-6">
+          <div class="calculator-box h-100">
+            <div class="mb-4">
+              <span class="badge bg-noir text-gold px-3 py-2 mb-2"><i class="bi bi-calculator-fill me-1"></i> Volume Estimator</span>
+              <h3 class="serif-heading mb-1">Interactive Volume Tier Pricing</h3>
+              <p class="text-muted-custom small">Estimate your corporate tier discounts and multi-address fulfillment savings.</p>
+            </div>
+
+            <div class="mb-4">
+              <label for="corpRecipients" class="form-label">Number of Gift Recipients</label>
+              <input type="number" id="corpRecipients" class="form-control" value="50" min="10" max="5000" step="5">
+              <div class="small text-muted mt-1">Volume tiers: 25+ (10%), 50+ (15%), 100+ (20%), 250+ (25%)</div>
+            </div>
+
+            <div class="mb-4">
+              <label for="corpTierSelect" class="form-label">Select Gift Presentation Suite</label>
+              <select id="corpTierSelect" class="form-select">
+                <option value="65">The Executive Praline Vault ($65 base)</option>
+                <option value="95" selected>The Grand Cru Terroir Chest ($95 base)</option>
+                <option value="150">The Chairman's Luxury Tasting Trunk ($150 base)</option>
+              </select>
+            </div>
+
+            <div class="p-4 bg-cream rounded-4 border">
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted">Unit Price After Discount:</span>
+                <strong id="corpUnitPrice" class="text-gold fs-5">$80.75</strong>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted">Applied Volume Savings:</span>
+                <strong id="corpDiscount" class="text-success">15% Volume Savings</strong>
+              </div>
+              <div class="d-flex justify-content-between pt-3 border-top mt-2">
+                <span class="fw-bold">Estimated Order Total:</span>
+                <strong id="corpTotalPrice" class="fs-4 text-gold fw-bold">$4,037.50</strong>
+              </div>
+            </div>
+
+            <div class="mt-4 text-center">
+              <span class="small text-muted"><i class="bi bi-shield-check text-gold me-1"></i> Includes complimentary white-glove corporate mockup proofs and climate packaging.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corporate Inquiry Form -->
+        <div class="col-lg-6">
+          <div class="calculator-box h-100">
+            <div class="mb-4">
+              <span class="badge bg-noir text-gold px-3 py-2 mb-2"><i class="bi bi-send-fill me-1"></i> Dedicated Concierge</span>
+              <h3 class="serif-heading mb-1">Request a Bespoke Corporate Quote</h3>
+              <p class="text-muted-custom small">A dedicated corporate gifting director will respond within 2 business hours with digital proofs and wholesale tiered options.</p>
+            </div>
+
+            <form class="cacao-ajax-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="form-control" placeholder="Eleanor Vance" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Company / Organization</label>
+                  <input type="text" class="form-control" placeholder="Vance Capital Partners" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Work Email</label>
+                  <input type="email" class="form-control" placeholder="e.vance@vancecap.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" placeholder="+1 (212) 555-0198" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Target Delivery Date</label>
+                  <input type="date" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Custom Branding Needs</label>
+                  <select class="form-select">
+                    <option>Gold Foil Logo Ribbon Stamp</option>
+                    <option>Custom Velvet Box Sleeve</option>
+                    <option>Embossed Wax Seal with Monogram</option>
+                    <option>Custom Curated Terroir Menu</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Project Details & Special Requirements</label>
+                  <textarea class="form-control" rows="3" placeholder="Describe your event, recipient list size, or multi-address international delivery requirements..."></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-cacao-gold w-100 py-3 fw-bold">
+                    <i class="bi bi-file-earmark-spreadsheet-fill me-2"></i> Submit Corporate Request & Request Tasting Kit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Portfolio Gallery with User Images -->
+  <section class="py-5 bg-cream-light">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-award-fill"></i> Bespoke Executive Suites</span>
+        <h2 class="serif-heading section-heading-lg">Past Corporate Collaborations</h2>
+        <p class="section-subhead">From Fortune 500 summits to private equity appreciation gifts, view our bespoke presentations.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="chocolate-card">
+            <div class="card-img-wrapper">
+              <img src="image/pexels-gorkemography-1013671176-36921982.jpg" alt="Executive Gala Vault">
+              <span class="origin-tag-pill"><i class="bi bi-star-fill text-gold"></i> Executive Gala</span>
+            </div>
+            <div class="chocolate-card-body">
+              <div class="choc-brand-title">Private Equity Summit</div>
+              <h3 class="choc-product-name">The Obsidian Vault</h3>
+              <p class="choc-flavor-notes">Custom matte black rigid gift boxes with metallic gold foil corporate crest for 350 international attendees.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="chocolate-card">
+            <div class="card-img-wrapper">
+              <img src="image/pexels-capturavisualmoment-36547517.jpg" alt="Luxury Client Appreciation Suite">
+              <span class="origin-tag-pill"><i class="bi bi-briefcase-fill text-gold"></i> Client Gifting</span>
+            </div>
+            <div class="chocolate-card-body">
+              <div class="choc-brand-title">Law & Wealth Management</div>
+              <h3 class="choc-product-name">The Chairman's Tasting Trunk</h3>
+              <p class="choc-flavor-notes">Double-layer walnut case featuring 24 European pralines and customized sommelier pairing booklet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="chocolate-card">
+            <div class="card-img-wrapper">
+              <img src="image/aleksandra-PBZ_3SA5KCM-unsplash.jpg" alt="Artisan Holiday Hampers">
+              <span class="origin-tag-pill"><i class="bi bi-gift-fill text-gold"></i> Holiday Tier</span>
+            </div>
+            <div class="chocolate-card-body">
+              <div class="choc-brand-title">Tech Enterprise Appreciation</div>
+              <h3 class="choc-product-name">Global Holiday Hamper</h3>
+              <p class="choc-flavor-notes">Direct cold-chain drop shipping to 1,200 remote employee home addresses across 14 countries.</p>
+        </div>
+      </div>
+
+      <!-- Corporate White-Glove Video Showcase -->
+      <div class="row justify-content-center mt-5 pt-3">
+        <div class="col-lg-10">
+          <div class="video-showcase-wrapper">
+            <video autoplay muted loop playsinline controls poster="image/pexels-gorkemography-1013671176-36921982.jpg">
+              <source src="vi9deos/5152004-uhd_4096_2160_30fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay-badge">
+              <i class="bi bi-building-fill-check text-gold fs-5"></i>
+              <span>Bespoke Corporate Packaging & Precision Hot-Foil Stamping</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="cacao-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between mb-5">
+        <div class="col-lg-4 text-start">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="brand-symbol">M</div>
+            <div>
+              <div class="footer-brand-title mb-0">Maison du Cacao</div>
+              <div class="small text-gold text-uppercase tracking-widest">Specialty Import Store</div>
+            </div>
+          </div>
+          <p class="small text-muted mb-4">
+            Curating and importing the planet's rarest single-origin chocolates and confectionery masterpieces since 2012. Direct cold-chain distribution.
+          </p>
+          <div class="footer-social-links d-flex gap-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Collections</h5>
+          <ul class="footer-links-list small">
+            <li><a href="products.html">Single-Origin Bars</a></li>
+            <li><a href="products.html">Belgian Pralines</a></li>
+            <li><a href="products.html">Swiss Truffles</a></li>
+            <li><a href="products.html">Rare Confections</a></li>
+            <li><a href="products.html">Vegan Selections</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Services</h5>
+          <ul class="footer-links-list small">
+            <li><a href="gifting.html">Bespoke Gift Boxes</a></li>
+            <li><a href="corporate.html">Corporate Orders</a></li>
+            <li><a href="corporate.html">Custom Ribbon Branding</a></li>
+            <li><a href="contact.html">Private Tasting Salon</a></li>
+            <li><a href="contact.html">Wholesale Enquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Concierge Salon</h5>
+          <p class="small text-muted mb-2"><i class="bi bi-geo-alt-fill text-gold me-1"></i> 480 Madison Avenue, New York, NY 10022</p>
+          <p class="small text-muted mb-2"><i class="bi bi-telephone-fill text-gold me-1"></i> +1 (800) 840-CACAO</p>
+          <p class="small text-muted mb-0"><i class="bi bi-clock-fill text-gold me-1"></i> Mon – Sat: 10:00 AM – 7:00 PM EST</p>
+        </div>
+      </div>
+
+      <div class="border-top pt-4 text-center small text-muted d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span>&copy; 2026 Maison du Cacao & Confectionery Import Co. All rights reserved.</span>
+        <span>Ethically Sourced | Climate-Insulated Shipping | Direct Master Importers</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

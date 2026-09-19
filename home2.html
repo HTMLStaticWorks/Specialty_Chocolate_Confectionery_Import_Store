@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison du Cacao — Grand Reserve Edition | Specialty Chocolate Imports</title>
+  <meta name="description" content="Discover Maison du Cacao Grand Reserve: Exclusive single-estate harvests, master European chocolatiers, sommelier sensory pairings, and private tasting flights.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23140D09'/><text x='50%' y='68%' font-size='60' font-family='serif' font-weight='bold' fill='%23D4AF37' text-anchor='middle'>M</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Announcement Bar -->
+  <div class="announcement-bar text-center">
+    <div class="container">
+      <span class="badge-gold me-2">Grand Reserve</span>
+      <span>Direct Air-Import Cold-Chain Shipping &middot; Guaranteed Uncompromised 16&deg;C Delivery</span>
+    </div>
+  </div>
+
+  <!-- Main Fixed Top Navbar -->
+  <nav class="navbar cacao-navbar fixed-top" id="mainNavbar">
+    <div class="container">
+      <div class="navbar-straight-wrapper">
+        
+        <!-- Left: Brand Logo -->
+        <a class="brand-logo-wrap" href="home2.html">
+          <div class="brand-symbol">M</div>
+          <div class="brand-text-block">
+            <span class="brand-name">Maison du Cacao</span>
+            <span class="brand-tagline">Grand Reserve & Imports</span>
+          </div>
+        </a>
+
+        <!-- Right Side: Theme + RTL + Gifting Pill + Magnetic MENU -->
+        <div class="d-flex align-items-center gap-2 gap-sm-3">
+          <button type="button" class="theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+            <i class="bi bi-sun-fill text-gold"></i>
+          </button>
+
+          <button type="button" class="dir-toggle-btn" title="Toggle RTL / LTR Direction" aria-label="Toggle Direction">
+            <i class="bi bi-arrow-left-right"></i>
+          </button>
+
+          <a href="gifting.html" class="concierge-pill d-none d-md-inline-flex">
+            <i class="bi bi-gift-fill"></i> Bespoke Gifting
+          </a>
+
+          <button type="button" class="magnetic-menu-btn" title="Open Menu" aria-label="Open Fullscreen Menu">
+            <div class="menu-hamburger-icon">
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Magnetic Navigation Overlay -->
+  <div id="fullscreenNavOverlay" class="fullscreen-nav-overlay">
+    <div class="nav-overlay-header">
+      <a class="brand-logo-wrap" href="home2.html">
+        <div class="brand-symbol" style="background: var(--cacao-gold); color: #140D09;">M</div>
+        <div class="brand-text-block">
+          <span class="brand-name text-white">Maison du Cacao</span>
+          <span class="brand-tagline text-gold">Grand Reserve Edition</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme"><i class="bi bi-sun-fill text-gold"></i></button>
+        <button type="button" class="dir-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle Direction"><i class="bi bi-arrow-left-right text-white"></i></button>
+        <button type="button" id="navCloseBtn" class="nav-close-btn" aria-label="Close Menu"><span>Close</span> <i class="bi bi-x-lg"></i></button>
+      </div>
+    </div>
+
+    <div class="nav-overlay-body">
+      <ul class="overlay-menu-list">
+        <li class="overlay-menu-item">
+          <a href="index.html" class="overlay-menu-link" data-preview-img="previewHome1">
+            <span class="overlay-menu-num">01</span>
+            <span class="overlay-menu-text">HOME 1 — CLASSIC</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="home2.html" class="overlay-menu-link" data-preview-img="previewHome2">
+            <span class="overlay-menu-num">02</span>
+            <span class="overlay-menu-text">HOME 2 — GRAND RESERVE</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="products.html" class="overlay-menu-link" data-preview-img="previewProducts">
+            <span class="overlay-menu-num">03</span>
+            <span class="overlay-menu-text">PRODUCTS CATALOG</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="gifting.html" class="overlay-menu-link" data-preview-img="previewGifting">
+            <span class="overlay-menu-num">04</span>
+            <span class="overlay-menu-text">BESPOKE GIFTING</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="corporate.html" class="overlay-menu-link" data-preview-img="previewCorporate">
+            <span class="overlay-menu-num">05</span>
+            <span class="overlay-menu-text">CORPORATE ORDERS</span>
+          </a>
+        </li>
+        <li class="overlay-menu-item">
+          <a href="contact.html" class="overlay-menu-link" data-preview-img="previewContact">
+            <span class="overlay-menu-num">06</span>
+            <span class="overlay-menu-text">CONTACT & SALON</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hover Image Preview Viewport -->
+      <div class="overlay-preview-viewport d-none d-lg-block">
+        <img id="previewHome1" src="image/dimitrisvetsikas1969-chocolaterie-3590621_1920.jpg" class="overlay-preview-img" alt="Home Classic">
+        <img id="previewHome2" src="image/pexels-valeriya-10323376.jpg" class="overlay-preview-img active" alt="Home Grand Reserve">
+        <img id="previewProducts" src="image/pexels-alleksana-4113345.jpg" class="overlay-preview-img" alt="Single Origin Chocolate Catalog">
+        <img id="previewGifting" src="image/abouyassin-christmas-5816557_1920.jpg" class="overlay-preview-img" alt="Luxury Gifting Suites">
+        <img id="previewCorporate" src="image/pexels-gorkemography-1013671176-36921982.jpg" class="overlay-preview-img" alt="Corporate Volume Orders">
+        <img id="previewContact" src="image/dimitrisvetsikas1969-chocolaterie-3590622_1920.jpg" class="overlay-preview-img" alt="Boutique & Tasting Salon">
+      </div>
+    </div>
+
+    <div class="nav-overlay-footer">
+      <div class="d-flex align-items-center gap-3">
+        <span><i class="bi bi-airplane-engines-fill text-gold me-1"></i> Direct Air-Import Cold Chain</span>
+        <span>|</span>
+        <span><i class="bi bi-shield-check text-gold me-1"></i> 100% Single-Estate Certified</span>
+      </div>
+      <div class="small">
+        <span>Concierge: concierge@maisonducacao.com</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section Variant 2: Editorial Split with Video & Badge Ribbons -->
+  <header class="hero-editorial py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        
+        <div class="col-lg-6 text-start">
+          <div class="hero-badge-pill">
+            <i class="bi bi-gem text-gold"></i> Exclusive 2026 Harvest Imports
+          </div>
+          <h1 class="display-3 fw-bold serif-heading mb-3 text-white">
+            The Grand Reserve <br><span class="text-gold-gradient">Curation</span>
+          </h1>
+          <p class="lead mb-4 text-muted-custom">
+            Direct cellar imports from the world's most guarded micro-terroirs. Handcrafted by master chocolatiers in Switzerland, Belgium, France, and Japan under climate-sealed provenance.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="products.html" class="btn btn-cacao-gold">
+              <i class="bi bi-compass me-2"></i> Explore Reserve Catalog
+            </a>
+            <a href="contact.html" class="btn btn-outline-cacao">
+              <i class="bi bi-cup-hot me-2"></i> Reserve Tasting Salon
+            </a>
+          </div>
+
+          <!-- Quick Metrics Bar -->
+          <div class="row g-3 pt-3 border-top border-secondary border-opacity-25">
+            <div class="col-4">
+              <div class="h4 fw-bold text-gold mb-0">14+</div>
+              <small class="text-muted text-uppercase tracking-widest" style="font-size: 0.72rem;">Countries</small>
+            </div>
+            <div class="col-4">
+              <div class="h4 fw-bold text-gold mb-0">100%</div>
+              <small class="text-muted text-uppercase tracking-widest" style="font-size: 0.72rem;">Cold-Chain</small>
+            </div>
+            <div class="col-4">
+              <div class="h4 fw-bold text-gold mb-0">88</div>
+              <small class="text-muted text-uppercase tracking-widest" style="font-size: 0.72rem;">Grand Crus</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="video-showcase-wrapper shadow-2xl">
+            <video autoplay muted loop playsinline poster="image/pexels-valeriya-10323376.jpg">
+              <source src="vi9deos/4458588-uhd_4096_2160_24fps.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay-badge">
+              <i class="bi bi-play-circle-fill text-gold fs-5"></i>
+              <span>Atelier Live Provenance: 16&deg;C Temp-Insulated</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: Heritage Houses & Master Chocolatiers Showcase -->
+  <section class="py-5 bg-cream-light border-top border-bottom border-secondary border-opacity-10">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="badge-gold mb-2">Grand Cru Terroirs</div>
+        <h2 class="serif-heading display-5 fw-bold mb-3">Master Chocolatier Houses</h2>
+        <p class="text-muted">
+          We partner exclusively with multi-generational European master chocolatiers who oversee every step from fermentation to conching.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- House 1: Pierre Marcolini -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chocolate-card h-100 text-center">
+            <div class="card-img-box">
+              <img src="image/pexels-revac-film-s-photography-10400-364726.jpg" alt="Maison Pierre Marcolini Brussels" class="img-fluid">
+              <span class="card-badge">Brussels, Belgium</span>
+            </div>
+            <div class="card-body-custom">
+              <span class="small text-gold text-uppercase fw-bold tracking-widest d-block mb-1">Single Estate Criollo</span>
+              <h4 class="card-title">Maison Marcolini</h4>
+              <p class="small text-muted mb-3">
+                Celebrated for ultra-fine conching and unroasted cocoa bean profiles sourced from Madagascar and Venezuela.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary border-opacity-25">
+                <span class="fw-bold text-gold">$42.00 / Box</span>
+                <a href="products.html" class="btn btn-sm btn-outline-cacao">View Bars</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- House 2: Confiserie Sprüngli -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chocolate-card h-100 text-center">
+            <div class="card-img-box">
+              <img src="image/pexels-meruyert-gonullu-6161674.jpg" alt="Confiserie Sprüngli Zurich" class="img-fluid">
+              <span class="card-badge">Zürich, Switzerland</span>
+            </div>
+            <div class="card-body-custom">
+              <span class="small text-gold text-uppercase fw-bold tracking-widest d-block mb-1">Alpine Truffles</span>
+              <h4 class="card-title">Confiserie Sprüngli</h4>
+              <p class="small text-muted mb-3">
+                Fresh Swiss Alpine cream blended with rare Grand Cru ganache, flown in weekly under strict refrigeration.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary border-opacity-25">
+                <span class="fw-bold text-gold">$58.00 / Box</span>
+                <a href="products.html" class="btn btn-sm btn-outline-cacao">View Bars</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- House 3: Bernachon Lyon -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chocolate-card h-100 text-center">
+            <div class="card-img-box">
+              <img src="image/pexels-valeriya-10323376.jpg" alt="Bernachon Lyon Master Chocolatier" class="img-fluid">
+              <span class="card-badge">Lyon, France</span>
+            </div>
+            <div class="card-body-custom">
+              <span class="small text-gold text-uppercase fw-bold tracking-widest d-block mb-1">Palet d'Or 24K</span>
+              <h4 class="card-title">Maison Bernachon</h4>
+              <p class="small text-muted mb-3">
+                Iconic 55% Isigny cream ganache coated in 70% dark blend and embellished with pure 24K edible gold leaf.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary border-opacity-25">
+                <span class="fw-bold text-gold">$65.00 / Box</span>
+                <a href="products.html" class="btn btn-sm btn-outline-cacao">View Bars</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- House 4: Minimal Bean to Bar Tokyo -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chocolate-card h-100 text-center">
+            <div class="card-img-box">
+              <img src="image/pexels-alimuart-14836741.jpg" alt="Minimal Bean to Bar Tokyo" class="img-fluid">
+              <span class="card-badge">Tokyo, Japan</span>
+            </div>
+            <div class="card-body-custom">
+              <span class="small text-gold text-uppercase fw-bold tracking-widest d-block mb-1">Coarse Roast Matrix</span>
+              <h4 class="card-title">Minimal Tokyo</h4>
+              <p class="small text-muted mb-3">
+                Precision micro-lot roasting preserving crisp fruit acidity and crystalline cocoa sugar textures.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top border-secondary border-opacity-25">
+                <span class="fw-bold text-gold">$38.00 / Bar</span>
+                <a href="products.html" class="btn btn-sm btn-outline-cacao">View Bars</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Limited Seasonal Vault Drops (Rare Allocations) -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+        <div>
+          <div class="badge-gold mb-2">Vault Allocations</div>
+          <h2 class="serif-heading display-5 fw-bold mb-2">Rare & Seasonal Micro-Lots</h2>
+          <p class="text-muted mb-0">Limited to 250 units worldwide per batch. Certified single-plantation harvest.</p>
+        </div>
+        <div class="mt-3 mt-md-0">
+          <a href="products.html" class="btn btn-outline-cacao">
+            View All 88 Drops <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Drop 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="chocolate-card h-100 text-center position-relative">
+            <span class="position-absolute top-0 end-0 m-3 badge bg-danger text-white rounded-pill px-3 py-2 fw-bold" style="z-index: 5;">
+              <i class="bi bi-fire me-1"></i> Only 14 Left
+            </span>
+            <div class="card-img-box">
+              <img src="image/pexels-busra-yaman-54874398-8272574.jpg" alt="Chuao Venezuela Grand Cru 75%" class="img-fluid">
+              <span class="card-badge">Chuao, Venezuela</span>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex justify-content-center gap-2 mb-2">
+                <span class="badge bg-dark text-gold border border-warning border-opacity-50">75% Pure Dark</span>
+                <span class="badge bg-dark text-white border border-secondary border-opacity-50">2026 Vintage</span>
+              </div>
+              <h4 class="card-title">Chuao Criollo Ancestral</h4>
+              <p class="small text-muted mb-3">
+                Sun-dried on the steps of the 16th-century village church. Tasting notes of plum, molasses, and roasted macadamia.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                <span class="h5 fw-bold text-gold mb-0">$36.00</span>
+                <a href="contact.html" class="btn btn-sm btn-cacao-gold">Acquire Micro-Lot</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drop 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="chocolate-card h-100 text-center position-relative">
+            <span class="position-absolute top-0 end-0 m-3 badge bg-warning text-dark rounded-pill px-3 py-2 fw-bold" style="z-index: 5;">
+              <i class="bi bi-gem me-1"></i> Grand Cru
+            </span>
+            <div class="card-img-box">
+              <img src="image/pexels-civan-7386287.jpg" alt="Piedmont Hazelnut Gianduja Truffle Suite" class="img-fluid">
+              <span class="card-badge">Piedmont, Italy</span>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex justify-content-center gap-2 mb-2">
+                <span class="badge bg-dark text-gold border border-warning border-opacity-50">IGP Hazelnuts</span>
+                <span class="badge bg-dark text-white border border-secondary border-opacity-50">Velvet Texture</span>
+              </div>
+              <h4 class="card-title">Tonda Gentile Gianduja</h4>
+              <p class="small text-muted mb-3">
+                Slow-stone ground with 45% roasted Langhe hazelnuts and Madagascar bourbon vanilla pod extract.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                <span class="h5 fw-bold text-gold mb-0">$48.00</span>
+                <a href="contact.html" class="btn btn-sm btn-cacao-gold">Acquire Micro-Lot</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drop 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="chocolate-card h-100 text-center position-relative">
+            <span class="position-absolute top-0 end-0 m-3 badge bg-success text-white rounded-pill px-3 py-2 fw-bold" style="z-index: 5;">
+              <i class="bi bi-star-fill me-1"></i> Sommelier Pick
+            </span>
+            <div class="card-img-box">
+              <img src="image/pexels-foyu-8987040.jpg" alt="Kyoto Uji Matcha & White Cacao Velvet" class="img-fluid">
+              <span class="card-badge">Kyoto, Japan</span>
+            </div>
+            <div class="card-body-custom">
+              <div class="d-flex justify-content-center gap-2 mb-2">
+                <span class="badge bg-dark text-gold border border-warning border-opacity-50">Ceremonial Grade</span>
+                <span class="badge bg-dark text-white border border-secondary border-opacity-50">Organic Harvest</span>
+              </div>
+              <h4 class="card-title">Uji Matcha Grand Cru</h4>
+              <p class="small text-muted mb-3">
+                First-flush shade-grown green tea blended into unrefined Dominican organic cacao butter and raw cane sugar.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top border-secondary border-opacity-25">
+                <span class="h5 fw-bold text-gold mb-0">$44.00</span>
+                <a href="contact.html" class="btn btn-sm btn-cacao-gold">Acquire Micro-Lot</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Interactive Sommelier Sensory Matrix (Wine & Whiskey Matcher) -->
+  <section class="py-5 bg-cream-light border-top border-bottom border-secondary border-opacity-10">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="badge-gold mb-2">Tasting Science</div>
+        <h2 class="serif-heading display-5 fw-bold mb-3">The Sommelier Pairing Matrix</h2>
+        <p class="text-muted">
+          Pairing single-estate cocoa with vintage spirits and grand cru wines elevates both flavor profiles to unprecedented harmony.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        
+        <!-- Pairing Card 1: Single Malt Scotch -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chocolate-card h-100 text-center p-3">
+            <div class="p-3 bg-dark rounded-4 mb-3 border border-secondary border-opacity-25">
+              <i class="bi bi-cup-straw text-gold fs-1 d-block mb-2"></i>
+              <span class="fw-bold text-white">Islay Peated Whisky</span>
+            </div>
+            <h5 class="serif-heading text-gold mb-2">Pairs With</h5>
+            <h6 class="fw-bold mb-1">Ecuador 85% Arriba Nacional</h6>
+            <p class="small text-muted mb-3">
+              The earthy peat smoke cuts through intense cacao tannins, revealing deep floral jasmine and roasted walnut aromas.
+            </p>
+            <span class="badge bg-dark text-gold border border-warning border-opacity-40">Tannin Index: 9.2/10</span>
+          </div>
+        </div>
+
+        <!-- Pairing Card 2: Bordeaux Cabernet -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chocolate-card h-100 text-center p-3">
+            <div class="p-3 bg-dark rounded-4 mb-3 border border-secondary border-opacity-25">
+              <i class="bi bi-droplet-half text-gold fs-1 d-block mb-2"></i>
+              <span class="fw-bold text-white">Vintage Bordeaux</span>
+            </div>
+            <h5 class="serif-heading text-gold mb-2">Pairs With</h5>
+            <h6 class="fw-bold mb-1">Madagascar 70% Sambirano</h6>
+            <p class="small text-muted mb-3">
+              Crisp red berry and raspberry acidity in the Sambirano valley bean echoes the cassis and oak notes of aged Cabernet.
+            </p>
+            <span class="badge bg-dark text-gold border border-warning border-opacity-40">Acidity Index: 8.8/10</span>
+          </div>
+        </div>
+
+        <!-- Pairing Card 3: Japanese Sencha -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chocolate-card h-100 text-center p-3">
+            <div class="p-3 bg-dark rounded-4 mb-3 border border-secondary border-opacity-25">
+              <i class="bi bi-flower1 text-gold fs-1 d-block mb-2"></i>
+              <span class="fw-bold text-white">Shizuoka Sencha Tea</span>
+            </div>
+            <h5 class="serif-heading text-gold mb-2">Pairs With</h5>
+            <h6 class="fw-bold mb-1">Vietnam 72% Ben Tre</h6>
+            <p class="small text-muted mb-3">
+              Grass and umami nuances in Japanese green tea highlight the exotic coconut and tropical pineapple undertones of Mekong delta beans.
+            </p>
+            <span class="badge bg-dark text-gold border border-warning border-opacity-40">Umami Index: 9.0/10</span>
+          </div>
+        </div>
+
+        <!-- Pairing Card 4: Espresso Roast -->
+        <div class="col-md-6 col-lg-3">
+          <div class="chocolate-card h-100 text-center p-3">
+            <div class="p-3 bg-dark rounded-4 mb-3 border border-secondary border-opacity-25">
+              <i class="bi bi-cup-hot-fill text-gold fs-1 d-block mb-2"></i>
+              <span class="fw-bold text-white">Ethiopian Yirgacheffe</span>
+            </div>
+            <h5 class="serif-heading text-gold mb-2">Pairs With</h5>
+            <h6 class="fw-bold mb-1">Haiti 75% PISA Organic</h6>
+            <p class="small text-muted mb-3">
+              Bergamot and citrus notes in floral coffee accentuate the smooth caramel and roasted cedarwood resonance of Haitian beans.
+            </p>
+            <span class="badge bg-dark text-gold border border-warning border-opacity-40">Resonance: 9.5/10</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Full-Width Cold-Chain Atelier Showcase Video -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 text-start">
+          <div class="badge-gold mb-2">Provenance Assurance</div>
+          <h2 class="serif-heading display-5 fw-bold mb-3">Zero-Meltdown Direct Cold-Chain</h2>
+          <p class="text-muted mb-4">
+            Specialty chocolate is a living, temperamental confection. Exposure to temperatures above 20&deg;C ruins cocoa crystal structures and dulls delicate flavor volatiles.
+          </p>
+          <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+            <li class="d-flex align-items-center gap-3">
+              <div class="bg-gold-subtle text-gold p-2 rounded-circle"><i class="bi bi-thermometer-snow fs-5"></i></div>
+              <div><strong>Hermetically Sealed Vacuum Shippers:</strong> Insulated with botanical foam and phase-change cool packs.</div>
+            </li>
+            <li class="d-flex align-items-center gap-3">
+              <div class="bg-gold-subtle text-gold p-2 rounded-circle"><i class="bi bi-airplane fs-5"></i></div>
+              <div><strong>Direct Cargo Air Freight:</strong> 48-hour transit from European chocolateries to our Madison Avenue hub.</div>
+            </li>
+            <li class="d-flex align-items-center gap-3">
+              <div class="bg-gold-subtle text-gold p-2 rounded-circle"><i class="bi bi-patch-check-fill fs-5"></i></div>
+              <div><strong>100% Quality & Temper Guarantee:</strong> If a single praline arrives compromised, we replace the entire box.</div>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-cacao-gold">Inquire About Cold-Chain Wholesale</a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="video-showcase-wrapper shadow-2xl">
+            <video autoplay muted loop playsinline poster="image/dimitrisvetsikas1969-chocolaterie-3590621_1920.jpg">
+              <source src="vi9deos/122508-725502916_medium.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay-badge">
+              <i class="bi bi-box-seam text-gold fs-5"></i>
+              <span>Live Warehouse Provenance: 16.2&deg;C &middot; Humidity 52%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Michelin Critics & Connoisseur Testimonials -->
+  <section class="py-5 bg-cream-light border-top border-secondary border-opacity-10">
+    <div class="container py-4">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="badge-gold mb-2">Critical Acclaim</div>
+        <h2 class="serif-heading display-5 fw-bold mb-3">Praised by Connoisseurs</h2>
+        <p class="text-muted">
+          From Michelin 3-star culinary kitchens to private royal cellars, Maison du Cacao is the world's most trusted specialty confectionery importer.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        
+        <div class="col-md-4">
+          <div class="chocolate-card h-100 p-4 text-center">
+            <div class="text-gold mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fst-italic text-white mb-4">
+              "Maison du Cacao delivers bean-to-bar expressions with pristine crystal temper. Their single-origin Venezuelan drops are without equal on this continent."
+            </p>
+            <div class="border-top border-secondary border-opacity-25 pt-3">
+              <h6 class="fw-bold mb-0 text-gold">Chef Laurent V.</h6>
+              <small class="text-muted">Executive Pastry Chef &middot; 3-Star Michelin NYC</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="chocolate-card h-100 p-4 text-center">
+            <div class="text-gold mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fst-italic text-white mb-4">
+              "Our bespoke holiday corporate hampers created through their VIP concierge left our board of directors and luxury clientele completely mesmerized."
+            </p>
+            <div class="border-top border-secondary border-opacity-25 pt-3">
+              <h6 class="fw-bold mb-0 text-gold">Elena Rostova</h6>
+              <small class="text-muted">Managing Director &middot; Apex Private Wealth Geneva</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="chocolate-card h-100 p-4 text-center">
+            <div class="text-gold mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="fst-italic text-white mb-4">
+              "The sommelier tasting flight matched with aged Glenfarclas whisky was a revelatory sensory journey. A must-visit salon in Manhattan."
+            </p>
+            <div class="border-top border-secondary border-opacity-25 pt-3">
+              <h6 class="fw-bold mb-0 text-gold">Marcus Thorne</h6>
+              <small class="text-muted">Spirits & Confectionery Columnist &middot; Connoisseur Magazine</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: VIP Cacao Club Newsletter Subscription -->
+  <section class="py-5 text-center bg-dark position-relative overflow-hidden">
+    <div class="container py-4">
+      <div class="max-w-700 mx-auto">
+        <span class="badge-gold mb-3">Private Society</span>
+        <h2 class="serif-heading display-5 fw-bold text-white mb-3">Join The Cacao Tasting Salon</h2>
+        <p class="text-muted mb-4">
+          Receive allocations of newly arrived European air-freight drops, private tasting salon invitations, and seasonal Grand Cru releases before public release.
+        </p>
+        <form class="d-flex flex-column flex-sm-row gap-2 justify-content-center max-w-500 mx-auto" onsubmit="event.preventDefault(); alert('Thank you! You have been granted priority access to Maison du Cacao Grand Reserve drops.');">
+          <input type="email" class="form-control" placeholder="Enter your private email..." required style="background: rgba(255,255,255,0.08); color: #FFF; border-color: rgba(212,175,55,0.4);">
+          <button type="submit" class="btn btn-cacao-gold flex-shrink-0">Request Invitation</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Master Cacao Footer -->
+  <footer class="cacao-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between mb-5">
+        
+        <div class="col-lg-4 text-start">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="brand-symbol">M</div>
+            <div>
+              <div class="footer-brand-title mb-0">Maison du Cacao</div>
+              <div class="small text-gold text-uppercase tracking-widest">Grand Reserve Edition</div>
+            </div>
+          </div>
+          <p class="small text-muted mb-4">
+            Curating and importing the planet's rarest single-origin chocolates and confectionery masterpieces since 2012. Direct cold-chain distribution across the United States, Europe, and Canada.
+          </p>
+          <div class="footer-social-links d-flex gap-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Navigation</h5>
+          <ul class="footer-links-list small">
+            <li><a href="index.html">Home (Classic)</a></li>
+            <li><a href="home2.html">Home 2 (Grand Reserve)</a></li>
+            <li><a href="products.html">Single-Origin Bars</a></li>
+            <li><a href="products.html">Belgian Pralines</a></li>
+            <li><a href="products.html">Swiss Truffles</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Services</h5>
+          <ul class="footer-links-list small">
+            <li><a href="gifting.html">Bespoke Gift Boxes</a></li>
+            <li><a href="corporate.html">Corporate Orders</a></li>
+            <li><a href="corporate.html">Custom Ribbon Branding</a></li>
+            <li><a href="contact.html">Private Tasting Salon</a></li>
+            <li><a href="contact.html">Wholesale Enquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Concierge Salon</h5>
+          <p class="small text-muted mb-2"><i class="bi bi-geo-alt-fill text-gold me-1"></i> 480 Madison Avenue, New York, NY 10022</p>
+          <p class="small text-muted mb-2"><i class="bi bi-telephone-fill text-gold me-1"></i> +1 (800) 840-CACAO</p>
+          <p class="small text-muted mb-0"><i class="bi bi-clock-fill text-gold me-1"></i> Mon &ndash; Sat: 10:00 AM &ndash; 7:00 PM EST</p>
+        </div>
+
+      </div>
+
+      <div class="border-top pt-4 text-center small text-muted d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span>&copy; 2026 Maison du Cacao & Confectionery Import Co. All rights reserved.</span>
+        <span>Ethically Sourced | Climate-Insulated Shipping | Direct Master Importers</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

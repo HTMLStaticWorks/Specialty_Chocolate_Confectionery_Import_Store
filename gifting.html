@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Chocolate Gifting Suites | Maison du Cacao</title>
+  <meta name="description" content="Bespoke luxury chocolate gift boxes, velvet tasting vaults, personalized wax-sealed greeting cards, and white-glove climate delivery.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23140D09'/><text x='50%' y='66%' font-size='50' font-family='serif' fill='%23D4AF37' text-anchor='middle'>M</text></svg>">
+
+  <!-- Bootstrap 5.3 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Fixed Straight-Line Navigation -->
+  <nav class="navbar cacao-navbar fixed-top">
+    <div class="container">
+      <div class="navbar-straight-wrapper">
+        
+        <a class="brand-logo-wrap" href="index.html">
+          <div class="brand-symbol">M</div>
+          <div class="brand-text-block">
+            <span class="brand-name">Maison du Cacao</span>
+            <span class="brand-tagline">Specialty Chocolate Imports</span>
+          </div>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 gap-sm-3">
+          <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme"><i class="bi bi-sun-fill text-gold"></i></button>
+          <button type="button" class="dir-toggle-btn" title="Toggle Direction" aria-label="Toggle Direction"><i class="bi bi-arrow-left-right"></i></button>
+          <a href="gifting.html" class="concierge-pill d-none d-md-inline-flex active"><i class="bi bi-gift-fill"></i> Bespoke Gifting</a>
+          <button type="button" class="magnetic-menu-btn" title="Open Menu" aria-label="Open Fullscreen Menu">
+            <div class="menu-hamburger-icon"><span></span><span></span></div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Magnetic Navigation Overlay -->
+  <div id="fullscreenNavOverlay" class="fullscreen-nav-overlay">
+    <div class="nav-overlay-header">
+      <a class="brand-logo-wrap" href="index.html">
+        <div class="brand-symbol" style="background: var(--cacao-gold); color: #140D09;">M</div>
+        <div class="brand-text-block">
+          <span class="brand-name text-white">Maison du Cacao</span>
+          <span class="brand-tagline text-gold">Grand Cru & Confectionery Imports</span>
+        </div>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme"><i class="bi bi-sun-fill text-gold"></i></button>
+        <button type="button" class="dir-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle Direction"><i class="bi bi-arrow-left-right text-white"></i></button>
+        <button type="button" id="navCloseBtn" class="nav-close-btn" aria-label="Close Menu"><span>Close</span> <i class="bi bi-x-lg"></i></button>
+      </div>
+    </div>
+
+    <div class="nav-overlay-body">
+      <ul class="overlay-menu-list">
+        <li class="overlay-menu-item"><a href="index.html" class="overlay-menu-link" data-preview-img="previewHome1"><span class="overlay-menu-num">01</span><span class="overlay-menu-text">HOME 1 — CLASSIC</span></a></li>
+        <li class="overlay-menu-item"><a href="home2.html" class="overlay-menu-link" data-preview-img="previewHome2"><span class="overlay-menu-num">02</span><span class="overlay-menu-text">HOME 2 — GRAND RESERVE</span></a></li>
+        <li class="overlay-menu-item"><a href="products.html" class="overlay-menu-link" data-preview-img="previewProducts"><span class="overlay-menu-num">03</span><span class="overlay-menu-text">PRODUCTS CATALOG</span></a></li>
+        <li class="overlay-menu-item"><a href="gifting.html" class="overlay-menu-link" data-preview-img="previewGifting"><span class="overlay-menu-num">04</span><span class="overlay-menu-text">BESPOKE GIFTING</span></a></li>
+        <li class="overlay-menu-item"><a href="corporate.html" class="overlay-menu-link" data-preview-img="previewCorporate"><span class="overlay-menu-num">05</span><span class="overlay-menu-text">CORPORATE ORDERS</span></a></li>
+        <li class="overlay-menu-item"><a href="contact.html" class="overlay-menu-link" data-preview-img="previewContact"><span class="overlay-menu-num">06</span><span class="overlay-menu-text">CONTACT & SALON</span></a></li>
+      </ul>
+
+      <div class="overlay-preview-viewport d-none d-lg-block">
+        <img id="previewHome1" src="image/dimitrisvetsikas1969-chocolaterie-3590621_1920.jpg" class="overlay-preview-img" alt="Home Classic">
+        <img id="previewHome2" src="image/pexels-valeriya-10323376.jpg" class="overlay-preview-img" alt="Home Grand Reserve">
+        <img id="previewProducts" src="image/pexels-alleksana-4113345.jpg" class="overlay-preview-img" alt="Products Preview">
+        <img id="previewGifting" src="image/abouyassin-christmas-5816557_1920.jpg" class="overlay-preview-img active" alt="Gifting Preview">
+        <img id="previewCorporate" src="image/pexels-gorkemography-1013671176-36921982.jpg" class="overlay-preview-img" alt="Corporate Preview">
+        <img id="previewContact" src="image/dimitrisvetsikas1969-chocolaterie-3590622_1920.jpg" class="overlay-preview-img" alt="Contact Preview">
+      </div>
+    </div>
+
+    <div class="nav-overlay-footer">
+      <div class="d-flex align-items-center gap-3">
+        <span><i class="bi bi-airplane-engines-fill text-gold me-1"></i> Direct Air-Import Cold Chain</span>
+        <span>|</span>
+        <span><i class="bi bi-shield-check text-gold me-1"></i> 100% Single-Estate Certified</span>
+      </div>
+      <div class="small"><span>Concierge: concierge@maisonducacao.com</span></div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="py-5 text-center bg-cream-light">
+    <div class="container py-3">
+      <span class="section-tag"><i class="bi bi-gift-fill"></i> Bespoke Confectionery Suites</span>
+      <h1 class="serif-heading section-heading-lg mb-2">The Art of Chocolate Gifting</h1>
+      <p class="section-subhead">
+        Handcrafted velvet presentation vaults, satin ribbon ties, and personalized calligraphy cards featuring the world's most awarded master chocolatiers.
+      </p>
+    </div>
+  </header>
+
+  <!-- Interactive 3-Step Custom Gift Box Builder -->
+  <section class="py-5">
+    <div class="container py-3">
+      <div class="quiz-box mb-5">
+        <div class="text-center mb-4 pb-2 border-bottom">
+          <span class="badge bg-noir text-gold px-3 py-2 mb-2"><i class="bi bi-sliders me-1"></i> Interactive Customizer</span>
+          <h2 class="serif-heading mb-1">Build Your Custom Gift Vault</h2>
+          <p class="text-muted-custom small mb-0">Select your presentation box, customize your imported chocolate flight, and add personalized ribbon & wax embossing.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Step 1: Select Box Size -->
+          <div class="col-lg-4">
+            <h4 class="serif-heading mb-3"><span class="text-gold">1.</span> Select Box Vault</h4>
+            <div class="d-flex flex-column gap-3">
+              <div class="box-tier-option active p-3 rounded-3 border cursor-pointer" data-price="68" data-max="6" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <strong>The Petite Connoisseur (6 Pcs)</strong>
+                  <span class="text-gold fw-bold">$68.00</span>
+                </div>
+                <p class="small text-muted mb-0">Deep burgundy velvet case with gold foil badge.</p>
+              </div>
+
+              <div class="box-tier-option p-3 rounded-3 border cursor-pointer" data-price="115" data-max="12" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <strong>The Master Salon Vault (12 Pcs)</strong>
+                  <span class="text-gold fw-bold">$115.00</span>
+                </div>
+                <p class="small text-muted mb-0">Double-tiered velvet trunk with custom division trays.</p>
+              </div>
+
+              <div class="box-tier-option p-3 rounded-3 border cursor-pointer" data-price="195" data-max="24" style="cursor: pointer;">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <strong>Grand Cru Imperial Trunk (24 Pcs)</strong>
+                  <span class="text-gold fw-bold">$195.00</span>
+                </div>
+                <p class="small text-muted mb-0">Solid walnut wooden keepsake chest with brass latches.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Choose Chocolates -->
+          <div class="col-lg-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h4 class="serif-heading mb-0"><span class="text-gold">2.</span> Pick Terroirs</h4>
+              <span id="selectedChocCount" class="badge bg-gold-subtle text-gold px-2 py-1">0 / 6</span>
+            </div>
+
+            <div class="d-flex flex-column gap-2" style="max-height: 320px; overflow-y: auto; padding-right: 6px;">
+              <div class="choc-pick-item p-2 rounded-2 border d-flex justify-content-between align-items-center" style="cursor: pointer;">
+                <div>
+                  <div class="fw-bold small">Chuao 85% Dark (Venezuela)</div>
+                  <div class="text-muted" style="font-size: 0.75rem;">Black fig, roasted pecan, Bourbon vanilla</div>
+                </div>
+                <i class="bi bi-plus-circle text-gold fs-5"></i>
+              </div>
+
+              <div class="choc-pick-item p-2 rounded-2 border d-flex justify-content-between align-items-center" style="cursor: pointer;">
+                <div>
+                  <div class="fw-bold small">Brussels Hazelnut Praliné (Belgium)</div>
+                  <div class="text-muted" style="font-size: 0.75rem;">Fleur de sel caramel & Piedmont crunch</div>
+                </div>
+                <i class="bi bi-plus-circle text-gold fs-5"></i>
+              </div>
+
+              <div class="choc-pick-item p-2 rounded-2 border d-flex justify-content-between align-items-center" style="cursor: pointer;">
+                <div>
+                  <div class="fw-bold small">Sambirano Valley 70% (Madagascar)</div>
+                  <div class="text-muted" style="font-size: 0.75rem;">Raspberry, citrus acidity, pink peppercorn</div>
+                </div>
+                <i class="bi bi-plus-circle text-gold fs-5"></i>
+              </div>
+
+              <div class="choc-pick-item p-2 rounded-2 border d-flex justify-content-between align-items-center" style="cursor: pointer;">
+                <div>
+                  <div class="fw-bold small">Alpine Marc de Champagne Truffle</div>
+                  <div class="text-muted" style="font-size: 0.75rem;">Swiss double cream & vintage Champagne</div>
+                </div>
+                <i class="bi bi-plus-circle text-gold fs-5"></i>
+              </div>
+
+              <div class="choc-pick-item p-2 rounded-2 border d-flex justify-content-between align-items-center" style="cursor: pointer;">
+                <div>
+                  <div class="fw-bold small">Kyoto Uji Matcha & Kochi Yuzu</div>
+                  <div class="text-muted" style="font-size: 0.75rem;">Ceremonial green tea & candied yuzu peel</div>
+                </div>
+                <i class="bi bi-plus-circle text-gold fs-5"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Ribbon & Note -->
+          <div class="col-lg-3">
+            <h4 class="serif-heading mb-3"><span class="text-gold">3.</span> Presentation</h4>
+            
+            <div class="mb-3">
+              <label class="form-label small">Satin Ribbon Hue</label>
+              <select class="form-select form-select-sm">
+                <option value="gold">Champagne Gold Satin</option>
+                <option value="burgundy">Imperial Burgundy</option>
+                <option value="emerald">Forest Emerald</option>
+                <option value="midnight">Midnight Noir</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label small">Wax-Sealed Gift Note</label>
+              <textarea class="form-control form-control-sm" rows="3" placeholder="Enter your custom message..."></textarea>
+            </div>
+
+            <div class="p-3 bg-cream rounded-3 text-center border">
+              <div class="small text-muted">Estimated Total</div>
+              <div id="giftTotalEstimate" class="fs-4 fw-bold text-gold mb-2">$68.00</div>
+              <button type="button" class="btn btn-cacao-gold btn-sm w-100" onclick="alert('Custom Gift Vault added to cart! Proceeding to gift concierge checkout.');">
+                <i class="bi bi-bag-check-fill me-1"></i> Assemble & Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ready-to-Ship Signature Gift Collections with User Images -->
+      <div class="text-center mb-5">
+        <span class="section-tag"><i class="bi bi-stars"></i> Curated Gift Suites</span>
+        <h2 class="serif-heading section-heading-lg">Signature Holiday & Celebration Hampers</h2>
+      </div>
+
+      <div class="row g-4">
+        
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="chocolate-card">
+            <div class="card-img-wrapper">
+              <img src="image/abouyassin-christmas-5816557_1920.jpg" alt="The Grand European Salon Vault">
+              <span class="origin-tag-pill"><i class="bi bi-trophy-fill text-gold"></i> Bestseller</span>
+            </div>
+            <div class="chocolate-card-body">
+              <div class="choc-brand-title">Signature Suite</div>
+              <h3 class="choc-product-name">The Grand Salon Hamper</h3>
+              <p class="choc-flavor-notes">16 Belgian pralines, 3 single-origin Grand Cru tablets, and candied French dragées in luxury presentation.</p>
+              <div class="choc-price-row">
+                <div class="choc-price">$128.00</div>
+                <button type="button" class="btn btn-cacao-primary btn-sm" onclick="alert('Added Grand Salon Hamper to cart.');">Order Gift</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="chocolate-card">
+            <div class="card-img-wrapper">
+              <img src="image/lobostudiohamburg-xmas-71219_1920.jpg" alt="The Champagne & Truffles Trunk">
+              <span class="origin-tag-pill"><i class="bi bi-heart-fill text-ruby"></i> Celebration</span>
+            </div>
+            <div class="chocolate-card-body">
+              <div class="choc-brand-title">Romantic & Anniversary</div>
+              <h3 class="choc-product-name">Champagne & Dark Truffle Trunk</h3>
+              <p class="choc-flavor-notes">24 Swiss Marc de Champagne and dark raspberry truffles dusted in 24-karat edible gold flakes.</p>
+              <div class="choc-price-row">
+                <div class="choc-price">$145.00</div>
+                <button type="button" class="btn btn-cacao-primary btn-sm" onclick="alert('Added Champagne & Dark Truffle Trunk to cart.');">Order Gift</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="chocolate-card">
+            <div class="card-img-wrapper">
+              <img src="image/pexels-busra-yaman-54874398-8272574.jpg" alt="The Terroir Explorer Library Box">
+              <span class="origin-tag-pill"><i class="bi bi-compass-fill text-gold"></i> Collector Set</span>
+            </div>
+            <div class="chocolate-card-body">
+              <div class="choc-brand-title">Single-Estate Vault</div>
+              <h3 class="choc-product-name">Terroir Explorer Library</h3>
+              <p class="choc-flavor-notes">6 Full single-origin bars spanning South America, Africa, and Southeast Asia with sommelier cards.</p>
+              <div class="choc-price-row">
+                <div class="choc-price">$98.00</div>
+                <button type="button" class="btn btn-cacao-primary btn-sm" onclick="alert('Added Terroir Explorer Library to cart.');">Order Gift</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="chocolate-card">
+            <div class="card-img-wrapper">
+              <img src="image/pexels-natalia-sevruk-636238602-38292502.jpg" alt="Belgian Artisan Keepsake Hamper">
+              <span class="origin-tag-pill"><i class="bi bi-gem text-gold"></i> Limited Edition</span>
+            </div>
+            <div class="chocolate-card-body">
+              <div class="choc-brand-title">Bespoke Collection</div>
+              <h3 class="choc-product-name">Imperial Cacao Keepsake Trunk</h3>
+              <p class="choc-flavor-notes">Assortment of handmade truffles, single-estate dark bars, and roasted cacao nib brittle.</p>
+              <div class="choc-price-row">
+                <div class="choc-price">$165.00</div>
+                <button type="button" class="btn btn-cacao-primary btn-sm" onclick="alert('Added Imperial Cacao Keepsake Trunk to cart.');">Order Gift</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="chocolate-card">
+            <div class="card-img-wrapper">
+              <img src="image/pexels-th2city-25049506.jpg" alt="Petite Connoisseur Gift Box">
+              <span class="origin-tag-pill"><i class="bi bi-patch-check-fill text-gold"></i> Express Gift</span>
+            </div>
+            <div class="chocolate-card-body">
+              <div class="choc-brand-title">Petite Discovery</div>
+              <h3 class="choc-product-name">The Parisian Sweet Box</h3>
+              <p class="choc-flavor-notes">8 French ganaches, roasted almond dragées, and single-origin dark caramel tablets.</p>
+              <div class="choc-price-row">
+                <div class="choc-price">$58.00</div>
+                <button type="button" class="btn btn-cacao-primary btn-sm" onclick="alert('Added Parisian Sweet Box to cart.');">Order Gift</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="chocolate-card">
+            <div class="card-img-wrapper">
+              <img src="image/pexels-meruyert-gonullu-6161674.jpg" alt="Artisan Wedding Favor Box">
+              <span class="origin-tag-pill"><i class="bi bi-heart text-ruby"></i> Wedding & Favors</span>
+            </div>
+            <div class="chocolate-card-body">
+              <div class="choc-brand-title">Event Favors</div>
+              <h3 class="choc-product-name">Bespoke Wedding Favor Duos</h3>
+              <p class="choc-flavor-notes">2-Piece gold-foiled favor boxes with twin master pralines and customized monogram tag.</p>
+              <div class="choc-price-row">
+                <div class="choc-price">$12.50 <small class="text-muted fw-normal" style="font-size: 0.8rem;">/ unit</small></div>
+                <a href="corporate.html" class="btn btn-cacao-primary btn-sm">Inquire Favors</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Luxury Gifting Atelier Video -->
+      <div class="row justify-content-center mt-5 pt-3">
+        <div class="col-lg-10">
+          <div class="video-showcase-wrapper">
+            <video autoplay muted loop playsinline controls poster="image/abouyassin-christmas-5816557_1920.jpg">
+              <source src="vi9deos/4458588-uhd_4096_2160_24fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay-badge">
+              <i class="bi bi-gift-fill text-gold fs-5"></i>
+              <span>Artisan Ribbon Tying & Velvet Vault Assembly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="cacao-footer">
+    <div class="container">
+      <div class="row g-4 justify-content-between mb-5">
+        <div class="col-lg-4 text-start">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="brand-symbol">M</div>
+            <div>
+              <div class="footer-brand-title mb-0">Maison du Cacao</div>
+              <div class="small text-gold text-uppercase tracking-widest">Specialty Import Store</div>
+            </div>
+          </div>
+          <p class="small text-muted mb-4">
+            Curating and importing the planet's rarest single-origin chocolates and confectionery masterpieces since 2012. Direct cold-chain distribution.
+          </p>
+          <div class="footer-social-links d-flex gap-2">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Collections</h5>
+          <ul class="footer-links-list small">
+            <li><a href="products.html">Single-Origin Bars</a></li>
+            <li><a href="products.html">Belgian Pralines</a></li>
+            <li><a href="products.html">Swiss Truffles</a></li>
+            <li><a href="products.html">Rare Confections</a></li>
+            <li><a href="products.html">Vegan Selections</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Services</h5>
+          <ul class="footer-links-list small">
+            <li><a href="gifting.html">Bespoke Gift Boxes</a></li>
+            <li><a href="corporate.html">Corporate Orders</a></li>
+            <li><a href="corporate.html">Custom Ribbon Branding</a></li>
+            <li><a href="contact.html">Private Tasting Salon</a></li>
+            <li><a href="contact.html">Wholesale Enquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-3 text-start">
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Concierge Salon</h5>
+          <p class="small text-muted mb-2"><i class="bi bi-geo-alt-fill text-gold me-1"></i> 480 Madison Avenue, New York, NY 10022</p>
+          <p class="small text-muted mb-2"><i class="bi bi-telephone-fill text-gold me-1"></i> +1 (800) 840-CACAO</p>
+          <p class="small text-muted mb-0"><i class="bi bi-clock-fill text-gold me-1"></i> Mon – Sat: 10:00 AM – 7:00 PM EST</p>
+        </div>
+      </div>
+
+      <div class="border-top pt-4 text-center small text-muted d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span>&copy; 2026 Maison du Cacao & Confectionery Import Co. All rights reserved.</span>
+        <span>Ethically Sourced | Climate-Insulated Shipping | Direct Master Importers</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
