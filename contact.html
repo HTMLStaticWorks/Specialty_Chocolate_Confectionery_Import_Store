@@ -17,6 +17,7 @@
 <body>
 
   <!-- Fixed Straight-Line Navigation -->
+  <!-- Conventional Fixed Navigation -->
   <nav class="navbar cacao-navbar fixed-top">
     <div class="container">
       <div class="navbar-straight-wrapper">
@@ -29,11 +30,39 @@
           </div>
         </a>
 
+        <!-- Center: Conventional Navigation Links (Desktop) -->
+        <ul class="cacao-nav-links d-none d-lg-flex">
+          <li class="cacao-nav-item dropdown">
+            <a class="cacao-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home <i class="bi bi-chevron-down small ms-1"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-house-door-fill text-gold me-2"></i> Home 1 — Classic</a></li>
+              <li><a class="dropdown-item" href="home2.html"><i class="bi bi-stars text-gold me-2"></i> Home 2 — Grand Reserve</a></li>
+            </ul>
+          </li>
+          <li class="cacao-nav-item">
+            <a class="cacao-nav-link" href="products.html">Catalog</a>
+          </li>
+          <li class="cacao-nav-item">
+            <a class="cacao-nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="cacao-nav-item">
+            <a class="cacao-nav-link" href="gifting.html">Bespoke Gifting</a>
+          </li>
+          <li class="cacao-nav-item">
+            <a class="cacao-nav-link" href="corporate.html">Corporate</a>
+          </li>
+          <li class="cacao-nav-item">
+            <a class="cacao-nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
         <div class="d-flex align-items-center gap-2 gap-sm-3">
           <button type="button" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme"><i class="bi bi-sun-fill text-gold"></i></button>
           <button type="button" class="dir-toggle-btn" title="Toggle Direction" aria-label="Toggle Direction"><i class="bi bi-arrow-left-right"></i></button>
-          <a href="gifting.html" class="concierge-pill d-none d-md-inline-flex"><i class="bi bi-gift-fill"></i> Bespoke Gifting</a>
-          <button type="button" class="magnetic-menu-btn" title="Open Menu" aria-label="Open Fullscreen Menu">
+          <a href="gifting.html" class="concierge-pill d-none d-xl-inline-flex"><i class="bi bi-gift-fill"></i> Bespoke Gifting</a>
+          <button type="button" class="magnetic-menu-btn d-lg-none" title="Open Menu" aria-label="Open Fullscreen Menu">
             <div class="menu-hamburger-icon"><span></span><span></span></div>
           </button>
         </div>
@@ -64,15 +93,17 @@
         <li class="overlay-menu-item"><a href="index.html" class="overlay-menu-link" data-preview-img="previewHome1"><span class="overlay-menu-num">01</span><span class="overlay-menu-text">HOME 1 — CLASSIC</span></a></li>
         <li class="overlay-menu-item"><a href="home2.html" class="overlay-menu-link" data-preview-img="previewHome2"><span class="overlay-menu-num">02</span><span class="overlay-menu-text">HOME 2 — GRAND RESERVE</span></a></li>
         <li class="overlay-menu-item"><a href="products.html" class="overlay-menu-link" data-preview-img="previewProducts"><span class="overlay-menu-num">03</span><span class="overlay-menu-text">PRODUCTS CATALOG</span></a></li>
-        <li class="overlay-menu-item"><a href="gifting.html" class="overlay-menu-link" data-preview-img="previewGifting"><span class="overlay-menu-num">04</span><span class="overlay-menu-text">BESPOKE GIFTING</span></a></li>
-        <li class="overlay-menu-item"><a href="corporate.html" class="overlay-menu-link" data-preview-img="previewCorporate"><span class="overlay-menu-num">05</span><span class="overlay-menu-text">CORPORATE ORDERS</span></a></li>
-        <li class="overlay-menu-item"><a href="contact.html" class="overlay-menu-link active" aria-current="page" data-preview-img="previewContact"><span class="overlay-menu-num">06</span><span class="overlay-menu-text">CONTACT & SALON</span></a></li>
+        <li class="overlay-menu-item"><a href="about.html" class="overlay-menu-link" data-preview-img="previewAbout"><span class="overlay-menu-num">04</span><span class="overlay-menu-text">ABOUT US</span></a></li>
+        <li class="overlay-menu-item"><a href="gifting.html" class="overlay-menu-link" data-preview-img="previewGifting"><span class="overlay-menu-num">05</span><span class="overlay-menu-text">BESPOKE GIFTING</span></a></li>
+        <li class="overlay-menu-item"><a href="corporate.html" class="overlay-menu-link" data-preview-img="previewCorporate"><span class="overlay-menu-num">06</span><span class="overlay-menu-text">CORPORATE ORDERS</span></a></li>
+        <li class="overlay-menu-item"><a href="contact.html" class="overlay-menu-link active" aria-current="page" data-preview-img="previewContact"><span class="overlay-menu-num">07</span><span class="overlay-menu-text">CONTACT & SALON</span></a></li>
       </ul>
 
       <div class="overlay-preview-viewport d-none d-lg-block">
         <img id="previewHome1" src="image/dimitrisvetsikas1969-chocolaterie-3590621_1920.jpg" class="overlay-preview-img" alt="Home Classic">
         <img id="previewHome2" src="image/pexels-valeriya-10323376.jpg" class="overlay-preview-img" alt="Home Grand Reserve">
         <img id="previewProducts" src="image/pexels-alleksana-4113345.jpg" class="overlay-preview-img" alt="Products Preview">
+        <img id="previewAbout" src="image/dimitrisvetsikas1969-chocolaterie-3590622_1920.jpg" class="overlay-preview-img" alt="About Preview">
         <img id="previewGifting" src="image/abouyassin-christmas-5816557_1920.jpg" class="overlay-preview-img" alt="Gifting Preview">
         <img id="previewCorporate" src="image/pexels-gorkemography-1013671176-36921982.jpg" class="overlay-preview-img" alt="Corporate Preview">
         <img id="previewContact" src="image/dimitrisvetsikas1969-chocolaterie-3590622_1920.jpg" class="overlay-preview-img active" alt="Contact Preview">
@@ -105,121 +136,117 @@
     </div>
   </header>
 
-  <!-- Contact Grid & Salon Booking -->
+  <!-- Contact Grid & Salon Booking (Compact Snug Container - Issues 8 & 10) -->
   <section class="py-5">
     <div class="container">
-      <div class="row g-4 mb-5">
+      <div class="row g-4 mb-5 align-items-stretch">
         
         <!-- Salon Details Column -->
         <div class="col-lg-5">
-          <div class="p-4 rounded-4 bg-white border h-100 d-flex flex-column">
-            <!-- Salon Photo (4:3 ratio) -->
-            <div class="rounded-3 overflow-hidden mb-4 border" style="aspect-ratio: 16 / 9;">
-              <img src="image/dimitrisvetsikas1969-chocolaterie-3590621_1920.jpg" alt="Madison Avenue Tasting Salon" style="width: 100%; height: 100%; object-fit: cover;">
+          <div class="p-4 rounded-4 bg-white border h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="badge bg-noir text-gold"><i class="bi bi-building me-1"></i> Manhattan Flagship</span>
+              </div>
+              <h3 class="serif-heading mb-2">Madison Avenue Salon</h3>
+              <p class="text-muted small mb-4">
+                Step into our climate-controlled tasting vault featuring live bean-to-bar tastings, rare single-origin pairing sessions, and bespoke gift box assembly.
+              </p>
+
+              <div class="d-flex flex-column gap-3 mb-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-geo-alt-fill"></i></div>
+                  <div>
+                    <strong>Boutique Address</strong>
+                    <div class="small text-muted">480 Madison Avenue, 4th Floor, New York, NY 10022</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                  <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-telephone-fill"></i></div>
+                  <div>
+                    <strong>Concierge Hotline</strong>
+                    <div class="small text-muted">+1 (800) 840-CACAO (Toll-Free)</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                  <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-envelope-fill"></i></div>
+                  <div>
+                    <strong>Direct Email</strong>
+                    <div class="small text-muted">concierge@maisonducacao.com</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                  <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-clock-fill"></i></div>
+                  <div>
+                    <strong>Tasting Salon Hours</strong>
+                    <div class="small text-muted">Mon &ndash; Fri: 10:00 AM &ndash; 7:00 PM EST &middot; Sat: 11:00 AM &ndash; 6:00 PM EST</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <h3 class="serif-heading mb-2">Madison Avenue Salon</h3>
-            <p class="text-muted small mb-4">
-              Step into our climate-controlled tasting vault featuring live bean-to-bar tastings, rare single-origin pairing sessions, and bespoke gift box assembly.
-            </p>
-
-            <div class="d-flex flex-column gap-3 mb-4">
-              <div class="d-flex align-items-start gap-3">
-                <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-geo-alt-fill"></i></div>
-                <div>
-                  <strong>Boutique Address</strong>
-                  <div class="small text-muted">480 Madison Avenue, 4th Floor, New York, NY 10022</div>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-start gap-3">
-                <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-telephone-fill"></i></div>
-                <div>
-                  <strong>Concierge Hotline</strong>
-                  <div class="small text-muted">+1 (800) 840-CACAO (Toll-Free)</div>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-start gap-3">
-                <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-envelope-fill"></i></div>
-                <div>
-                  <strong>Direct Email</strong>
-                  <div class="small text-muted">concierge@maisonducacao.com</div>
-                </div>
-              </div>
-
-              <div class="d-flex align-items-start gap-3">
-                <div class="origin-badge-icon flex-shrink-0"><i class="bi bi-clock-fill"></i></div>
-                <div>
-                  <strong>Tasting Salon Hours</strong>
-                  <div class="small text-muted">Monday – Friday: 10:00 AM – 7:00 PM EST<br>Saturday: 11:00 AM – 6:00 PM EST<br>Sunday: By Private Sommelier Reservation</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Social Media Icon Links -->
-            <div class="mb-4 pt-3 border-top">
+            <!-- Social Media Icon Links (High-Contrast in Dark Mode - Issue 10) -->
+            <div class="pt-3 border-top">
               <span class="small fw-bold text-uppercase tracking-widest text-muted d-block mb-2">Follow Our Confectionery Ateliers</span>
               <div class="footer-social-links d-flex gap-2">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="bi bi-facebook"></i></a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="bi bi-instagram"></i></a>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
                 <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" title="YouTube"><i class="bi bi-youtube"></i></a>
-                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" title="TikTok"><i class="bi bi-tiktok"></i></a>
               </div>
-            </div>
-
-            <div class="mt-auto p-3 rounded-3 bg-cream border text-center">
-              <span class="small fw-bold text-gold d-block mb-1"><i class="bi bi-calendar-event me-1"></i> Private Sommelier Tastings</span>
-              <span class="small text-muted">Reservations required 48 hours in advance for groups of 4 to 16 guests.</span>
             </div>
           </div>
         </div>
 
-        <!-- Enquiry Form Column -->
+        <!-- Enquiry Form Column (Snug Container, Zero Unwanted Bottom Space - Issues 8 & 10) -->
         <div class="col-lg-7">
-          <div class="calculator-box h-100">
-            <div class="mb-4">
-              <span class="badge bg-noir text-gold px-3 py-2 mb-2"><i class="bi bi-chat-heart-fill me-1"></i> Salon Enquiry</span>
-              <h3 class="serif-heading mb-1">Send a Message or Reservation</h3>
-              <p class="text-muted-custom small">Our concierge team responds to all inquiries within 2 business hours.</p>
-            </div>
-
-            <form class="cacao-ajax-form">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label class="form-label">Your Name</label>
-                  <input type="text" class="form-control" placeholder="Jean-Luc Dupont" required>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Email Address</label>
-                  <input type="email" class="form-control" placeholder="jeanluc@domain.com" required>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Phone</label>
-                  <input type="tel" class="form-control" placeholder="+1 (555) 019-2834">
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Nature of Inquiry</label>
-                  <select class="form-select">
-                    <option>Private Tasting Salon Reservation</option>
-                    <option>Wholesale & Direct Import Distribution</option>
-                    <option>Bespoke Event & Wedding Favors</option>
-                    <option>Press & Sommelier Collaboration</option>
-                    <option>Order Inquiries & Tracking</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <label class="form-label">Your Message</label>
-                  <textarea class="form-control" rows="4" placeholder="Please provide details regarding your requested date, guest count, or import product interests..." required></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-cacao-gold w-100 py-3 fw-bold">
-                    <i class="bi bi-send-fill me-2"></i> Submit Inquiry to Concierge
-                  </button>
-                </div>
+          <div class="calculator-box h-100 d-flex flex-column justify-content-between p-4">
+            <div>
+              <div class="mb-4">
+                <span class="badge bg-noir text-gold px-3 py-2 mb-2"><i class="bi bi-chat-heart-fill me-1"></i> Salon Enquiry</span>
+                <h3 class="serif-heading mb-1">Send a Message or Reservation</h3>
+                <p class="text-muted-custom small mb-0">Our concierge team responds to all inquiries within 2 business hours.</p>
               </div>
-            </form>
+
+              <form class="cacao-ajax-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Your Name</label>
+                    <input type="text" class="form-control" placeholder="Jean-Luc Dupont" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="jeanluc@domain.com" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Phone</label>
+                    <input type="tel" class="form-control" placeholder="+1 (555) 019-2834">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Nature of Inquiry</label>
+                    <select class="form-select" aria-label="Nature of Inquiry">
+                      <option>Private Tasting Salon Reservation</option>
+                      <option>Wholesale & Direct Import Distribution</option>
+                      <option>Bespoke Event & Wedding Favors</option>
+                      <option>Press & Sommelier Collaboration</option>
+                      <option>Order Inquiries & Tracking</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Your Message</label>
+                    <textarea class="form-control" rows="4" placeholder="Please provide details regarding your requested date, guest count, or import product interests..." required></textarea>
+                  </div>
+                  <div class="col-12 pt-2">
+                    <button type="submit" class="btn btn-cacao-primary w-100 py-3 fw-bold">
+                      <i class="bi bi-send-fill me-2"></i> Submit Inquiry to Concierge
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
 
@@ -405,11 +432,11 @@
         </div>
 
         <div class="col-6 col-md-3 col-lg-2 text-start">
-          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">Services</h5>
+          <h5 class="text-white text-uppercase small fw-bold mb-3 tracking-widest">About & Services</h5>
           <ul class="footer-links-list small">
+            <li><a href="about.html">About Our Heritage</a></li>
             <li><a href="gifting.html">Bespoke Gift Boxes</a></li>
             <li><a href="corporate.html">Corporate Orders</a></li>
-            <li><a href="corporate.html">Custom Ribbon Branding</a></li>
             <li><a href="contact.html">Private Tasting Salon</a></li>
             <li><a href="contact.html">Wholesale Enquiries</a></li>
           </ul>
