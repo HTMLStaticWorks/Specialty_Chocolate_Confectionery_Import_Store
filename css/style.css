@@ -630,11 +630,12 @@ body.theme-dark .btn-outline-cacao:hover {
   color: var(--cacao-gold) !important;
   font-weight: 600;
   border-radius: var(--radius-pill);
-  padding: 0.55rem 1.2rem !important;
+  padding: 0.55rem 1.2rem;
   border: 1px solid rgba(212, 175, 55, 0.45);
   transition: all var(--transition-fast);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   font-size: 0.9rem;
   white-space: nowrap;
@@ -644,6 +645,52 @@ body.theme-dark .btn-outline-cacao:hover {
   background: var(--cacao-gold);
   color: #140D09 !important;
   box-shadow: var(--shadow-gold);
+}
+
+/* Navbar Icon-Only Concierge Gifting Action Button */
+.cacao-navbar .concierge-pill:not(.overlay-concierge-pill),
+.concierge-pill.nav-icon-circle-btn {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  text-decoration: none;
+}
+
+.cacao-navbar .concierge-pill:not(.overlay-concierge-pill) i,
+.concierge-pill.nav-icon-circle-btn i {
+  color: var(--cacao-gold) !important;
+  font-size: 1.15rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.cacao-navbar .concierge-pill:not(.overlay-concierge-pill):hover,
+.concierge-pill.nav-icon-circle-btn:hover {
+  background: rgba(212, 175, 55, 0.25);
+  border-color: var(--cacao-gold);
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.35);
+  color: #FFFFFF !important;
+}
+
+.cacao-navbar .concierge-pill:not(.overlay-concierge-pill):hover i,
+.concierge-pill.nav-icon-circle-btn:hover i {
+  color: #FFFFFF !important;
+}
+
+.cacao-navbar .concierge-pill:not(.overlay-concierge-pill).active {
+  background: rgba(212, 175, 55, 0.28);
+  border-color: var(--cacao-gold);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
 /* Web view (> 1024px): Strictly hide hamburger button */
