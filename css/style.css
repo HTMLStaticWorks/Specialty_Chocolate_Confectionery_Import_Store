@@ -368,7 +368,7 @@ body.theme-dark .btn-outline-cacao:hover {
   left: 0 !important;
   right: 0 !important;
   width: 100% !important;
-  z-index: 1080 !important;
+  z-index: 1100 !important;
   background: rgba(20, 13, 9, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -497,20 +497,27 @@ body.theme-dark .btn-outline-cacao:hover {
   border: 1px solid rgba(212, 175, 55, 0.35);
 }
 
-/* Remove duplicate Bootstrap caret so only the elegant chevron icon is shown */
+/* Remove duplicate Bootstrap caret so only the single elegant chevron icon is shown */
+.cacao-navbar .dropdown-toggle::after,
+.cacao-nav-links .dropdown-toggle::after,
+.cacao-nav-link::after,
 .cacao-nav-link.dropdown-toggle::after {
   display: none !important;
+  content: none !important;
+  border: none !important;
+  margin: 0 !important;
 }
 
-/* Dropdown Menu Styling for Conventional Navbar */
+/* Dropdown Menu Styling for Conventional Navbar (Ensured above all hero elements) */
 .cacao-nav-item .dropdown-menu {
+  position: absolute !important;
   background: #18100B !important;
   border: 1px solid rgba(212, 175, 55, 0.35) !important;
   border-radius: var(--radius-md) !important;
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75) !important;
   padding: 0.5rem 0;
   margin-top: 0.5rem;
-  z-index: 1090 !important;
+  z-index: 1200 !important;
 }
 
 .cacao-nav-item .dropdown-item {
@@ -693,13 +700,15 @@ body.theme-dark .btn-outline-cacao:hover {
   box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
-/* Web view (> 1024px): Strictly hide hamburger button */
-@media (min-width: 1024.02px) {
+/* Web view (> 1024px): Strictly hide hamburger button and show nav links */
+@media (min-width: 1024.01px) {
   .cacao-navbar .magnetic-menu-btn,
-  .magnetic-menu-btn {
+  .magnetic-menu-btn,
+  button.magnetic-menu-btn {
     display: none !important;
   }
-  .cacao-navbar .cacao-nav-links {
+  .cacao-navbar .cacao-nav-links,
+  .cacao-nav-links {
     display: flex !important;
   }
 }
@@ -710,19 +719,21 @@ body.theme-dark .btn-outline-cacao:hover {
     padding: 0.6rem 0 !important;
   }
 
-  .cacao-navbar .concierge-pill,
+  .cacao-navbar .concierge-pill:not(.overlay-concierge-pill),
   .cacao-navbar .cacao-nav-links,
+  .cacao-nav-links,
   .cacao-navbar .navbar-nav,
   .cacao-navbar .nav-item,
-  .cacao-navbar .nav-link,
-  .cacao-navbar .btn:not(.magnetic-menu-btn):not(.theme-toggle-btn):not(.dir-toggle-btn),
-  .cacao-navbar a:not(.brand-logo-wrap):not(.dropdown-item) {
+  .cacao-navbar .nav-link {
     display: none !important;
   }
 
   .cacao-navbar .magnetic-menu-btn,
-  .magnetic-menu-btn {
+  .magnetic-menu-btn,
+  button.magnetic-menu-btn {
     display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
   .cacao-navbar .container,
@@ -1805,24 +1816,62 @@ body.theme-dark .contact-social-link:hover i {
   color: #E6DCD5 !important;
 }
 
-/* Homepage 1 Hero Second Button Contrast in Light & Dark Themes */
+/* Homepage Hero Second Button High Contrast in Light & Dark Themes */
+.hero-editorial .btn-cacao-outline,
+.hero-editorial .btn-outline-cacao,
 .hero-editorial-home1 .btn-cacao-outline,
-.hero-editorial-home1 .btn-outline-cacao {
+.hero-editorial-home1 .btn-outline-cacao,
+[data-theme="light"] .hero-editorial .btn-cacao-outline,
+[data-theme="light"] .hero-editorial .btn-outline-cacao,
+[data-theme="light"] .hero-editorial-home1 .btn-cacao-outline,
+[data-theme="light"] .hero-editorial-home1 .btn-outline-cacao,
+[data-theme="dark"] .hero-editorial .btn-cacao-outline,
+[data-theme="dark"] .hero-editorial .btn-outline-cacao,
+[data-theme="dark"] .hero-editorial-home1 .btn-cacao-outline,
+[data-theme="dark"] .hero-editorial-home1 .btn-outline-cacao {
   color: #FFFFFF !important;
-  border-color: rgba(212, 175, 55, 0.85) !important;
-  background-color: rgba(20, 13, 9, 0.5) !important;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  border: 1.5px solid var(--cacao-gold) !important;
+  background-color: rgba(20, 13, 9, 0.65) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
+.hero-editorial .btn-cacao-outline i,
+.hero-editorial .btn-outline-cacao i,
+.hero-editorial-home1 .btn-cacao-outline i,
+.hero-editorial-home1 .btn-outline-cacao i,
+[data-theme="light"] .hero-editorial .btn-cacao-outline i,
+[data-theme="light"] .hero-editorial .btn-outline-cacao i,
+[data-theme="light"] .hero-editorial-home1 .btn-cacao-outline i,
+[data-theme="light"] .hero-editorial-home1 .btn-outline-cacao i {
+  color: var(--cacao-gold) !important;
+}
+
+.hero-editorial .btn-cacao-outline:hover,
+.hero-editorial .btn-outline-cacao:hover,
 .hero-editorial-home1 .btn-cacao-outline:hover,
-.hero-editorial-home1 .btn-outline-cacao:hover {
+.hero-editorial-home1 .btn-outline-cacao:hover,
+[data-theme="light"] .hero-editorial .btn-cacao-outline:hover,
+[data-theme="light"] .hero-editorial .btn-outline-cacao:hover,
+[data-theme="light"] .hero-editorial-home1 .btn-cacao-outline:hover,
+[data-theme="light"] .hero-editorial-home1 .btn-outline-cacao:hover {
   background-color: var(--cacao-gold) !important;
   border-color: var(--cacao-gold) !important;
   color: #140D09 !important;
   text-shadow: none;
   box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
+}
+
+.hero-editorial .btn-cacao-outline:hover i,
+.hero-editorial .btn-outline-cacao:hover i,
+.hero-editorial-home1 .btn-cacao-outline:hover i,
+.hero-editorial-home1 .btn-outline-cacao:hover i,
+[data-theme="light"] .hero-editorial .btn-cacao-outline:hover i,
+[data-theme="light"] .hero-editorial .btn-outline-cacao:hover i,
+[data-theme="light"] .hero-editorial-home1 .btn-cacao-outline:hover i,
+[data-theme="light"] .hero-editorial-home1 .btn-outline-cacao:hover i {
+  color: #140D09 !important;
 }
 
 /* ==========================================================================
@@ -1836,7 +1885,7 @@ body.theme-dark .contact-social-link:hover i {
   font-size: 0.88rem !important;
   letter-spacing: 0.03em !important;
   position: relative;
-  z-index: 1040;
+  z-index: 100 !important;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5) !important;
 }
 
