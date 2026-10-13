@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeAndDirection();
+  syncNavbarHeight();
   initFullscreenMenu();
   initProductFilter();
   initFlavorQuiz();
@@ -12,6 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
   initCorporateCalculator();
   initEnquiryForms();
 });
+
+window.addEventListener('resize', syncNavbarHeight);
+
+function syncNavbarHeight() {
+  const navbar = document.querySelector('.cacao-navbar');
+  if (navbar) {
+    const height = Math.round(navbar.getBoundingClientRect().height);
+    if (height > 0) {
+      document.documentElement.style.setProperty('--navbar-height', `${height}px`);
+    }
+  }
+}
 
 /* ==========================================================================
    1. Theme & RTL / LTR Direction Management
@@ -31,6 +44,7 @@ function initThemeAndDirection() {
       document.documentElement.setAttribute('data-theme', activeTheme);
       localStorage.setItem('cacao_theme', activeTheme);
       updateThemeIcons(activeTheme);
+      syncNavbarHeight();
     });
   });
 
@@ -41,6 +55,7 @@ function initThemeAndDirection() {
       document.documentElement.setAttribute('dir', activeDir);
       document.documentElement.setAttribute('lang', activeDir === 'rtl' ? 'ar' : 'en');
       localStorage.setItem('cacao_dir', activeDir);
+      syncNavbarHeight();
     });
   });
 

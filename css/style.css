@@ -44,10 +44,37 @@
   --radius-xl: 28px;
   --radius-pill: 9999px;
 
+  /* Fixed Navigation Sizing */
+  --navbar-height: 74px;
+
   /* Transitions */
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-base: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --navbar-height: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 56px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --navbar-height: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  :root {
+    --navbar-height: 46px;
+  }
 }
 
 /* ==========================================================================
@@ -148,13 +175,7 @@ body {
 }
 
 body:not(.no-navbar-pad) {
-  padding-top: 86px !important;
-}
-
-@media (max-width: 576px) {
-  body:not(.no-navbar-pad) {
-    padding-top: 76px !important;
-  }
+  padding-top: var(--navbar-height) !important;
 }
 
 /* Typography Classes */
@@ -369,17 +390,20 @@ body.theme-dark .btn-outline-cacao:hover {
   right: 0 !important;
   width: 100% !important;
   z-index: 1100 !important;
+  height: var(--navbar-height);
+  min-height: var(--navbar-height);
+  display: flex;
+  align-items: center;
   background: rgba(20, 13, 9, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1.5px solid rgba(212, 175, 55, 0.25);
-  padding: 0.9rem 0;
+  padding: 0 !important;
   transition: all var(--transition-base);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
 }
 
 .cacao-navbar.scrolled {
-  padding: 0.72rem 0;
   background: rgba(13, 7, 5, 0.98);
   border-bottom-color: rgba(212, 175, 55, 0.4);
 }
@@ -716,7 +740,7 @@ body.theme-dark .btn-outline-cacao:hover {
 /* Tablet & Mobile (320px - 1024px): Balanced Straight-Line Navbar & Visible Hamburger Button */
 @media (max-width: 1024px) {
   .cacao-navbar {
-    padding: 0.6rem 0 !important;
+    padding: 0 !important;
   }
 
   .cacao-navbar .concierge-pill:not(.overlay-concierge-pill),
@@ -764,7 +788,7 @@ body.theme-dark .btn-outline-cacao:hover {
 
 @media (max-width: 576px) {
   .cacao-navbar {
-    padding: 0.45rem 0 !important;
+    padding: 0 !important;
   }
 
   .cacao-navbar .container,
@@ -1102,6 +1126,7 @@ body.theme-dark .btn-outline-cacao:hover {
   text-align: center;
   position: relative;
   overflow: hidden;
+  margin-top: -1px;
 }
 
 .hero-editorial::before {
@@ -1790,7 +1815,7 @@ body.theme-dark .contact-social-link:hover i {
    Home 1 Hero Viewport-Fitting & Background Image (Issue 2)
    ========================================================================== */
 .hero-editorial-home1 {
-  min-height: calc(100vh - 86px);
+  min-height: calc(100vh - var(--navbar-height) + 1px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1800,6 +1825,7 @@ body.theme-dark .contact-social-link:hover i {
   padding: 3.5rem 0;
   text-align: center;
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
+  margin-top: -1px;
 }
 
 .hero-editorial-home1 .hero-title-giant {
@@ -2061,9 +2087,11 @@ body.theme-dark .form-select option {
   border: 1.5px solid rgba(212, 175, 55, 0.45);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -2074,6 +2102,14 @@ body.theme-dark .form-select option {
   border-color: #D4AF37;
   transform: translateY(-5px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4), 0 0 24px rgba(212, 175, 55, 0.25);
+}
+
+.deal-offer-card .mt-auto {
+  margin-top: auto !important;
+}
+
+.deal-offer-card .btn {
+  white-space: nowrap;
 }
 
 .deal-badge-pill {
@@ -2089,6 +2125,144 @@ body.theme-dark .form-select option {
   padding: 0.35rem 0.85rem;
   border-radius: var(--radius-pill);
   box-shadow: 0 4px 12px rgba(138, 43, 58, 0.4);
+}
+
+/* ==========================================================================
+   Heritage Key Numbers Stat Cards - Equal Size Across All Views
+   (Mobile, Tablet, 1024px, Desktop)
+   ========================================================================== */
+.heritage-stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.heritage-stat-row > [class*="col-"] {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.heritage-stat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem 0.75rem;
+  border-radius: var(--radius-lg);
+  background-color: #FFFFFF;
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+  height: 100%;
+  min-height: 125px;
+  flex: 1 1 auto;
+  transition: all var(--transition-base);
+  box-sizing: border-box;
+}
+
+.heritage-stat-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--cacao-gold);
+  box-shadow: 0 10px 24px rgba(212, 175, 55, 0.22);
+}
+
+.heritage-stat-number {
+  font-family: var(--font-serif);
+  font-size: clamp(1.85rem, 3.2vw, 2.45rem);
+  font-weight: 700;
+  color: var(--cacao-gold);
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.heritage-stat-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--cacao-muted);
+  line-height: 1.35;
+  min-height: 2.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+[data-theme="dark"] .heritage-stat-card {
+  background: linear-gradient(135deg, #1C120C 0%, #120A07 100%);
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+[data-theme="dark"] .heritage-stat-number {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .heritage-stat-card:hover .heritage-stat-number {
+  color: var(--cacao-gold);
+}
+
+[data-theme="dark"] .heritage-stat-label {
+  color: #E6DCD5 !important;
+}
+
+/* Tablet & 1024px View */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heritage-stat-card {
+    min-height: 124px;
+    padding: 1.1rem 0.5rem;
+  }
+  .heritage-stat-number {
+    font-size: 1.85rem;
+    margin-bottom: 0.3rem;
+  }
+  .heritage-stat-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    min-height: 2.8em;
+    line-height: 1.35;
+  }
+}
+
+/* Mobile View (< 768px) */
+@media (max-width: 767.98px) {
+  .heritage-stat-card {
+    padding: 1rem 0.5rem;
+    min-height: 116px;
+  }
+  .heritage-stat-number {
+    font-size: 1.65rem;
+    margin-bottom: 0.25rem;
+  }
+  .heritage-stat-label {
+    font-size: 0.64rem;
+    letter-spacing: 0.08em;
+    min-height: 2.8em;
+    line-height: 1.35;
+  }
+}
+
+/* Universal Grid Card Stretch Across All Rows */
+.heritage-stat-row > [class*="col-"],
+.equal-card-row > [class*="col-"],
+.row:has(> [class*="col-"] > .chocolate-card) > [class*="col-"],
+.row:has(> [class*="col-"] > .deal-offer-card) > [class*="col-"],
+.row:has(> [class*="col-"] > .heritage-stat-card) > [class*="col-"] {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.heritage-stat-row > [class*="col-"] > .heritage-stat-card,
+.equal-card-row > [class*="col-"] > *,
+.row:has(> [class*="col-"] > .chocolate-card) > [class*="col-"] > .chocolate-card,
+.row:has(> [class*="col-"] > .deal-offer-card) > [class*="col-"] > .deal-offer-card,
+.row:has(> [class*="col-"] > .heritage-stat-card) > [class*="col-"] > .heritage-stat-card {
+  width: 100% !important;
+  height: 100% !important;
+  flex: 1 1 auto;
 }
 
 
